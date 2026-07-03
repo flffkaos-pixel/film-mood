@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<div class="film-grain"></div>
 <header class="site-header">
   <div class="header-inner">
     <a href="#/" class="site-logo"><span>M</span>oodFrame</a>
@@ -28,6 +29,10 @@
   </div>
   <p>&copy; 2026 MoodFrame &middot; Film &amp; Home Inspiration</p>
 </footer>
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <span class="lightbox-close">&times;</span>
+  <img class="lightbox-img" id="lightboxImg" alt="">
+</div>
 <script src="js/data.js"></script>
 <script src="js/film-details-full.js"></script>
 <script src="js/academy-full.js"></script>

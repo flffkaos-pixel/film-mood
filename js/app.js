@@ -15,6 +15,25 @@ function personAvatar(d) {
   return d.img || 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect fill="%23252525" width="100" height="100"/><text font-size="32" fill="%236b6966" text-anchor="middle" x="50" y="58">' + encodeURIComponent(initial) + '</text></svg>';
 }
 
+// ─── Lightbox ───
+function openLightbox(src) {
+  const lb = document.getElementById('lightbox');
+  const img = document.getElementById('lightboxImg');
+  img.src = src;
+  lb.classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+function closeLightbox() {
+  document.getElementById('lightbox').classList.remove('active');
+  document.body.style.overflow = '';
+}
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+
+// ─── Img helper ───
+function imgAttr(src, alt) {
+  return `src="${src}" alt="${alt}" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.parentElement.innerHTML='<div class=\\'img-error\\'>${alt}<br><span style=font-size:11px;opacity:.6>Failed to load</span></div>'" onload="this.classList.add('loaded')"`;
+}
+
 // ─── Router ───
 function getRoute() {
   const hash = location.hash.slice(1) || '/';
