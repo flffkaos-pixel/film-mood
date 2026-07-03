@@ -1,6 +1,6 @@
 const LANG = {
   ko: {
-    brand: "무드프레임",
+    brand: "필름무드",
     brandTag: "영화 속 컬러, 집에서 만나다",
     tagline: "영화 속 인테리어와 컬러 팔레트에서 집 꾸미기 영감을 찾아보세요. 큐레이션된 영화 스크린샷으로 공간, 조명, 분위기를 탐험하세요.",
     heroTitle: "영화에서<br>집의 색을 찾다",
@@ -40,7 +40,7 @@ const LANG = {
     siteDescription: "영화 속 인테리어와 컬러 팔레트에서 집 꾸미기 영감을 찾아보세요. 큐레이션된 영화 스크린샷으로 공간, 조명, 분위기를 탐험하세요.",
     joinDiscord: "Discord 커뮤니티 참여",
     email: "이메일 보내기",
-    copyright: "© 2026 무드프레임 · 영화 & 홈 인테리어",
+    copyright: "© 2026 필름무드 · 영화 & 홈 인테리어",
     introTitle: "소개",
     introP1: "이 사이트는 개인 프로젝트입니다. 여가 시간에 운영하며 주로 공간, 색, 빛, 집에 대해 이야기하는 영화의 스크린샷을 수집합니다.",
     introP2: "어떤 영화나 프레임을 공유할지 정해진 규칙은 없습니다. 살아있는 듯하고 진실하며, 오래 머물고 싶은 작품을 선호합니다. 여기서 집과 색에 대한 일상적인 영감을 찾을 수 있지만, 영화 속 세트를 그대로 따라 하는 것은 권장하지 않습니다.",
@@ -84,7 +84,7 @@ const LANG = {
     award: "수상 여부",
   },
   en: {
-    brand: "MoodFrame",
+    brand: "Film Mood",
     brandTag: "Film colors, at home",
     tagline: "Find home color and decor inspiration from cinema. Curated film screenshots rich in interior, space, and palette.",
     heroTitle: "From cinema,<br>find color for your home",
@@ -124,7 +124,7 @@ const LANG = {
     siteDescription: "Find home color and decor inspiration from cinema. Curated film screenshots rich in interior, space, and palette.",
     joinDiscord: "Join our Discord community",
     email: "Email us",
-    copyright: "© 2026 MoodFrame · Film & Home Inspiration",
+    copyright: "© 2026 Film Mood · Film & Home Inspiration",
     introTitle: "Introduction",
     introP1: "This is a personal passion project. I maintain the site in my spare time, mainly collecting screenshots from films that speak to space, color, light, and home.",
     introP2: "There is no fixed rule for which films or frames I share. I lean toward work that feels lived-in, sincere, and worth sitting with—not spectacle for its own sake. You may find everyday inspiration for home and color here, but I don't encourage copying film sets literally; those palettes and layouts serve the story first.",

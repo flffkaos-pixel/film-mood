@@ -1,8 +1,8 @@
-let CURRENT_LANG = localStorage.getItem('moodframe-lang') || 'ko';
+let CURRENT_LANG = localStorage.getItem('filmmood-lang') || 'ko';
 
 function switchLang() {
   CURRENT_LANG = CURRENT_LANG === 'ko' ? 'en' : 'ko';
-  localStorage.setItem('moodframe-lang', CURRENT_LANG);
+  localStorage.setItem('filmmood-lang', CURRENT_LANG);
   document.querySelector('.lang-toggle').textContent = CURRENT_LANG === 'ko' ? 'English' : '한국어';
   renderPage();
 }
