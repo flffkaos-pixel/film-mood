@@ -44,7 +44,7 @@ const LANG = {
     introTitle: "소개",
     introP1: "이 사이트는 개인 프로젝트입니다. 여가 시간에 운영하며 주로 공간, 색, 빛, 집에 대해 이야기하는 영화의 스크린샷을 수집합니다.",
     introP2: "어떤 영화나 프레임을 공유할지 정해진 규칙은 없습니다. 살아있는 듯하고 진실하며, 오래 머물고 싶은 작품을 선호합니다. 여기서 집과 색에 대한 일상적인 영감을 찾을 수 있지만, 영화 속 세트를 그대로 따라 하는 것은 권장하지 않습니다.",
-    introP3: "영화와 인테리어에 대한 이해는 modest 하지만, 모든 영화와 프레임은 직접 선택했습니다 (64편, 3154장). 천천히 살펴보고, 디테일을 음미하며, 새로운 감정을 느껴보세요.",
+    introP3: "영화와 인테리어에 대한 이해는 modest 하지만, 모든 영화와 프레임은 직접 선택했습니다 (64편, 3400+장). 천천히 살펴보고, 디테일을 음미하며, 새로운 감정을 느껴보세요.",
     notesTitle: "참고 사항",
     notesList: [
       "일부 영화는 스포일러를 포함할 수 있습니다",
@@ -128,7 +128,7 @@ const LANG = {
     introTitle: "Introduction",
     introP1: "This is a personal passion project. I maintain the site in my spare time, mainly collecting screenshots from films that speak to space, color, light, and home.",
     introP2: "There is no fixed rule for which films or frames I share. I lean toward work that feels lived-in, sincere, and worth sitting with—not spectacle for its own sake. You may find everyday inspiration for home and color here, but I don't encourage copying film sets literally; those palettes and layouts serve the story first.",
-    introP3: "My understanding of cinema and interiors is modest, but every film and frame here was chosen by hand (64 films, 3154 images). I hope you'll slow down, notice the details, and maybe feel something new.",
+    introP3: "My understanding of cinema and interiors is modest, but every film and frame here was chosen by hand (64 films, 3400+ images). I hope you'll slow down, notice the details, and maybe feel something new.",
     notesTitle: "Notes",
     notesList: [
       "Some films may contain spoilers",

@@ -95,7 +95,7 @@ function renderHome(main) {
         <a href="#/films" class="btn btn-primary">${lang('browseFilms')}</a>
         <a href="#/colors" class="btn btn-secondary">${lang('exploreColors')}</a>
       </div>
-      <div class="hero-stats">64 ${lang('filmCount', { count: 3154 })}</div>
+      <div class="hero-stats">64 ${lang('filmCount', { count: 3432 })}</div>
     </section>
     <section class="section">
       <div class="section-header">
