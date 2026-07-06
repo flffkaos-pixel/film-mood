@@ -1,3 +1,6 @@
+const IMG_PROXY = 'https://film-mood-proxy.flffkaos.workers.dev/?url=';
+function pimg(url) { return url.includes('img.yeguozi.com') ? IMG_PROXY + encodeURIComponent(url) : url; }
+
 let CURRENT_LANG = localStorage.getItem('filmmood-lang') || 'ko';
 
 function switchLang() {
@@ -19,7 +22,7 @@ function personAvatar(d) {
 function openLightbox(src) {
   const lb = document.getElementById('lightbox');
   const img = document.getElementById('lightboxImg');
-  img.src = src;
+  img.src = pimg(src);
   lb.classList.add('active');
   document.body.style.overflow = 'hidden';
 }
@@ -31,7 +34,8 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbo
 
 // ─── Img helper ───
 function imgAttr(src, alt) {
-  return `src="${src}" alt="${alt}" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.parentElement.innerHTML='<div class=\\'img-error\\'>${alt}<br><span style=font-size:11px;opacity:.6>Failed to load</span></div>'" onload="this.classList.add('loaded')"`;
+  src = pimg(src);
+  return `src="${src}" alt="${alt}" loading="lazy" crossorigin="anonymous" onerror="this.onerror=null;this.parentElement.innerHTML='<div class=\\'img-error\\'>${alt}<br><span style=font-size:11px;opacity:.6>Failed to load</span></div>'" onload="this.classList.add('loaded')"`;
 }
 
 // ─── Router ───
@@ -174,7 +178,7 @@ function filmCardHTML(f) {
   return `
     <div class="film-card" data-region="${f.region[CURRENT_LANG] || f.region.en}" onclick="navigate('#/film/${f.id}')">
       <div class="film-card-img">
-        <img src="${f.poster}" alt="${title}" loading="lazy">
+        <img src="${pimg(f.screenshots?.[0] || f.poster)}" alt="${title}" loading="lazy">
         ${f.new ? '<span class="film-card-badge">' + lang('new') + '</span>' : ''}
       </div>
       <div class="film-card-body">
@@ -209,7 +213,7 @@ function renderColors(main) {
                 </div>
               </div>
               <div class="color-card-thumbs">
-                ${c.thumbs.slice(0, 6).map(url => `<img src="${url}" alt="" loading="lazy">`).join('')}
+                ${c.thumbs.slice(0, 6).map(url => `<img src="${pimg(url)}" alt="" loading="lazy">`).join('')}
               </div>
             </div>
           `;
@@ -341,7 +345,7 @@ function renderFilmDetail(main, slug) {
       ` : ''}
       <h3 style="font-size:16px;font-weight:600;margin-top:32px;margin-bottom:12px">${lang('screenshots')} · ${shots.length}</h3>
       <div class="film-screenshots">
-        ${shots.map(s => `<img src="${s}" alt="${title}" loading="lazy">`).join('')}
+        ${shots.map(s => `<img src="${pimg(s)}" alt="${title}" loading="lazy" style="cursor:zoom-in" onclick="openLightbox('${s}')">`).join('')}
       </div>
     </div>
   `;
