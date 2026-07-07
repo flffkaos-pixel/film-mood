@@ -272,7 +272,6 @@ function renderAcademy(main) {
           <thead>
             <tr>
               <th>${lang('year')}</th>
-              <th>${lang('chineseTitle')}</th>
               <th>${lang('englishTitle')}</th>
               <th>${lang('cinematographer')}</th>
               <th>${lang('award')}</th>
@@ -291,7 +290,6 @@ function renderAcademy(main) {
     tbody.innerHTML = filtered.map(e => `
       <tr>
         <td>${e.year}</td>
-        <td>${e.chineseTitle}</td>
         <td>${e.englishTitle}</td>
         <td>${e.cinematographer}</td>
         <td class="${e.award === 'Winner' ? 'winner' : ''}">${e.award === 'Winner' ? '🏆 ' + lang('winner') : lang('nominee')}</td>

@@ -973,60 +973,60 @@ const FILM_DATA = [
 
 const COLORS_DATA = [
   { id: "red", name: "Red", count: 311, tags: ["warm", "passion", "tension", "intimacy", "danger", "vintage"], thumbs: [
-    "https://img.yeguozi.com/thumbs/%E5%A4%A7%E7%BA%A2%E7%81%AF%E7%AC%BC%E9%AB%98%E9%AB%98%E6%8C%82(1991)/O98CBHMY-scaled.webp",
-    "https://img.yeguozi.com/thumbs/%E5%A4%A9%E6%89%8D%E4%B8%80%E6%97%8F%EF%BC%882001%EF%BC%89/EWDSQP3Z.webp",
-    "https://img.yeguozi.com/thumbs/%E5%B8%83%E8%BE%BE%E4%BD%A9%E6%96%AF%E5%A4%A7%E9%A5%AD%E5%BA%97(2014)/The-Grand-Budapest-Hotel-212.webp",
-    "https://img.yeguozi.com/thumbs/%E5%A4%A7%E7%BA%A2%E7%81%AF%E7%AC%BC%E9%AB%98%E9%AB%98%E6%8C%82(1991)/AQF09DW1-scaled.webp",
-    "https://img.yeguozi.com/thumbs/%E5%B8%83%E8%BE%BE%E4%BD%A9%E6%96%AF%E5%A4%A7%E9%A5%AD%E5%BA%97(2014)/The-Grand-Budapest-Hotel-093.webp",
-    "https://img.yeguozi.com/thumbs/%E5%A4%A7%E7%BA%A2%E7%81%AF%E7%AC%BC%E9%AB%98%E9%AB%98%E6%8C%82(1991)/WETGA6A5-scaled.webp"
+    "https://img.yeguozi.com/thumbs/%E5%A4%A7%E7%BA%A2%E7%81%AF%E7%AC%BC%E9%AB%98%E9%AB%98%E6%8C%82(1991)/0001.webp",
+    "https://img.yeguozi.com/thumbs/%E5%A4%A9%E6%89%8D%E4%B8%80%E6%97%8F%EF%BC%882001%EF%BC%89/0001.webp",
+    "https://img.yeguozi.com/thumbs/%E5%B8%83%E8%BE%BE%E4%BD%A9%E6%96%AF%E5%A4%A7%E9%A5%AD%E5%BA%97(2014)/0001.webp",
+    "https://img.yeguozi.com/thumbs/%E5%A4%A7%E7%BA%A2%E7%81%AF%E7%AC%BC%E9%AB%98%E9%AB%98%E6%8C%82(1991)/0022.webp",
+    "https://img.yeguozi.com/thumbs/%E5%B8%83%E8%BE%BE%E4%BD%A9%E6%96%AF%E5%A4%A7%E9%A5%AD%E5%BA%97(2014)/0001.webp",
+    "https://img.yeguozi.com/thumbs/%E5%A4%A7%E7%BA%A2%E7%81%AF%E7%AC%BC%E9%AB%98%E9%AB%98%E6%8C%82(1991)/0002.webp"
   ]},
   { id: "orange", name: "Orange", count: 538, tags: ["vibrant", "sunset", "nostalgia", "harvest", "warmth", "soft"], thumbs: [
-    "https://img.yeguozi.com/thumbs/%E5%A4%A9%E4%BD%BF%E7%88%B1%E7%BE%8E%E4%B8%BD%EF%BC%882001%EF%BC%89/Amelie-0182.webp",
-    "https://img.yeguozi.com/thumbs/%E5%A4%A9%E4%BD%BF%E7%88%B1%E7%BE%8E%E4%B8%BD%EF%BC%882001%EF%BC%89/Amelie-0870.webp",
-    "https://img.yeguozi.com/thumbs/%E5%A4%A9%E6%89%8D%E4%B8%80%E6%97%8F%EF%BC%882001%EF%BC%89/1T0T33Y1.webp",
-    "https://img.yeguozi.com/thumbs/%E5%B8%83%E8%BE%BE%E4%BD%A9%E6%96%AF%E5%A4%A7%E9%A5%AD%E5%BA%97(2014)/The-Grand-Budapest-Hotel-012.webp",
-    "https://img.yeguozi.com/thumbs/%E5%A4%A9%E4%BD%BF%E7%88%B1%E7%BE%8E%E4%B8%BD%EF%BC%882001%EF%BC%89/Amelie-0439.webp",
-    "https://img.yeguozi.com/thumbs/%E5%A4%A9%E6%89%8D%E4%B8%80%E6%97%8F%EF%BC%882001%EF%BC%89/VNDUFC39.webp"
+    "https://img.yeguozi.com/thumbs/%E5%A4%A9%E4%BD%BF%E7%88%B1%E7%BE%8E%E4%B8%BD%EF%BC%882001%EF%BC%89/0001.webp",
+    "https://img.yeguozi.com/thumbs/%E5%A4%A9%E6%89%8D%E4%B8%80%E6%97%8F%EF%BC%882001%EF%BC%89/0001.webp",
+    "https://img.yeguozi.com/thumbs/%E5%A4%A9%E6%89%8D%E4%B8%80%E6%97%8F%EF%BC%882001%EF%BC%89/0044.webp",
+    "https://img.yeguozi.com/thumbs/%E5%B8%83%E8%BE%BE%E4%BD%A9%E6%96%AF%E5%A4%A7%E9%A5%AD%E5%BA%97(2014)/0001.webp",
+    "https://img.yeguozi.com/thumbs/%E5%A4%A9%E6%89%8D%E4%B8%80%E6%97%8F%EF%BC%882001%EF%BC%89/0002.webp",
+    "https://img.yeguozi.com/thumbs/%E5%A4%A9%E6%89%8D%E4%B8%80%E6%97%8F%EF%BC%882001%EF%BC%89/0001.webp"
   ]},
   { id: "yellow", name: "Yellow", count: 64, tags: ["bright", "creative", "hope", "vintage", "joyful", "alert"], thumbs: [
-    "https://img.yeguozi.com/thumbs/%E5%A6%82%E6%B2%90%E7%88%B1%E6%B2%B3(2012)/GWZKFXAH.webp",
-    "https://img.yeguozi.com/thumbs/%E7%8B%82%E4%BA%BA%E7%9A%AE%E5%9F%83%E7%BD%97(1965)/W942YGEJ.webp",
-    "https://img.yeguozi.com/thumbs/%E5%A4%A9%E4%BD%BF%E7%88%B1%E7%BE%8E%E4%B8%BD%EF%BC%882001%EF%BC%89/Amelie-0154.webp",
-    "https://img.yeguozi.com/thumbs/%E5%A4%A9%E6%89%8D%E4%B8%80%E6%97%8F%EF%BC%882001%EF%BC%89/8T1HO3TB.webp",
-    "https://img.yeguozi.com/thumbs/%E5%A4%A9%E4%BD%BF%E7%88%B1%E7%BE%8E%E4%B8%BD%EF%BC%882001%EF%BC%89/Amelie-0872.webp",
-    "https://img.yeguozi.com/thumbs/%E5%A6%82%E6%B2%90%E7%88%B1%E6%B2%B3(2012)/8D0RK2KX.webp"
+    "https://img.yeguozi.com/thumbs/%E5%A6%82%E6%B2%90%E7%88%B1%E6%B2%B3(2012)/0001.webp",
+    "https://img.yeguozi.com/thumbs/%E7%8B%82%E4%BA%BA%E7%9A%AE%E5%9F%83%E7%BD%97(1965)/0001.webp",
+    "https://img.yeguozi.com/thumbs/%E5%A4%A9%E6%89%8D%E4%B8%80%E6%97%8F%EF%BC%882001%EF%BC%89/0001.webp",
+    "https://img.yeguozi.com/thumbs/%E5%A4%A9%E6%89%8D%E4%B8%80%E6%97%8F%EF%BC%882001%EF%BC%89/0001.webp",
+    "https://img.yeguozi.com/thumbs/%E5%A4%A9%E6%89%8D%E4%B8%80%E6%97%8F%EF%BC%882001%EF%BC%89/0003.webp",
+    "https://img.yeguozi.com/thumbs/%E5%A6%82%E6%B2%90%E7%88%B1%E6%B2%B3(2012)/0001.webp"
   ]},
   { id: "green", name: "Green", count: 261, tags: ["nature", "growth", "calm", "healing", "forest", "vintage"], thumbs: [
-    "https://img.yeguozi.com/thumbs/%E9%9D%92%E6%9C%A8%E7%93%9C%E4%B9%8B%E5%91%B3%EF%BC%881993%EF%BC%89/%E9%9D%92%E6%9C%A8%E7%93%9C%E4%B9%8B%E5%91%B3_0130-1.webp",
-    "https://img.yeguozi.com/thumbs/%E9%9A%94%E5%A3%81%E6%88%BF%E9%97%B4(2024)/small_TK2W1ZOR.webp",
-    "https://img.yeguozi.com/thumbs/%E7%BB%BF%E5%85%89(1986)/1VM3IAM7.webp",
-    "https://img.yeguozi.com/thumbs/%E5%9C%A8%E5%93%A5%E4%BC%A6%E5%B8%83(2017)/QWZ0484K.webp",
-    "https://img.yeguozi.com/thumbs/%E4%B9%94%E4%B9%94%E7%9A%84%E5%BC%82%E6%83%B3%E4%B8%96%E7%95%8C(2019)/Jojo-Rabbit-118.webp",
-    "https://img.yeguozi.com/thumbs/%E9%9A%94%E5%A3%81%E6%88%BF%E9%97%B4(2024)/small_PXJ0P28A.webp"
+    "https://img.yeguozi.com/thumbs/%E9%9D%92%E6%9C%A8%E7%93%9C%E4%B9%8B%E5%91%B3%EF%BC%881993%EF%BC%89/0047.webp",
+    "https://img.yeguozi.com/thumbs/%E9%9A%94%E5%A3%81%E6%88%BF%E9%97%B4(2024)/0018.webp",
+    "https://img.yeguozi.com/thumbs/%E7%BB%BF%E5%85%89(1986)/0001.webp",
+    "https://img.yeguozi.com/thumbs/%E5%9C%A8%E5%93%A5%E4%BC%A6%E5%B8%83(2017)/0001.webp",
+    "https://img.yeguozi.com/thumbs/%E4%B9%94%E4%B9%94%E7%9A%84%E5%BC%82%E6%83%B3%E4%B8%96%E7%95%8C(2019)/0001.webp",
+    "https://img.yeguozi.com/thumbs/%E5%85%B3%E4%BA%8E%E6%88%91%E6%AF%8D%E4%BA%B2%E7%9A%84%E4%B8%80%E5%88%87(1999)/0001.webp"
   ]},
   { id: "blue", name: "Blue", count: 291, tags: ["calm", "depth", "melancholy", "night", "trust", "space"], thumbs: [
-    "https://img.yeguozi.com/thumbs/%E6%98%A5%E5%A4%A9%E7%9A%84%E6%95%85%E4%BA%8B%EF%BC%881990%EF%BC%89/%E6%98%A5%E5%A4%A9%E7%9A%84%E6%95%85%E4%BA%8B_0080.webp",
-    "https://img.yeguozi.com/thumbs/%E5%87%A0%E8%BF%91%E6%88%90%E5%90%8D(2000)/Almost-Famous-0782.webp",
-    "https://img.yeguozi.com/thumbs/%E5%85%B3%E4%BA%8E%E6%88%91%E6%AF%8D%E4%BA%B2%E7%9A%84%E4%B8%80%E5%88%87(1999)/H2XY5TKI.webp",
-    "https://img.yeguozi.com/thumbs/%E5%B4%A9%E6%BA%83%E8%BE%B9%E7%BC%98%E7%9A%84%E5%A5%B3%E4%BA%BA(1988)/271FGXQ7.webp",
-    "https://img.yeguozi.com/thumbs/%E5%B8%83%E8%BE%BE%E4%BD%A9%E6%96%AF%E5%A4%A7%E9%A5%AD%E5%BA%97(2014)/The-Grand-Budapest-Hotel-148.webp",
-    "https://img.yeguozi.com/thumbs/%E6%88%8F%E6%A2%A6%E5%B7%B4%E9%BB%8E%EF%BC%882003%EF%BC%89/%E6%88%8F%E6%A2%A6%E5%B7%B4%E9%BB%8E.The_.Dreamers.2003.UNCUT_.BluRay.720p.x264.AC3-CMCT_0089.webp"
+    "https://img.yeguozi.com/thumbs/%E6%98%A5%E5%A4%A9%E7%9A%84%E6%95%85%E4%BA%8B%EF%BC%881990%EF%BC%89/0001.webp",
+    "https://img.yeguozi.com/thumbs/%E5%87%A0%E8%BF%91%E6%88%90%E5%90%8D(2000)/0001.webp",
+    "https://img.yeguozi.com/thumbs/%E5%85%B3%E4%BA%8E%E6%88%91%E6%AF%8D%E4%BA%B2%E7%9A%84%E4%B8%80%E5%88%87(1999)/0001.webp",
+    "https://img.yeguozi.com/thumbs/%E5%B4%A9%E6%BA%83%E8%BE%B9%E7%BC%98%E7%9A%84%E5%A5%B3%E4%BA%BA(1988)/0001.webp",
+    "https://img.yeguozi.com/thumbs/%E5%B8%83%E8%BE%BE%E4%BD%A9%E6%96%AF%E5%A4%A7%E9%A5%AD%E5%BA%97(2014)/0001.webp",
+    "https://img.yeguozi.com/thumbs/%E6%88%8F%E6%A2%A6%E5%B7%B4%E9%BB%8E%EF%BC%882003%EF%BC%89/0001.webp"
   ]},
   { id: "purple", name: "Purple", count: 6, tags: ["mystery", "romance", "dream", "elegance", "dusk", "art"], thumbs: [
-    "https://img.yeguozi.com/thumbs/%E7%88%B1%E4%B9%90%E4%B9%8B%E5%9F%8E(2016)/LaLaLand_225.webp",
-    "https://img.yeguozi.com/thumbs/%E9%9A%94%E5%A3%81%E6%88%BF%E9%97%B4(2024)/small_8QNP0BXC.webp",
-    "https://img.yeguozi.com/thumbs/%E5%A4%A9%E4%BD%BF%E7%88%B1%E7%BE%8E%E4%B8%BD%EF%BC%882001%EF%BC%89/Amelie-0735.webp",
-    "https://img.yeguozi.com/thumbs/%E7%88%B1%E4%B9%90%E4%B9%8B%E5%9F%8E(2016)/LaLaLand_333.webp",
-    "https://img.yeguozi.com/thumbs/%E7%88%B1%E4%B9%90%E4%B9%8B%E5%9F%8E(2016)/LaLaLand_560.webp",
-    "https://img.yeguozi.com/thumbs/%E7%88%B1%E4%B9%90%E4%B9%8B%E5%9F%8E(2016)/LaLaLand_518.webp"
+    "https://img.yeguozi.com/thumbs/%E7%88%B1%E4%B9%90%E4%B9%8B%E5%9F%8E(2016)/0027.webp",
+    "https://img.yeguozi.com/thumbs/%E5%85%B3%E4%BA%8E%E6%88%91%E6%AF%8D%E4%BA%B2%E7%9A%84%E4%B8%80%E5%88%87(1999)/0001.webp",
+    "https://img.yeguozi.com/thumbs/%E5%A4%A9%E6%89%8D%E4%B8%80%E6%97%8F%EF%BC%882001%EF%BC%89/0044.webp",
+    "https://img.yeguozi.com/thumbs/%E7%88%B1%E4%B9%90%E4%B9%8B%E5%9F%8E(2016)/0001.webp",
+    "https://img.yeguozi.com/thumbs/%E7%88%B1%E4%B9%90%E4%B9%8B%E5%9F%8E(2016)/0001.webp",
+    "https://img.yeguozi.com/thumbs/%E7%88%B1%E4%B9%90%E4%B9%8B%E5%9F%8E(2016)/0002.webp"
   ]},
   { id: "mono", name: "Black & White", count: 158, tags: ["classic cinema", "film grain", "grayscale", "contrast", "documentary", "vintage"], thumbs: [
-    "https://img.yeguozi.com/thumbs/%E9%A9%AC%E5%B0%94%E7%A7%91%E5%A7%86%E4%B8%8E%E7%8E%9B%E4%B8%BD%EF%BC%882021)/C1NSM2HI.webp",
-    "https://img.yeguozi.com/thumbs/%E4%BC%8A%E4%B8%87%E7%9A%84%E7%AB%A5%E5%B9%B4(1962)/XK2ABNFC.webp",
-    "https://img.yeguozi.com/thumbs/%E4%BC%8A%E4%B8%87%E7%9A%84%E7%AB%A5%E5%B9%B4(1962)/ZVTE8DJK.webp",
-    "https://img.yeguozi.com/thumbs/%E4%BC%8A%E4%B8%87%E7%9A%84%E7%AB%A5%E5%B9%B4(1962)/PSZUPILB.webp",
-    "https://img.yeguozi.com/thumbs/%E4%BC%8A%E4%B8%87%E7%9A%84%E7%AB%A5%E5%B9%B4(1962)/MIYOV7AP.webp",
-    "https://img.yeguozi.com/thumbs/%E4%BC%8A%E4%B8%87%E7%9A%84%E7%AB%A5%E5%B9%B4(1962)/TUW56ZLZ.webp"
+    "https://img.yeguozi.com/thumbs/%E9%A9%AC%E5%B0%94%E7%A7%91%E5%A7%86%E4%B8%8E%E7%8E%9B%E4%B8%BD%EF%BC%882021)/0021.webp",
+    "https://img.yeguozi.com/thumbs/%E4%BC%8A%E4%B8%87%E7%9A%84%E7%AB%A5%E5%B9%B4(1962)/0002.webp",
+    "https://img.yeguozi.com/thumbs/%E4%BC%8A%E4%B8%87%E7%9A%84%E7%AB%A5%E5%B9%B4(1962)/0021.webp",
+    "https://img.yeguozi.com/thumbs/%E4%BC%8A%E4%B8%87%E7%9A%84%E7%AB%A5%E5%B9%B4(1962)/0001.webp",
+    "https://img.yeguozi.com/thumbs/%E4%BC%8A%E4%B8%87%E7%9A%84%E7%AB%A5%E5%B9%B4(1962)/0001.webp",
+    "https://img.yeguozi.com/thumbs/%E4%BC%8A%E4%B8%87%E7%9A%84%E7%AB%A5%E5%B9%B4(1962)/0003.webp"
   ]}
 ];
 
