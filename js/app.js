@@ -43,6 +43,7 @@ function getRoute() {
   const hash = location.hash.slice(1) || '/';
   const parts = hash.split('/').filter(Boolean);
   if (parts[0] === 'film') return { page: 'film', slug: parts[1] };
+  if (parts[0] === 'color') return { page: 'color', slug: parts[1] };
   return { page: parts[0] || 'home' };
 }
 
@@ -70,6 +71,7 @@ function renderPage() {
     case 'colors': renderColors(main); break;
     case 'about': renderAbout(main); break;
     case 'academy': renderAcademy(main); break;
+    case 'color': renderColorDetail(main, route.slug); break;
     case 'film': renderFilmDetail(main, route.slug); break;
     default: renderHome(main);
   }
@@ -204,7 +206,7 @@ function renderColors(main) {
           const name = lang(nameKey);
           const desc = lang(descKey);
           return `
-            <div class="color-card">
+            <div class="color-card" onclick="navigate('#/color/${c.id}')">
               <div class="color-card-header">
                 <div class="color-card-name">${name}</div>
                 <div class="color-card-count">${c.count} ${lang('screenshotsCount')}</div>
@@ -308,6 +310,28 @@ function renderAcademy(main) {
     btn.classList.add('active');
     renderAcademyTable(btn.dataset.filter);
   });
+}
+
+// ─── Color Detail ───
+function renderColorDetail(main, slug) {
+  const color = COLORS_DATA.find(c => c.id === slug);
+  if (!color) { main.innerHTML = `<div class="loading" style="padding:80px 24px"><p>Color not found</p><a href="#/colors" class="btn btn-secondary" style="margin-top:16px">← ${lang('colors')}</a></div>`; return; }
+  const nameKey = color.id;
+  const descKey = color.id + 'Desc';
+  const name = lang(nameKey);
+  const desc = lang(descKey);
+  main.innerHTML = `
+    <div class="page-header">
+      <h1>${name}</h1>
+      <p>${desc} · ${color.count} ${lang('screenshotsCount')}</p>
+    </div>
+    <section class="section">
+      <a href="#/colors" style="color:var(--text3);font-size:14px;display:inline-block;margin-bottom:24px">← ${lang('colors')}</a>
+      <div class="film-screenshots">
+        ${color.thumbs.map(url => `<img src="${pimg(url)}" alt="${name}" loading="lazy" style="cursor:zoom-in" onclick="openLightbox('${url}')">`).join('')}
+      </div>
+    </section>
+  `;
 }
 
 // ─── Film Detail ───
