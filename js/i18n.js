@@ -78,7 +78,8 @@ const LANG = {
     // Academy page
     academyAbout: "아카데미 최우수 촬영상은 영화 예술 과학 아카데미가 뛰어난 촬영 업적을 기리기 위해 매년 수여하는 상입니다. 아래 표는 1928년부터 2025년까지의 모든 수상자와 후보를 보여줍니다 (총 636편).",
     chineseTitle: "중국어 제목",
-    englishTitle: "제목",
+    englishTitle: "영어 제목",
+    koreanTitle: "한국어 제목",
     cinematographer: "촬영 감독",
     award: "수상 여부",
   },
@@ -159,6 +160,7 @@ const LANG = {
     academyAbout: "The Academy Award for Best Cinematography is presented annually by the Academy of Motion Picture Arts and Sciences to honor outstanding achievement in cinematography. The table below lists every winner and nominee from 1928 to 2025, 636 films in total.",
     chineseTitle: "Chinese title",
     englishTitle: "English title",
+    koreanTitle: "Korean title",
     cinematographer: "Cinematographer",
     award: "Award",
   }

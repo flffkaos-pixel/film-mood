@@ -273,6 +273,7 @@ function renderAcademy(main) {
             <tr>
               <th>${lang('year')}</th>
               <th>${lang('englishTitle')}</th>
+              <th>${lang('koreanTitle')}</th>
               <th>${lang('cinematographer')}</th>
               <th>${lang('award')}</th>
             </tr>
@@ -287,14 +288,17 @@ function renderAcademy(main) {
   const tbody = document.getElementById('academyBody');
   function renderAcademyTable(filter) {
     const filtered = filter === 'all' ? entries : entries.filter(e => e.award === filter);
-    tbody.innerHTML = filtered.map(e => `
+    tbody.innerHTML = filtered.map(e => {
+      const kt = e.koreanTitle || '';
+      return `
       <tr>
         <td>${e.year}</td>
         <td>${e.englishTitle}</td>
+        <td>${kt}</td>
         <td>${e.cinematographer}</td>
         <td class="${e.award === 'Winner' ? 'winner' : ''}">${e.award === 'Winner' ? '🏆 ' + lang('winner') : lang('nominee')}</td>
-      </tr>
-    `).join('');
+      </tr>`;
+    }).join('');
   }
   renderAcademyTable('all');
   document.getElementById('academyFilters').addEventListener('click', e => {
