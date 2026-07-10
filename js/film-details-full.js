@@ -68,11 +68,7 @@ const FILM_DETAILS_FULL = [
       "https://img.yeguozi.com/thumbs/%E4%B9%A1%E6%84%81(1983)/0051.webp",
       "https://img.yeguozi.com/thumbs/%E4%B9%A1%E6%84%81(1983)/0052.webp",
       "https://img.yeguozi.com/thumbs/%E4%B9%A1%E6%84%81(1983)/0053.webp",
-      "https://img.yeguozi.com/thumbs/%E4%B9%A1%E6%84%81(1983)/0054.webp",
-      "https://img.yeguozi.com/thumbs/%E4%BC%8A%E4%B8%87%E7%9A%84%E7%AB%A5%E5%B9%B4(1962)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E7%89%BA%E7%89%B2(1986)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E9%95%9C%E5%AD%90%EF%BC%881975%EF%BC%89/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E7%8E%A9%E4%B9%90%E6%97%B6%E9%97%B4%EF%BC%881967%EF%BC%89/0001.webp"
+      "https://img.yeguozi.com/thumbs/%E4%B9%A1%E6%84%81(1983)/0054.webp"
     ]
   },
   {
@@ -129,11 +125,7 @@ const FILM_DETAILS_FULL = [
       "https://img.yeguozi.com/thumbs/%E4%BC%8A%E4%B8%87%E7%9A%84%E7%AB%A5%E5%B9%B4(1962)/0036.webp",
       "https://img.yeguozi.com/thumbs/%E4%BC%8A%E4%B8%87%E7%9A%84%E7%AB%A5%E5%B9%B4(1962)/0037.webp",
       "https://img.yeguozi.com/thumbs/%E4%BC%8A%E4%B8%87%E7%9A%84%E7%AB%A5%E5%B9%B4(1962)/0038.webp",
-      "https://img.yeguozi.com/thumbs/%E4%BC%8A%E4%B8%87%E7%9A%84%E7%AB%A5%E5%B9%B4(1962)/0039.webp",
-      "https://img.yeguozi.com/thumbs/%E9%95%9C%E5%AD%90%EF%BC%881975%EF%BC%89/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E4%B9%A1%E6%84%81(1983)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E7%89%BA%E7%89%B2(1986)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E7%8E%A9%E4%B9%90%E6%97%B6%E9%97%B4%EF%BC%881967%EF%BC%89/0001.webp"
+      "https://img.yeguozi.com/thumbs/%E4%BC%8A%E4%B8%87%E7%9A%84%E7%AB%A5%E5%B9%B4(1962)/0039.webp"
     ]
   },
   {
@@ -182,11 +174,7 @@ const FILM_DETAILS_FULL = [
       "https://img.yeguozi.com/thumbs/%E7%88%B1%E5%BE%88%E5%A4%8D%E6%9D%82(2009)/0040.webp",
       "https://img.yeguozi.com/thumbs/%E7%88%B1%E5%BE%88%E5%A4%8D%E6%9D%82(2009)/0041.webp",
       "https://img.yeguozi.com/thumbs/%E7%88%B1%E5%BE%88%E5%A4%8D%E6%9D%82(2009)/0042.webp",
-      "https://img.yeguozi.com/thumbs/%E7%88%B1%E5%BE%88%E5%A4%8D%E6%9D%82(2009)/0043.webp",
-      "https://img.yeguozi.com/thumbs/%E5%A4%A9%E7%94%9F%E4%B8%80%E5%AF%B9%EF%BC%881998%EF%BC%89/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E5%87%A0%E8%BF%91%E6%88%90%E5%90%8D(2000)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E6%81%8B%E7%88%B1%E5%81%87%E6%9C%9F(2006)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E8%BF%B7%E9%AD%82%E8%AE%B0(1958)/0001.webp"
+      "https://img.yeguozi.com/thumbs/%E7%88%B1%E5%BE%88%E5%A4%8D%E6%9D%82(2009)/0043.webp"
     ]
   },
   {
@@ -232,11 +220,7 @@ const FILM_DETAILS_FULL = [
       "https://img.yeguozi.com/thumbs/%E5%AF%84%E7%94%9F%E8%99%AB(2019)/0025.webp",
       "https://img.yeguozi.com/thumbs/%E5%AF%84%E7%94%9F%E8%99%AB(2019)/0026.webp",
       "https://img.yeguozi.com/thumbs/%E5%AF%84%E7%94%9F%E8%99%AB(2019)/0027.webp",
-      "https://img.yeguozi.com/thumbs/%E5%AF%84%E7%94%9F%E8%99%AB(2019)/0028.webp",
-      "https://img.yeguozi.com/thumbs/%E5%A6%82%E6%B2%90%E7%88%B1%E6%B2%B3(2012)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E6%9C%88%E5%8D%87%E7%8E%8B%E5%9B%BD%EF%BC%882012%EF%BC%89/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E5%B9%B3%E8%A1%8C%E7%9A%84%E6%AF%8D%E4%BA%B2(2021)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E6%AD%A5%E5%B1%A5%E4%B8%8D%E5%81%9C(2008)/0001.webp"
+      "https://img.yeguozi.com/thumbs/%E5%AF%84%E7%94%9F%E8%99%AB(2019)/0028.webp"
     ]
   },
   {
@@ -257,7 +241,6 @@ const FILM_DETAILS_FULL = [
     "screenshots": [
       "https://img.yeguozi.com/thumbs/%E9%9A%94%E5%A3%81%E6%88%BF%E9%97%B4(2024)/0018.webp",
       "https://img.yeguozi.com/thumbs/%E9%9A%94%E5%A3%81%E6%88%BF%E9%97%B4(2024)/0002.webp",
-      "https://img.yeguozi.com/thumbs/%E9%9A%94%E5%A3%81%E6%88%BF%E9%97%B4(2024)/0001.webp",
       "https://img.yeguozi.com/thumbs/%E9%9A%94%E5%A3%81%E6%88%BF%E9%97%B4(2024)/0003.webp",
       "https://img.yeguozi.com/thumbs/%E9%9A%94%E5%A3%81%E6%88%BF%E9%97%B4(2024)/0004.webp",
       "https://img.yeguozi.com/thumbs/%E9%9A%94%E5%A3%81%E6%88%BF%E9%97%B4(2024)/0005.webp",
@@ -287,11 +270,7 @@ const FILM_DETAILS_FULL = [
       "https://img.yeguozi.com/thumbs/%E9%9A%94%E5%A3%81%E6%88%BF%E9%97%B4(2024)/0030.webp",
       "https://img.yeguozi.com/thumbs/%E9%9A%94%E5%A3%81%E6%88%BF%E9%97%B4(2024)/0031.webp",
       "https://img.yeguozi.com/thumbs/%E9%9A%94%E5%A3%81%E6%88%BF%E9%97%B4(2024)/0032.webp",
-      "https://img.yeguozi.com/thumbs/%E9%9A%94%E5%A3%81%E6%88%BF%E9%97%B4(2024)/0033.webp",
-      "https://img.yeguozi.com/thumbs/%E8%83%A1%E4%B8%BD%E5%8F%B6%E5%A1%94(2016)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E5%B9%B3%E8%A1%8C%E7%9A%84%E6%AF%8D%E4%BA%B2(2021)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E5%85%B3%E4%BA%8E%E6%88%91%E6%AF%8D%E4%BA%B2%E7%9A%84%E4%B8%80%E5%88%87(1999)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E5%B4%A9%E6%BA%83%E8%BE%B9%E7%BC%98%E7%9A%84%E5%A5%B3%E4%BA%BA(1988)/0001.webp"
+      "https://img.yeguozi.com/thumbs/%E9%9A%94%E5%A3%81%E6%88%BF%E9%97%B4(2024)/0033.webp"
     ]
   },
   {
@@ -359,11 +338,7 @@ const FILM_DETAILS_FULL = [
       "https://img.yeguozi.com/thumbs/%E5%B9%B8%E7%A6%8F%20Le%20bonheur%C2%A0(1965)/0047.webp",
       "https://img.yeguozi.com/thumbs/%E5%B9%B8%E7%A6%8F%20Le%20bonheur%C2%A0(1965)/0048.webp",
       "https://img.yeguozi.com/thumbs/%E5%B9%B8%E7%A6%8F%20Le%20bonheur%C2%A0(1965)/0049.webp",
-      "https://img.yeguozi.com/thumbs/%E5%B9%B8%E7%A6%8F%20Le%20bonheur%C2%A0(1965)/0050.webp",
-      "https://img.yeguozi.com/thumbs/%E7%8E%A9%E4%B9%90%E6%97%B6%E9%97%B4%EF%BC%881967%EF%BC%89/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E7%8B%82%E4%BA%BA%E7%9A%AE%E5%9F%83%E7%BD%97(1965)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E5%85%8B%E8%8E%B1%E5%B0%94%E7%9A%84%E8%86%9D%E7%9B%96(1970)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E9%9A%94%E5%A3%81%E6%88%BF%E9%97%B4(2024)/0001.webp"
+      "https://img.yeguozi.com/thumbs/%E5%B9%B8%E7%A6%8F%20Le%20bonheur%C2%A0(1965)/0050.webp"
     ]
   },
   {
@@ -415,11 +390,7 @@ const FILM_DETAILS_FULL = [
       "https://img.yeguozi.com/thumbs/%E5%8B%92%E9%98%BF%E5%BC%97%E5%B0%94(2011%EF%BC%89/0043.webp",
       "https://img.yeguozi.com/thumbs/%E5%8B%92%E9%98%BF%E5%BC%97%E5%B0%94(2011%EF%BC%89/0044.webp",
       "https://img.yeguozi.com/thumbs/%E5%8B%92%E9%98%BF%E5%BC%97%E5%B0%94(2011%EF%BC%89/0045.webp",
-      "https://img.yeguozi.com/thumbs/%E5%8B%92%E9%98%BF%E5%BC%97%E5%B0%94(2011%EF%BC%89/0046.webp",
-      "https://img.yeguozi.com/thumbs/%E6%9E%AF%E5%8F%B6(2023)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E5%B8%95%E7%89%B9%E6%A3%AE(2016)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E5%BD%B1%E5%AD%90%E5%86%99%E6%89%8B(2010)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E5%B0%86%E6%9D%A5%E7%9A%84%E4%BA%8B%EF%BC%882016%EF%BC%89/0001.webp"
+      "https://img.yeguozi.com/thumbs/%E5%8B%92%E9%98%BF%E5%BC%97%E5%B0%94(2011%EF%BC%89/0046.webp"
     ]
   },
   {
@@ -437,7 +408,6 @@ const FILM_DETAILS_FULL = [
       "#121214"
     ],
     "screenshots": [
-      "https://img.yeguozi.com/thumbs/%E9%A5%AE%E9%A3%9F%E7%94%B7%E5%A5%B3(1994)/0001.webp",
       "https://img.yeguozi.com/thumbs/%E9%9D%92%E6%9C%A8%E7%93%9C%E4%B9%8B%E5%91%B3%EF%BC%881993%EF%BC%89/0047.webp",
       "https://img.yeguozi.com/thumbs/%E9%9D%92%E6%9C%A8%E7%93%9C%E4%B9%8B%E5%91%B3%EF%BC%881993%EF%BC%89/0002.webp",
       "https://img.yeguozi.com/thumbs/%E9%9D%92%E6%9C%A8%E7%93%9C%E4%B9%8B%E5%91%B3%EF%BC%881993%EF%BC%89/0001.webp",
@@ -529,10 +499,7 @@ const FILM_DETAILS_FULL = [
       "https://img.yeguozi.com/thumbs/%E9%9D%92%E6%9C%A8%E7%93%9C%E4%B9%8B%E5%91%B3%EF%BC%881993%EF%BC%89/0089.webp",
       "https://img.yeguozi.com/thumbs/%E9%9D%92%E6%9C%A8%E7%93%9C%E4%B9%8B%E5%91%B3%EF%BC%881993%EF%BC%89/0090.webp",
       "https://img.yeguozi.com/thumbs/%E9%9D%92%E6%9C%A8%E7%93%9C%E4%B9%8B%E5%91%B3%EF%BC%881993%EF%BC%89/0091.webp",
-      "https://img.yeguozi.com/thumbs/%E9%9D%92%E6%9C%A8%E7%93%9C%E4%B9%8B%E5%91%B3%EF%BC%881993%EF%BC%89/0092.webp",
-      "https://img.yeguozi.com/thumbs/%E5%A4%A9%E7%94%9F%E4%B8%80%E5%AF%B9%EF%BC%881998%EF%BC%89/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E5%A4%8F%E5%A4%A9%E7%9A%84%E6%95%85%E4%BA%8B(1996)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E5%86%AC%E5%A4%A9%E7%9A%84%E6%95%85%E4%BA%8B(1992%EF%BC%89/0001.webp"
+      "https://img.yeguozi.com/thumbs/%E9%9D%92%E6%9C%A8%E7%93%9C%E4%B9%8B%E5%91%B3%EF%BC%881993%EF%BC%89/0092.webp"
     ],
     "letterboxd": "https://letterboxd.com/film/the-scent-of-green-papaya/"
   },
@@ -581,11 +548,7 @@ const FILM_DETAILS_FULL = [
       "https://img.yeguozi.com/thumbs/%E7%BE%8E%E5%9B%BD%E7%B2%BE%E7%A5%9E%E7%97%85%E4%BA%BA(2000)/0027.webp",
       "https://img.yeguozi.com/thumbs/%E7%BE%8E%E5%9B%BD%E7%B2%BE%E7%A5%9E%E7%97%85%E4%BA%BA(2000)/0028.webp",
       "https://img.yeguozi.com/thumbs/%E7%BE%8E%E5%9B%BD%E7%B2%BE%E7%A5%9E%E7%97%85%E4%BA%BA(2000)/0029.webp",
-      "https://img.yeguozi.com/thumbs/%E7%BE%8E%E5%9B%BD%E7%B2%BE%E7%A5%9E%E7%97%85%E4%BA%BA(2000)/0030.webp",
-      "https://img.yeguozi.com/thumbs/%E6%97%B6%E6%97%B6%E5%88%BB%E5%88%BB%EF%BC%882002%EF%BC%89/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E5%87%A0%E8%BF%91%E6%88%90%E5%90%8D(2000)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E9%9D%A9%E5%91%BD%E4%B9%8B%E8%B7%AF(2008)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E6%9C%B1%E8%8E%89%E4%B8%8E%E6%9C%B1%E8%8E%89%E5%A8%85(2009)/0001.webp"
+      "https://img.yeguozi.com/thumbs/%E7%BE%8E%E5%9B%BD%E7%B2%BE%E7%A5%9E%E7%97%85%E4%BA%BA(2000)/0030.webp"
     ]
   },
   {
@@ -652,11 +615,7 @@ const FILM_DETAILS_FULL = [
       "https://img.yeguozi.com/thumbs/%E9%9A%8F%E9%A3%8E%E8%80%8C%E9%80%9D(1999)/0046.webp",
       "https://img.yeguozi.com/thumbs/%E9%9A%8F%E9%A3%8E%E8%80%8C%E9%80%9D(1999)/0047.webp",
       "https://img.yeguozi.com/thumbs/%E9%9A%8F%E9%A3%8E%E8%80%8C%E9%80%9D(1999)/0048.webp",
-      "https://img.yeguozi.com/thumbs/%E9%9A%8F%E9%A3%8E%E8%80%8C%E9%80%9D(1999)/0049.webp",
-      "https://img.yeguozi.com/thumbs/%E6%A8%B1%E6%A1%83%E7%9A%84%E6%BB%8B%E5%91%B3(1997)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E5%A6%82%E6%B2%90%E7%88%B1%E6%B2%B3(2012)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E5%B0%86%E6%9D%A5%E7%9A%84%E4%BA%8B%EF%BC%882016%EF%BC%89/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E5%A5%B3%E6%94%B6%E8%97%8F%E5%AE%B6(1967)/0001.webp"
+      "https://img.yeguozi.com/thumbs/%E9%9A%8F%E9%A3%8E%E8%80%8C%E9%80%9D(1999)/0049.webp"
     ]
   },
   {
@@ -708,11 +667,7 @@ const FILM_DETAILS_FULL = [
       "https://img.yeguozi.com/thumbs/%E6%A8%B1%E6%A1%83%E7%9A%84%E6%BB%8B%E5%91%B3(1997)/0031.webp",
       "https://img.yeguozi.com/thumbs/%E6%A8%B1%E6%A1%83%E7%9A%84%E6%BB%8B%E5%91%B3(1997)/0032.webp",
       "https://img.yeguozi.com/thumbs/%E6%A8%B1%E6%A1%83%E7%9A%84%E6%BB%8B%E5%91%B3(1997)/0033.webp",
-      "https://img.yeguozi.com/thumbs/%E6%A8%B1%E6%A1%83%E7%9A%84%E6%BB%8B%E5%91%B3(1997)/0034.webp",
-      "https://img.yeguozi.com/thumbs/%E9%9A%8F%E9%A3%8E%E8%80%8C%E9%80%9D(1999)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E5%A6%82%E6%B2%90%E7%88%B1%E6%B2%B3(2012)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E5%A4%8F%E5%A4%A9%E7%9A%84%E6%95%85%E4%BA%8B(1996)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E9%9D%92%E6%9C%A8%E7%93%9C%E4%B9%8B%E5%91%B3%EF%BC%881993%EF%BC%89/0001.webp"
+      "https://img.yeguozi.com/thumbs/%E6%A8%B1%E6%A1%83%E7%9A%84%E6%BB%8B%E5%91%B3(1997)/0034.webp"
     ]
   },
   {
@@ -779,11 +734,7 @@ const FILM_DETAILS_FULL = [
       "https://img.yeguozi.com/thumbs/%E5%86%AC%E5%A4%A9%E7%9A%84%E6%95%85%E4%BA%8B(1992%EF%BC%89/0058.webp",
       "https://img.yeguozi.com/thumbs/%E5%86%AC%E5%A4%A9%E7%9A%84%E6%95%85%E4%BA%8B(1992%EF%BC%89/0059.webp",
       "https://img.yeguozi.com/thumbs/%E5%86%AC%E5%A4%A9%E7%9A%84%E6%95%85%E4%BA%8B(1992%EF%BC%89/0060.webp",
-      "https://img.yeguozi.com/thumbs/%E5%86%AC%E5%A4%A9%E7%9A%84%E6%95%85%E4%BA%8B(1992%EF%BC%89/0061.webp",
-      "https://img.yeguozi.com/thumbs/%E5%A4%8F%E5%A4%A9%E7%9A%84%E6%95%85%E4%BA%8B(1996)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E6%98%A5%E5%A4%A9%E7%9A%84%E6%95%85%E4%BA%8B%EF%BC%881990%EF%BC%89/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E7%BB%BF%E5%85%89(1986)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E7%A7%8B%E5%A4%A9%E7%9A%84%E6%95%85%E4%BA%8B(1998)/0001.webp"
+      "https://img.yeguozi.com/thumbs/%E5%86%AC%E5%A4%A9%E7%9A%84%E6%95%85%E4%BA%8B(1992%EF%BC%89/0061.webp"
     ]
   },
   {
@@ -827,11 +778,7 @@ const FILM_DETAILS_FULL = [
       "https://img.yeguozi.com/thumbs/%E7%A7%8B%E5%A4%A9%E7%9A%84%E6%95%85%E4%BA%8B(1998)/0035.webp",
       "https://img.yeguozi.com/thumbs/%E7%A7%8B%E5%A4%A9%E7%9A%84%E6%95%85%E4%BA%8B(1998)/0036.webp",
       "https://img.yeguozi.com/thumbs/%E7%A7%8B%E5%A4%A9%E7%9A%84%E6%95%85%E4%BA%8B(1998)/0037.webp",
-      "https://img.yeguozi.com/thumbs/%E7%A7%8B%E5%A4%A9%E7%9A%84%E6%95%85%E4%BA%8B(1998)/0038.webp",
-      "https://img.yeguozi.com/thumbs/%E5%A4%8F%E5%A4%A9%E7%9A%84%E6%95%85%E4%BA%8B(1996)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E7%BB%BF%E5%85%89(1986)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E5%86%AC%E5%A4%A9%E7%9A%84%E6%95%85%E4%BA%8B(1992%EF%BC%89/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E6%B2%99%E6%BB%A9%E4%B8%8A%E7%9A%84%E5%AE%9D%E8%8E%B2(1983)/sha-tan-shang-de-bao-lian-1983-0001.webp"
+      "https://img.yeguozi.com/thumbs/%E7%A7%8B%E5%A4%A9%E7%9A%84%E6%95%85%E4%BA%8B(1998)/0038.webp"
     ]
   },
   {
@@ -852,7 +799,6 @@ const FILM_DETAILS_FULL = [
     "screenshots": [
       "https://img.yeguozi.com/thumbs/%E7%88%B1%20Amour%C2%A0(2012)/0010.webp",
       "https://img.yeguozi.com/thumbs/%E7%88%B1%20Amour%C2%A0(2012)/0002.webp",
-      "https://img.yeguozi.com/thumbs/%E7%88%B1%20Amour%C2%A0(2012)/0001.webp",
       "https://img.yeguozi.com/thumbs/%E7%88%B1%20Amour%C2%A0(2012)/0003.webp",
       "https://img.yeguozi.com/thumbs/%E7%88%B1%20Amour%C2%A0(2012)/0004.webp",
       "https://img.yeguozi.com/thumbs/%E7%88%B1%20Amour%C2%A0(2012)/0005.webp",
@@ -867,11 +813,7 @@ const FILM_DETAILS_FULL = [
       "https://img.yeguozi.com/thumbs/%E7%88%B1%20Amour%C2%A0(2012)/0015.webp",
       "https://img.yeguozi.com/thumbs/%E7%88%B1%20Amour%C2%A0(2012)/0016.webp",
       "https://img.yeguozi.com/thumbs/%E7%88%B1%20Amour%C2%A0(2012)/0017.webp",
-      "https://img.yeguozi.com/thumbs/%E7%88%B1%20Amour%C2%A0(2012)/0018.webp",
-      "https://img.yeguozi.com/thumbs/%E5%B8%95%E7%89%B9%E6%A3%AE(2016)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E5%8D%88%E5%A4%9C%E5%B7%B4%E9%BB%8E(2011)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E8%AF%B7%E4%BB%A5%E4%BD%A0%E7%9A%84%E5%90%8D%E5%AD%97%E5%91%BC%E5%94%A4%E6%88%91%EF%BC%882017%EF%BC%89/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E5%B0%86%E6%9D%A5%E7%9A%84%E4%BA%8B%EF%BC%882016%EF%BC%89/0001.webp"
+      "https://img.yeguozi.com/thumbs/%E7%88%B1%20Amour%C2%A0(2012)/0018.webp"
     ]
   },
   {
@@ -914,11 +856,7 @@ const FILM_DETAILS_FULL = [
       "https://img.yeguozi.com/thumbs/%E5%A9%9A%E5%A7%BB%E6%95%85%E4%BA%8B(2019)/0022.webp",
       "https://img.yeguozi.com/thumbs/%E5%A9%9A%E5%A7%BB%E6%95%85%E4%BA%8B(2019)/0023.webp",
       "https://img.yeguozi.com/thumbs/%E5%A9%9A%E5%A7%BB%E6%95%85%E4%BA%8B(2019)/0024.webp",
-      "https://img.yeguozi.com/thumbs/%E5%A9%9A%E5%A7%BB%E6%95%85%E4%BA%8B(2019)/0025.webp",
-      "https://img.yeguozi.com/thumbs/%E4%B9%94%E4%B9%94%E7%9A%84%E5%BC%82%E6%83%B3%E4%B8%96%E7%95%8C(2019)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E5%A5%B9(2013)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E6%9C%88%E5%8D%87%E7%8E%8B%E5%9B%BD%EF%BC%882012%EF%BC%89/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E7%88%B1%E4%B9%90%E4%B9%8B%E5%9F%8E(2016)/0001.webp"
+      "https://img.yeguozi.com/thumbs/%E5%A9%9A%E5%A7%BB%E6%95%85%E4%BA%8B(2019)/0025.webp"
     ]
   },
   {
@@ -937,7 +875,6 @@ const FILM_DETAILS_FULL = [
     ],
     "letterboxd": "https://letterboxd.com/film/pierrot-le-fou/",
     "screenshots": [
-      "https://img.yeguozi.com/thumbs/%E5%9B%B0%E5%9C%A8%E6%97%B6%E9%97%B4%E9%87%8C%E7%9A%84%E7%88%B6%E4%BA%B2%EF%BC%882020%EF%BC%89/0001.webp",
       "https://img.yeguozi.com/thumbs/%E7%8B%82%E4%BA%BA%E7%9A%AE%E5%9F%83%E7%BD%97(1965)/0021.webp",
       "https://img.yeguozi.com/thumbs/%E7%8B%82%E4%BA%BA%E7%9A%AE%E5%9F%83%E7%BD%97(1965)/0002.webp",
       "https://img.yeguozi.com/thumbs/%E7%8B%82%E4%BA%BA%E7%9A%AE%E5%9F%83%E7%BD%97(1965)/0001.webp",
@@ -977,10 +914,7 @@ const FILM_DETAILS_FULL = [
       "https://img.yeguozi.com/thumbs/%E7%8B%82%E4%BA%BA%E7%9A%AE%E5%9F%83%E7%BD%97(1965)/0037.webp",
       "https://img.yeguozi.com/thumbs/%E7%8B%82%E4%BA%BA%E7%9A%AE%E5%9F%83%E7%BD%97(1965)/0038.webp",
       "https://img.yeguozi.com/thumbs/%E7%8B%82%E4%BA%BA%E7%9A%AE%E5%9F%83%E7%BD%97(1965)/0039.webp",
-      "https://img.yeguozi.com/thumbs/%E7%8B%82%E4%BA%BA%E7%9A%AE%E5%9F%83%E7%BD%97(1965)/0040.webp",
-      "https://img.yeguozi.com/thumbs/%E7%8E%A9%E4%B9%90%E6%97%B6%E9%97%B4%EF%BC%881967%EF%BC%89/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E5%B9%B8%E7%A6%8F%20Le%20bonheur%C2%A0(1965)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E6%B2%99%E6%BB%A9%E4%B8%8A%E7%9A%84%E5%AE%9D%E8%8E%B2(1983)/sha-tan-shang-de-bao-lian-1983-0001.webp"
+      "https://img.yeguozi.com/thumbs/%E7%8B%82%E4%BA%BA%E7%9A%AE%E5%9F%83%E7%BD%97(1965)/0040.webp"
     ]
   },
   {
@@ -1013,11 +947,7 @@ const FILM_DETAILS_FULL = [
       "https://img.yeguozi.com/thumbs/%E6%99%92%E5%90%8E%E5%81%87%E6%97%A5(2022)/0024.webp",
       "https://img.yeguozi.com/thumbs/%E6%99%92%E5%90%8E%E5%81%87%E6%97%A5(2022)/0025.webp",
       "https://img.yeguozi.com/thumbs/%E6%99%92%E5%90%8E%E5%81%87%E6%97%A5(2022)/0026.webp",
-      "https://img.yeguozi.com/thumbs/%E6%99%92%E5%90%8E%E5%81%87%E6%97%A5(2022)/0027.webp",
-      "https://img.yeguozi.com/thumbs/%E5%9C%A8%E5%93%A5%E4%BC%A6%E5%B8%83(2017)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E9%9A%94%E5%A3%81%E6%88%BF%E9%97%B4(2024)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E5%B8%95%E7%89%B9%E6%A3%AE(2016)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E7%88%B1%E5%BE%88%E5%A4%8D%E6%9D%82(2009)/0001.webp"
+      "https://img.yeguozi.com/thumbs/%E6%99%92%E5%90%8E%E5%81%87%E6%97%A5(2022)/0027.webp"
     ]
   },
   {
@@ -1117,18 +1047,13 @@ const FILM_DETAILS_FULL = [
       "https://img.yeguozi.com/thumbs/%E7%A7%8B%E5%88%80%E9%B1%BC%E4%B9%8B%E5%91%B3(1962)/0079.webp",
       "https://img.yeguozi.com/thumbs/%E7%A7%8B%E5%88%80%E9%B1%BC%E4%B9%8B%E5%91%B3(1962)/0080.webp",
       "https://img.yeguozi.com/thumbs/%E7%A7%8B%E5%88%80%E9%B1%BC%E4%B9%8B%E5%91%B3(1962)/0081.webp",
-      "https://img.yeguozi.com/thumbs/%E7%A7%8B%E5%88%80%E9%B1%BC%E4%B9%8B%E5%91%B3(1962)/0082.webp",
-      "https://img.yeguozi.com/thumbs/%E4%B9%B1(1985)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E7%8E%A9%E4%B9%90%E6%97%B6%E9%97%B4%EF%BC%881967%EF%BC%89/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E6%AD%A5%E5%B1%A5%E4%B8%8D%E5%81%9C(2008)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E5%A6%82%E6%B2%90%E7%88%B1%E6%B2%B3(2012)/0001.webp"
+      "https://img.yeguozi.com/thumbs/%E7%A7%8B%E5%88%80%E9%B1%BC%E4%B9%8B%E5%91%B3(1962)/0082.webp"
     ]
   },
   {
     "id": "moonrise-kingdom-2012",
     "screenshotCount": 38,
     "screenshots": [
-      "https://img.yeguozi.com/thumbs/%E5%A5%B9(2013)/0001.webp",
       "https://img.yeguozi.com/thumbs/%E6%9C%88%E5%8D%87%E7%8E%8B%E5%9B%BD%EF%BC%882012%EF%BC%89/0018.webp",
       "https://img.yeguozi.com/thumbs/%E6%9C%88%E5%8D%87%E7%8E%8B%E5%9B%BD%EF%BC%882012%EF%BC%89/0002.webp",
       "https://img.yeguozi.com/thumbs/%E6%9C%88%E5%8D%87%E7%8E%8B%E5%9B%BD%EF%BC%882012%EF%BC%89/0001.webp",
@@ -1162,17 +1087,13 @@ const FILM_DETAILS_FULL = [
       "https://img.yeguozi.com/thumbs/%E6%9C%88%E5%8D%87%E7%8E%8B%E5%9B%BD%EF%BC%882012%EF%BC%89/0031.webp",
       "https://img.yeguozi.com/thumbs/%E6%9C%88%E5%8D%87%E7%8E%8B%E5%9B%BD%EF%BC%882012%EF%BC%89/0032.webp",
       "https://img.yeguozi.com/thumbs/%E6%9C%88%E5%8D%87%E7%8E%8B%E5%9B%BD%EF%BC%882012%EF%BC%89/0033.webp",
-      "https://img.yeguozi.com/thumbs/%E6%9C%88%E5%8D%87%E7%8E%8B%E5%9B%BD%EF%BC%882012%EF%BC%89/0034.webp",
-      "https://img.yeguozi.com/thumbs/%E5%B8%83%E8%BE%BE%E4%BD%A9%E6%96%AF%E5%A4%A7%E9%A5%AD%E5%BA%97(2014)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E6%B3%95%E5%85%B0%E8%A5%BF%E7%89%B9%E6%B4%BE(2021)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E5%A4%A9%E6%89%8D%E4%B8%80%E6%97%8F%EF%BC%882001%EF%BC%89/0001.webp"
+      "https://img.yeguozi.com/thumbs/%E6%9C%88%E5%8D%87%E7%8E%8B%E5%9B%BD%EF%BC%882012%EF%BC%89/0034.webp"
     ]
   },
   {
     "id": "the-ghost-writer-2010",
     "screenshotCount": 28,
     "screenshots": [
-      "https://img.yeguozi.com/thumbs/%E7%88%B1%20Amour%C2%A0(2012)/0001.webp",
       "https://img.yeguozi.com/thumbs/%E5%BD%B1%E5%AD%90%E5%86%99%E6%89%8B(2010)/0013.webp",
       "https://img.yeguozi.com/thumbs/%E5%BD%B1%E5%AD%90%E5%86%99%E6%89%8B(2010)/0002.webp",
       "https://img.yeguozi.com/thumbs/%E5%BD%B1%E5%AD%90%E5%86%99%E6%89%8B(2010)/0001.webp",
@@ -1196,10 +1117,7 @@ const FILM_DETAILS_FULL = [
       "https://img.yeguozi.com/thumbs/%E5%BD%B1%E5%AD%90%E5%86%99%E6%89%8B(2010)/0021.webp",
       "https://img.yeguozi.com/thumbs/%E5%BD%B1%E5%AD%90%E5%86%99%E6%89%8B(2010)/0022.webp",
       "https://img.yeguozi.com/thumbs/%E5%BD%B1%E5%AD%90%E5%86%99%E6%89%8B(2010)/0023.webp",
-      "https://img.yeguozi.com/thumbs/%E5%BD%B1%E5%AD%90%E5%86%99%E6%89%8B(2010)/0024.webp",
-      "https://img.yeguozi.com/thumbs/%E5%B8%95%E7%89%B9%E6%A3%AE(2016)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E8%AF%B7%E4%BB%A5%E4%BD%A0%E7%9A%84%E5%90%8D%E5%AD%97%E5%91%BC%E5%94%A4%E6%88%91%EF%BC%882017%EF%BC%89/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E5%B0%86%E6%9D%A5%E7%9A%84%E4%BA%8B%EF%BC%882016%EF%BC%89/0001.webp"
+      "https://img.yeguozi.com/thumbs/%E5%BD%B1%E5%AD%90%E5%86%99%E6%89%8B(2010)/0024.webp"
     ]
   },
   {
@@ -1257,11 +1175,7 @@ const FILM_DETAILS_FULL = [
       "https://img.yeguozi.com/thumbs/%E9%A5%AE%E9%A3%9F%E7%94%B7%E5%A5%B3(1994)/0037.webp",
       "https://img.yeguozi.com/thumbs/%E9%A5%AE%E9%A3%9F%E7%94%B7%E5%A5%B3(1994)/0038.webp",
       "https://img.yeguozi.com/thumbs/%E9%A5%AE%E9%A3%9F%E7%94%B7%E5%A5%B3(1994)/0039.webp",
-      "https://img.yeguozi.com/thumbs/%E9%A5%AE%E9%A3%9F%E7%94%B7%E5%A5%B3(1994)/0040.webp",
-      "https://img.yeguozi.com/thumbs/%E5%A4%A9%E7%94%9F%E4%B8%80%E5%AF%B9%EF%BC%881998%EF%BC%89/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E4%B8%80%E4%B8%80(2000)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E5%A4%A7%E7%BA%A2%E7%81%AF%E7%AC%BC%E9%AB%98%E9%AB%98%E6%8C%82(1991)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E9%9D%92%E6%A2%85%E7%AB%B9%E9%A9%AC(1985)/0001.webp"
+      "https://img.yeguozi.com/thumbs/%E9%A5%AE%E9%A3%9F%E7%94%B7%E5%A5%B3(1994)/0040.webp"
     ]
   },
   {
@@ -1298,11 +1212,7 @@ const FILM_DETAILS_FULL = [
       "https://img.yeguozi.com/thumbs/%E5%B9%B3%E8%A1%8C%E7%9A%84%E6%AF%8D%E4%BA%B2(2021)/0028.webp",
       "https://img.yeguozi.com/thumbs/%E5%B9%B3%E8%A1%8C%E7%9A%84%E6%AF%8D%E4%BA%B2(2021)/0029.webp",
       "https://img.yeguozi.com/thumbs/%E5%B9%B3%E8%A1%8C%E7%9A%84%E6%AF%8D%E4%BA%B2(2021)/0030.webp",
-      "https://img.yeguozi.com/thumbs/%E5%B9%B3%E8%A1%8C%E7%9A%84%E6%AF%8D%E4%BA%B2(2021)/0031.webp",
-      "https://img.yeguozi.com/thumbs/%E5%B4%A9%E6%BA%83%E8%BE%B9%E7%BC%98%E7%9A%84%E5%A5%B3%E4%BA%BA(1988)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E8%83%A1%E4%B8%BD%E5%8F%B6%E5%A1%94(2016)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E9%9A%94%E5%A3%81%E6%88%BF%E9%97%B4(2024)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E5%85%B3%E4%BA%8E%E6%88%91%E6%AF%8D%E4%BA%B2%E7%9A%84%E4%B8%80%E5%88%87(1999)/0001.webp"
+      "https://img.yeguozi.com/thumbs/%E5%B9%B3%E8%A1%8C%E7%9A%84%E6%AF%8D%E4%BA%B2(2021)/0031.webp"
     ]
   },
   {
@@ -1343,11 +1253,7 @@ const FILM_DETAILS_FULL = [
       "https://img.yeguozi.com/thumbs/%E5%A6%82%E6%B2%90%E7%88%B1%E6%B2%B3(2012)/0032.webp",
       "https://img.yeguozi.com/thumbs/%E5%A6%82%E6%B2%90%E7%88%B1%E6%B2%B3(2012)/0033.webp",
       "https://img.yeguozi.com/thumbs/%E5%A6%82%E6%B2%90%E7%88%B1%E6%B2%B3(2012)/0034.webp",
-      "https://img.yeguozi.com/thumbs/%E5%A6%82%E6%B2%90%E7%88%B1%E6%B2%B3(2012)/0035.webp",
-      "https://img.yeguozi.com/thumbs/%E9%9A%8F%E9%A3%8E%E8%80%8C%E9%80%9D(1999)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E6%A8%B1%E6%A1%83%E7%9A%84%E6%BB%8B%E5%91%B3(1997)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E6%B5%B7%E8%A1%97%E6%97%A5%E8%AE%B0(2015)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E5%A5%B9(2013)/0001.webp"
+      "https://img.yeguozi.com/thumbs/%E5%A6%82%E6%B2%90%E7%88%B1%E6%B2%B3(2012)/0035.webp"
     ]
   },
   {
@@ -1392,11 +1298,7 @@ const FILM_DETAILS_FULL = [
       "https://img.yeguozi.com/thumbs/%E5%85%8B%E8%8E%B1%E5%B0%94%E7%9A%84%E8%86%9D%E7%9B%96(1970)/0036.webp",
       "https://img.yeguozi.com/thumbs/%E5%85%8B%E8%8E%B1%E5%B0%94%E7%9A%84%E8%86%9D%E7%9B%96(1970)/0037.webp",
       "https://img.yeguozi.com/thumbs/%E5%85%8B%E8%8E%B1%E5%B0%94%E7%9A%84%E8%86%9D%E7%9B%96(1970)/0038.webp",
-      "https://img.yeguozi.com/thumbs/%E5%85%8B%E8%8E%B1%E5%B0%94%E7%9A%84%E8%86%9D%E7%9B%96(1970)/0039.webp",
-      "https://img.yeguozi.com/thumbs/%E5%8D%88%E5%90%8E%E4%B9%8B%E7%88%B1(1972)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E7%BB%BF%E5%85%89(1986)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E6%B2%99%E6%BB%A9%E4%B8%8A%E7%9A%84%E5%AE%9D%E8%8E%B2(1983)/sha-tan-shang-de-bao-lian-1983-0001.webp",
-      "https://img.yeguozi.com/thumbs/%E7%A7%8B%E5%A4%A9%E7%9A%84%E6%95%85%E4%BA%8B(1998)/0001.webp"
+      "https://img.yeguozi.com/thumbs/%E5%85%8B%E8%8E%B1%E5%B0%94%E7%9A%84%E8%86%9D%E7%9B%96(1970)/0039.webp"
     ]
   },
   {
@@ -1439,11 +1341,7 @@ const FILM_DETAILS_FULL = [
       "https://img.yeguozi.com/thumbs/%E4%B8%80%E4%B8%AA%E5%A5%BD%E4%BA%BA(2023)/0034.webp",
       "https://img.yeguozi.com/thumbs/%E4%B8%80%E4%B8%AA%E5%A5%BD%E4%BA%BA(2023)/0035.webp",
       "https://img.yeguozi.com/thumbs/%E4%B8%80%E4%B8%AA%E5%A5%BD%E4%BA%BA(2023)/0036.webp",
-      "https://img.yeguozi.com/thumbs/%E4%B8%80%E4%B8%AA%E5%A5%BD%E4%BA%BA(2023)/0037.webp",
-      "https://img.yeguozi.com/thumbs/%E9%9D%A9%E5%91%BD%E4%B9%8B%E8%B7%AF(2008)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E5%9C%A8%E5%93%A5%E4%BC%A6%E5%B8%83(2017)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E9%9A%94%E5%A3%81%E6%88%BF%E9%97%B4(2024)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E5%B8%95%E7%89%B9%E6%A3%AE(2016)/0001.webp"
+      "https://img.yeguozi.com/thumbs/%E4%B8%80%E4%B8%AA%E5%A5%BD%E4%BA%BA(2023)/0037.webp"
     ]
   },
   {
@@ -1462,7 +1360,6 @@ const FILM_DETAILS_FULL = [
     ],
     "letterboxd": "https://letterboxd.com/film/portrait-of-a-lady-on-fire/",
     "screenshots": [
-      "https://img.yeguozi.com/thumbs/%E5%8B%92%E9%98%BF%E5%BC%97%E5%B0%94(2011%EF%BC%89/0001.webp",
       "https://img.yeguozi.com/thumbs/%E7%87%83%E7%83%A7%E5%A5%B3%E5%AD%90%E7%9A%84%E8%82%96%E5%83%8F(2019)/0024.webp",
       "https://img.yeguozi.com/thumbs/%E7%87%83%E7%83%A7%E5%A5%B3%E5%AD%90%E7%9A%84%E8%82%96%E5%83%8F(2019)/0002.webp",
       "https://img.yeguozi.com/thumbs/%E7%87%83%E7%83%A7%E5%A5%B3%E5%AD%90%E7%9A%84%E8%82%96%E5%83%8F(2019)/0001.webp",
@@ -1507,10 +1404,7 @@ const FILM_DETAILS_FULL = [
       "https://img.yeguozi.com/thumbs/%E7%87%83%E7%83%A7%E5%A5%B3%E5%AD%90%E7%9A%84%E8%82%96%E5%83%8F(2019)/0042.webp",
       "https://img.yeguozi.com/thumbs/%E7%87%83%E7%83%A7%E5%A5%B3%E5%AD%90%E7%9A%84%E8%82%96%E5%83%8F(2019)/0043.webp",
       "https://img.yeguozi.com/thumbs/%E7%87%83%E7%83%A7%E5%A5%B3%E5%AD%90%E7%9A%84%E8%82%96%E5%83%8F(2019)/0044.webp",
-      "https://img.yeguozi.com/thumbs/%E7%87%83%E7%83%A7%E5%A5%B3%E5%AD%90%E7%9A%84%E8%82%96%E5%83%8F(2019)/0045.webp",
-      "https://img.yeguozi.com/thumbs/%E8%AF%B7%E4%BB%A5%E4%BD%A0%E7%9A%84%E5%90%8D%E5%AD%97%E5%91%BC%E5%94%A4%E6%88%91%EF%BC%882017%EF%BC%89/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E5%B0%86%E6%9D%A5%E7%9A%84%E4%BA%8B%EF%BC%882016%EF%BC%89/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E5%B8%95%E7%89%B9%E6%A3%AE(2016)/0001.webp"
+      "https://img.yeguozi.com/thumbs/%E7%87%83%E7%83%A7%E5%A5%B3%E5%AD%90%E7%9A%84%E8%82%96%E5%83%8F(2019)/0045.webp"
     ]
   },
   {
@@ -1599,11 +1493,7 @@ const FILM_DETAILS_FULL = [
       "https://img.yeguozi.com/thumbs/%E7%BD%97%E9%A9%AC(2018)/0068.webp",
       "https://img.yeguozi.com/thumbs/%E7%BD%97%E9%A9%AC(2018)/0069.webp",
       "https://img.yeguozi.com/thumbs/%E7%BD%97%E9%A9%AC(2018)/0070.webp",
-      "https://img.yeguozi.com/thumbs/%E7%BD%97%E9%A9%AC(2018)/0071.webp",
-      "https://img.yeguozi.com/thumbs/%E7%88%B1%E4%B9%90%E4%B9%8B%E5%9F%8E(2016)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E5%B8%95%E7%89%B9%E6%A3%AE(2016)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E8%83%A1%E4%B8%BD%E5%8F%B6%E5%A1%94(2016)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E5%9C%A8%E5%93%A5%E4%BC%A6%E5%B8%83(2017)/0001.webp"
+      "https://img.yeguozi.com/thumbs/%E7%BD%97%E9%A9%AC(2018)/0071.webp"
     ]
   },
   {
@@ -1681,11 +1571,7 @@ const FILM_DETAILS_FULL = [
       "https://img.yeguozi.com/thumbs/%E4%B9%94%E4%B9%94%E7%9A%84%E5%BC%82%E6%83%B3%E4%B8%96%E7%95%8C(2019)/0057.webp",
       "https://img.yeguozi.com/thumbs/%E4%B9%94%E4%B9%94%E7%9A%84%E5%BC%82%E6%83%B3%E4%B8%96%E7%95%8C(2019)/0058.webp",
       "https://img.yeguozi.com/thumbs/%E4%B9%94%E4%B9%94%E7%9A%84%E5%BC%82%E6%83%B3%E4%B8%96%E7%95%8C(2019)/0059.webp",
-      "https://img.yeguozi.com/thumbs/%E4%B9%94%E4%B9%94%E7%9A%84%E5%BC%82%E6%83%B3%E4%B8%96%E7%95%8C(2019)/0060.webp",
-      "https://img.yeguozi.com/thumbs/%E5%A5%B9(2013)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E5%8D%88%E5%A4%9C%E5%B7%B4%E9%BB%8E(2011)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E6%9C%88%E5%8D%87%E7%8E%8B%E5%9B%BD%EF%BC%882012%EF%BC%89/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E5%A9%9A%E5%A7%BB%E6%95%85%E4%BA%8B(2019)/0001.webp"
+      "https://img.yeguozi.com/thumbs/%E4%B9%94%E4%B9%94%E7%9A%84%E5%BC%82%E6%83%B3%E4%B8%96%E7%95%8C(2019)/0060.webp"
     ]
   },
   {
@@ -1757,11 +1643,7 @@ const FILM_DETAILS_FULL = [
       "https://img.yeguozi.com/thumbs/%E5%87%A0%E8%BF%91%E6%88%90%E5%90%8D(2000)/0063.webp",
       "https://img.yeguozi.com/thumbs/%E5%87%A0%E8%BF%91%E6%88%90%E5%90%8D(2000)/0064.webp",
       "https://img.yeguozi.com/thumbs/%E5%87%A0%E8%BF%91%E6%88%90%E5%90%8D(2000)/0065.webp",
-      "https://img.yeguozi.com/thumbs/%E5%87%A0%E8%BF%91%E6%88%90%E5%90%8D(2000)/0066.webp",
-      "https://img.yeguozi.com/thumbs/%E7%88%B1%E5%BE%88%E5%A4%8D%E6%9D%82(2009)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E6%97%B6%E6%97%B6%E5%88%BB%E5%88%BB%EF%BC%882002%EF%BC%89/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E7%BE%8E%E5%9B%BD%E7%B2%BE%E7%A5%9E%E7%97%85%E4%BA%BA(2000)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E9%9D%A9%E5%91%BD%E4%B9%8B%E8%B7%AF(2008)/0001.webp"
+      "https://img.yeguozi.com/thumbs/%E5%87%A0%E8%BF%91%E6%88%90%E5%90%8D(2000)/0066.webp"
     ]
   },
   {
@@ -1834,11 +1716,7 @@ const FILM_DETAILS_FULL = [
       "https://img.yeguozi.com/thumbs/%E9%97%AA%E7%81%B5(1980)/0052.webp",
       "https://img.yeguozi.com/thumbs/%E9%97%AA%E7%81%B5(1980)/0053.webp",
       "https://img.yeguozi.com/thumbs/%E9%97%AA%E7%81%B5(1980)/0054.webp",
-      "https://img.yeguozi.com/thumbs/%E9%97%AA%E7%81%B5(1980)/0055.webp",
-      "https://img.yeguozi.com/thumbs/%E6%97%B6%E6%97%B6%E5%88%BB%E5%88%BB%EF%BC%882002%EF%BC%89/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E7%BE%8E%E5%9B%BD%E7%B2%BE%E7%A5%9E%E7%97%85%E4%BA%BA(2000)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E8%BF%B7%E9%AD%82%E8%AE%B0(1958)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E6%B3%95%E5%85%B0%E8%A5%BF%E7%89%B9%E6%B4%BE(2021)/0001.webp"
+      "https://img.yeguozi.com/thumbs/%E9%97%AA%E7%81%B5(1980)/0055.webp"
     ]
   },
   {
@@ -1917,11 +1795,7 @@ const FILM_DETAILS_FULL = [
       "https://img.yeguozi.com/thumbs/%E7%89%BA%E7%89%B2(1986)/0058.webp",
       "https://img.yeguozi.com/thumbs/%E7%89%BA%E7%89%B2(1986)/0059.webp",
       "https://img.yeguozi.com/thumbs/%E7%89%BA%E7%89%B2(1986)/0060.webp",
-      "https://img.yeguozi.com/thumbs/%E7%89%BA%E7%89%B2(1986)/0061.webp",
-      "https://img.yeguozi.com/thumbs/%E4%B9%A1%E6%84%81(1983)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E9%95%9C%E5%AD%90%EF%BC%881975%EF%BC%89/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E4%BC%8A%E4%B8%87%E7%9A%84%E7%AB%A5%E5%B9%B4(1962)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E9%9D%92%E6%A2%85%E7%AB%B9%E9%A9%AC(1985)/0001.webp"
+      "https://img.yeguozi.com/thumbs/%E7%89%BA%E7%89%B2(1986)/0061.webp"
     ]
   },
   {
@@ -1990,11 +1864,7 @@ const FILM_DETAILS_FULL = [
       "https://img.yeguozi.com/thumbs/%E7%88%B1%E4%B9%90%E4%B9%8B%E5%9F%8E(2016)/0048.webp",
       "https://img.yeguozi.com/thumbs/%E7%88%B1%E4%B9%90%E4%B9%8B%E5%9F%8E(2016)/0049.webp",
       "https://img.yeguozi.com/thumbs/%E7%88%B1%E4%B9%90%E4%B9%8B%E5%9F%8E(2016)/0050.webp",
-      "https://img.yeguozi.com/thumbs/%E7%88%B1%E4%B9%90%E4%B9%8B%E5%9F%8E(2016)/0051.webp",
-      "https://img.yeguozi.com/thumbs/%E5%B8%95%E7%89%B9%E6%A3%AE(2016)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E5%B8%83%E8%BE%BE%E4%BD%A9%E6%96%AF%E5%A4%A7%E9%A5%AD%E5%BA%97(2014)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E5%9C%A8%E5%93%A5%E4%BC%A6%E5%B8%83(2017)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E5%A5%B9(2013)/0001.webp"
+      "https://img.yeguozi.com/thumbs/%E7%88%B1%E4%B9%90%E4%B9%8B%E5%9F%8E(2016)/0051.webp"
     ]
   },
   {
@@ -2045,11 +1915,7 @@ const FILM_DETAILS_FULL = [
       "https://img.yeguozi.com/thumbs/%E5%A5%B9(2013)/0030.webp",
       "https://img.yeguozi.com/thumbs/%E5%A5%B9(2013)/0031.webp",
       "https://img.yeguozi.com/thumbs/%E5%A5%B9(2013)/0032.webp",
-      "https://img.yeguozi.com/thumbs/%E5%A5%B9(2013)/0033.webp",
-      "https://img.yeguozi.com/thumbs/%E6%9C%88%E5%8D%87%E7%8E%8B%E5%9B%BD%EF%BC%882012%EF%BC%89/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E5%A9%9A%E5%A7%BB%E6%95%85%E4%BA%8B(2019)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E4%B9%94%E4%B9%94%E7%9A%84%E5%BC%82%E6%83%B3%E4%B8%96%E7%95%8C(2019)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E7%88%B1%E4%B9%90%E4%B9%8B%E5%9F%8E(2016)/0001.webp"
+      "https://img.yeguozi.com/thumbs/%E5%A5%B9(2013)/0033.webp"
     ]
   },
   {
@@ -2124,11 +1990,7 @@ const FILM_DETAILS_FULL = [
       "https://img.yeguozi.com/thumbs/%E9%95%9C%E5%AD%90%EF%BC%881975%EF%BC%89/0055.webp",
       "https://img.yeguozi.com/thumbs/%E9%95%9C%E5%AD%90%EF%BC%881975%EF%BC%89/0056.webp",
       "https://img.yeguozi.com/thumbs/%E9%95%9C%E5%AD%90%EF%BC%881975%EF%BC%89/0057.webp",
-      "https://img.yeguozi.com/thumbs/%E9%95%9C%E5%AD%90%EF%BC%881975%EF%BC%89/0058.webp",
-      "https://img.yeguozi.com/thumbs/%E4%BC%8A%E4%B8%87%E7%9A%84%E7%AB%A5%E5%B9%B4(1962)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E7%89%BA%E7%89%B2(1986)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E4%B9%A1%E6%84%81(1983)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E7%8B%82%E4%BA%BA%E7%9A%AE%E5%9F%83%E7%BD%97(1965)/0001.webp"
+      "https://img.yeguozi.com/thumbs/%E9%95%9C%E5%AD%90%EF%BC%881975%EF%BC%89/0058.webp"
     ],
     "letterboxd": "https://letterboxd.com/film/mirror/"
   },
@@ -2174,11 +2036,7 @@ const FILM_DETAILS_FULL = [
       "https://img.yeguozi.com/thumbs/%E9%9D%A9%E5%91%BD%E4%B9%8B%E8%B7%AF(2008)/0024.webp",
       "https://img.yeguozi.com/thumbs/%E9%9D%A9%E5%91%BD%E4%B9%8B%E8%B7%AF(2008)/0025.webp",
       "https://img.yeguozi.com/thumbs/%E9%9D%A9%E5%91%BD%E4%B9%8B%E8%B7%AF(2008)/0026.webp",
-      "https://img.yeguozi.com/thumbs/%E9%9D%A9%E5%91%BD%E4%B9%8B%E8%B7%AF(2008)/0027.webp",
-      "https://img.yeguozi.com/thumbs/%E6%9C%B1%E8%8E%89%E4%B8%8E%E6%9C%B1%E8%8E%89%E5%A8%85(2009)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E6%97%B6%E6%97%B6%E5%88%BB%E5%88%BB%EF%BC%882002%EF%BC%89/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E5%87%A0%E8%BF%91%E6%88%90%E5%90%8D(2000)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E7%BE%8E%E5%9B%BD%E7%B2%BE%E7%A5%9E%E7%97%85%E4%BA%BA(2000)/0001.webp"
+      "https://img.yeguozi.com/thumbs/%E9%9D%A9%E5%91%BD%E4%B9%8B%E8%B7%AF(2008)/0027.webp"
     ]
   },
   {
@@ -2222,11 +2080,7 @@ const FILM_DETAILS_FULL = [
       "https://img.yeguozi.com/thumbs/%E6%9E%AF%E5%8F%B6(2023)/0035.webp",
       "https://img.yeguozi.com/thumbs/%E6%9E%AF%E5%8F%B6(2023)/0036.webp",
       "https://img.yeguozi.com/thumbs/%E6%9E%AF%E5%8F%B6(2023)/0037.webp",
-      "https://img.yeguozi.com/thumbs/%E6%9E%AF%E5%8F%B6(2023)/0038.webp",
-      "https://img.yeguozi.com/thumbs/%E5%8B%92%E9%98%BF%E5%BC%97%E5%B0%94(2011%EF%BC%89/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E4%B8%80%E4%B8%AA%E5%A5%BD%E4%BA%BA(2023)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E5%8D%88%E5%90%8E%E4%B9%8B%E7%88%B1(1972)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E7%88%B1%E4%B9%90%E4%B9%8B%E5%9F%8E(2016)/0001.webp"
+      "https://img.yeguozi.com/thumbs/%E6%9E%AF%E5%8F%B6(2023)/0038.webp"
     ]
   },
   {
@@ -2245,7 +2099,6 @@ const FILM_DETAILS_FULL = [
     ],
     "letterboxd": "https://letterboxd.com/film/raise-the-red-lantern/",
     "screenshots": [
-      "https://img.yeguozi.com/thumbs/%E9%A5%AE%E9%A3%9F%E7%94%B7%E5%A5%B3(1994)/0001.webp",
       "https://img.yeguozi.com/thumbs/%E5%A4%A7%E7%BA%A2%E7%81%AF%E7%AC%BC%E9%AB%98%E9%AB%98%E6%8C%82(1991)/0022.webp",
       "https://img.yeguozi.com/thumbs/%E5%A4%A7%E7%BA%A2%E7%81%AF%E7%AC%BC%E9%AB%98%E9%AB%98%E6%8C%82(1991)/0002.webp",
       "https://img.yeguozi.com/thumbs/%E5%A4%A7%E7%BA%A2%E7%81%AF%E7%AC%BC%E9%AB%98%E9%AB%98%E6%8C%82(1991)/0001.webp",
@@ -2286,14 +2139,11 @@ const FILM_DETAILS_FULL = [
       "https://img.yeguozi.com/thumbs/%E5%A4%A7%E7%BA%A2%E7%81%AF%E7%AC%BC%E9%AB%98%E9%AB%98%E6%8C%82(1991)/0038.webp",
       "https://img.yeguozi.com/thumbs/%E5%A4%A7%E7%BA%A2%E7%81%AF%E7%AC%BC%E9%AB%98%E9%AB%98%E6%8C%82(1991)/0039.webp",
       "https://img.yeguozi.com/thumbs/%E5%A4%A7%E7%BA%A2%E7%81%AF%E7%AC%BC%E9%AB%98%E9%AB%98%E6%8C%82(1991)/0040.webp",
-      "https://img.yeguozi.com/thumbs/%E5%A4%A7%E7%BA%A2%E7%81%AF%E7%AC%BC%E9%AB%98%E9%AB%98%E6%8C%82(1991)/0041.webp",
-      "https://img.yeguozi.com/thumbs/%E5%A4%A9%E7%94%9F%E4%B8%80%E5%AF%B9%EF%BC%881998%EF%BC%89/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E5%85%B3%E4%BA%8E%E6%88%91%E6%AF%8D%E4%BA%B2%E7%9A%84%E4%B8%80%E5%88%87(1999)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E5%A4%8F%E5%A4%A9%E7%9A%84%E6%95%85%E4%BA%8B(1996)/0001.webp"
+      "https://img.yeguozi.com/thumbs/%E5%A4%A7%E7%BA%A2%E7%81%AF%E7%AC%BC%E9%AB%98%E9%AB%98%E6%8C%82(1991)/0041.webp"
     ]
   },
   {
-    "id": "malcolm-marie-2021",
+    "id": "malcolm-and-marie-2021",
     "screenshotCount": 44,
     "screenshots": [
       "https://img.yeguozi.com/thumbs/%E9%A9%AC%E5%B0%94%E7%A7%91%E5%A7%86%E4%B8%8E%E7%8E%9B%E4%B8%BD%EF%BC%882021)/0021.webp",
@@ -2335,11 +2185,7 @@ const FILM_DETAILS_FULL = [
       "https://img.yeguozi.com/thumbs/%E9%A9%AC%E5%B0%94%E7%A7%91%E5%A7%86%E4%B8%8E%E7%8E%9B%E4%B8%BD%EF%BC%882021)/0037.webp",
       "https://img.yeguozi.com/thumbs/%E9%A9%AC%E5%B0%94%E7%A7%91%E5%A7%86%E4%B8%8E%E7%8E%9B%E4%B8%BD%EF%BC%882021)/0038.webp",
       "https://img.yeguozi.com/thumbs/%E9%A9%AC%E5%B0%94%E7%A7%91%E5%A7%86%E4%B8%8E%E7%8E%9B%E4%B8%BD%EF%BC%882021)/0039.webp",
-      "https://img.yeguozi.com/thumbs/%E9%A9%AC%E5%B0%94%E7%A7%91%E5%A7%86%E4%B8%8E%E7%8E%9B%E4%B8%BD%EF%BC%882021)/0040.webp",
-      "https://img.yeguozi.com/thumbs/%E6%B3%95%E5%85%B0%E8%A5%BF%E7%89%B9%E6%B4%BE(2021)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E7%88%B1%E4%B9%90%E4%B9%8B%E5%9F%8E(2016)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E9%9A%94%E5%A3%81%E6%88%BF%E9%97%B4(2024)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E5%87%A0%E8%BF%91%E6%88%90%E5%90%8D(2000)/0001.webp"
+      "https://img.yeguozi.com/thumbs/%E9%A9%AC%E5%B0%94%E7%A7%91%E5%A7%86%E4%B8%8E%E7%8E%9B%E4%B8%BD%EF%BC%882021)/0040.webp"
     ]
   },
   {
@@ -2381,11 +2227,7 @@ const FILM_DETAILS_FULL = [
       "https://img.yeguozi.com/thumbs/%E5%9C%A8%E5%93%A5%E4%BC%A6%E5%B8%83(2017)/0033.webp",
       "https://img.yeguozi.com/thumbs/%E5%9C%A8%E5%93%A5%E4%BC%A6%E5%B8%83(2017)/0034.webp",
       "https://img.yeguozi.com/thumbs/%E5%9C%A8%E5%93%A5%E4%BC%A6%E5%B8%83(2017)/0035.webp",
-      "https://img.yeguozi.com/thumbs/%E5%9C%A8%E5%93%A5%E4%BC%A6%E5%B8%83(2017)/0036.webp",
-      "https://img.yeguozi.com/thumbs/%E5%B8%95%E7%89%B9%E6%A3%AE(2016)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E6%9C%88%E5%8D%87%E7%8E%8B%E5%9B%BD%EF%BC%882012%EF%BC%89/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E4%B9%94%E4%B9%94%E7%9A%84%E5%BC%82%E6%83%B3%E4%B8%96%E7%95%8C(2019)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E5%A9%9A%E5%A7%BB%E6%95%85%E4%BA%8B(2019)/0001.webp"
+      "https://img.yeguozi.com/thumbs/%E5%9C%A8%E5%93%A5%E4%BC%A6%E5%B8%83(2017)/0036.webp"
     ]
   },
   {
@@ -2439,11 +2281,7 @@ const FILM_DETAILS_FULL = [
       "https://img.yeguozi.com/thumbs/%E6%81%8B%E7%88%B1%E5%81%87%E6%9C%9F(2006)/0045.webp",
       "https://img.yeguozi.com/thumbs/%E6%81%8B%E7%88%B1%E5%81%87%E6%9C%9F(2006)/0046.webp",
       "https://img.yeguozi.com/thumbs/%E6%81%8B%E7%88%B1%E5%81%87%E6%9C%9F(2006)/0047.webp",
-      "https://img.yeguozi.com/thumbs/%E6%81%8B%E7%88%B1%E5%81%87%E6%9C%9F(2006)/0048.webp",
-      "https://img.yeguozi.com/thumbs/%E5%A4%A9%E7%94%9F%E4%B8%80%E5%AF%B9%EF%BC%881998%EF%BC%89/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E7%88%B1%E5%BE%88%E5%A4%8D%E6%9D%82(2009)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E6%88%8F%E6%A2%A6%E5%B7%B4%E9%BB%8E%EF%BC%882003%EF%BC%89/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E6%97%B6%E6%97%B6%E5%88%BB%E5%88%BB%EF%BC%882002%EF%BC%89/0001.webp"
+      "https://img.yeguozi.com/thumbs/%E6%81%8B%E7%88%B1%E5%81%87%E6%9C%9F(2006)/0048.webp"
     ]
   },
   {
@@ -2499,11 +2337,7 @@ const FILM_DETAILS_FULL = [
       "https://img.yeguozi.com/thumbs/%E6%B5%B7%E8%A1%97%E6%97%A5%E8%AE%B0(2015)/0035.webp",
       "https://img.yeguozi.com/thumbs/%E6%B5%B7%E8%A1%97%E6%97%A5%E8%AE%B0(2015)/0036.webp",
       "https://img.yeguozi.com/thumbs/%E6%B5%B7%E8%A1%97%E6%97%A5%E8%AE%B0(2015)/0037.webp",
-      "https://img.yeguozi.com/thumbs/%E6%B5%B7%E8%A1%97%E6%97%A5%E8%AE%B0(2015)/0038.webp",
-      "https://img.yeguozi.com/thumbs/%E6%AD%A5%E5%B1%A5%E4%B8%8D%E5%81%9C(2008)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E5%A6%82%E6%B2%90%E7%88%B1%E6%B2%B3(2012)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E5%BD%B1%E5%AD%90%E5%86%99%E6%89%8B(2010)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E8%83%A1%E4%B8%BD%E5%8F%B6%E5%A1%94(2016)/0001.webp"
+      "https://img.yeguozi.com/thumbs/%E6%B5%B7%E8%A1%97%E6%97%A5%E8%AE%B0(2015)/0038.webp"
     ]
   },
   {
@@ -2569,11 +2403,7 @@ const FILM_DETAILS_FULL = [
       "https://img.yeguozi.com/thumbs/%E4%B8%80%E4%B8%80(2000)/0045.webp",
       "https://img.yeguozi.com/thumbs/%E4%B8%80%E4%B8%80(2000)/0046.webp",
       "https://img.yeguozi.com/thumbs/%E4%B8%80%E4%B8%80(2000)/0047.webp",
-      "https://img.yeguozi.com/thumbs/%E4%B8%80%E4%B8%80(2000)/0048.webp",
-      "https://img.yeguozi.com/thumbs/%E9%9D%92%E6%A2%85%E7%AB%B9%E9%A9%AC(1985)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E5%87%A0%E8%BF%91%E6%88%90%E5%90%8D(2000)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E6%81%8B%E7%88%B1%E5%81%87%E6%9C%9F(2006)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E9%A5%AE%E9%A3%9F%E7%94%B7%E5%A5%B3(1994)/0001.webp"
+      "https://img.yeguozi.com/thumbs/%E4%B8%80%E4%B8%80(2000)/0048.webp"
     ]
   },
   {
@@ -2622,18 +2452,13 @@ const FILM_DETAILS_FULL = [
       "https://img.yeguozi.com/thumbs/%E9%9D%92%E6%A2%85%E7%AB%B9%E9%A9%AC(1985)/0040.webp",
       "https://img.yeguozi.com/thumbs/%E9%9D%92%E6%A2%85%E7%AB%B9%E9%A9%AC(1985)/0041.webp",
       "https://img.yeguozi.com/thumbs/%E9%9D%92%E6%A2%85%E7%AB%B9%E9%A9%AC(1985)/0042.webp",
-      "https://img.yeguozi.com/thumbs/%E9%9D%92%E6%A2%85%E7%AB%B9%E9%A9%AC(1985)/0043.webp",
-      "https://img.yeguozi.com/thumbs/%E4%B8%80%E4%B8%80(2000)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E7%BB%BF%E5%85%89(1986)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E6%B2%99%E6%BB%A9%E4%B8%8A%E7%9A%84%E5%AE%9D%E8%8E%B2(1983)/sha-tan-shang-de-bao-lian-1983-0001.webp",
-      "https://img.yeguozi.com/thumbs/%E7%89%BA%E7%89%B2(1986)/0001.webp"
+      "https://img.yeguozi.com/thumbs/%E9%9D%92%E6%A2%85%E7%AB%B9%E9%A9%AC(1985)/0043.webp"
     ]
   },
   {
     "id": "women-on-the-verge-1988",
     "screenshotCount": 31,
     "screenshots": [
-      "https://img.yeguozi.com/thumbs/%E8%83%A1%E4%B8%BD%E5%8F%B6%E5%A1%94(2016)/0001.webp",
       "https://img.yeguozi.com/thumbs/%E5%B4%A9%E6%BA%83%E8%BE%B9%E7%BC%98%E7%9A%84%E5%A5%B3%E4%BA%BA(1988)/0015.webp",
       "https://img.yeguozi.com/thumbs/%E5%B4%A9%E6%BA%83%E8%BE%B9%E7%BC%98%E7%9A%84%E5%A5%B3%E4%BA%BA(1988)/0002.webp",
       "https://img.yeguozi.com/thumbs/%E5%B4%A9%E6%BA%83%E8%BE%B9%E7%BC%98%E7%9A%84%E5%A5%B3%E4%BA%BA(1988)/0001.webp",
@@ -2660,14 +2485,11 @@ const FILM_DETAILS_FULL = [
       "https://img.yeguozi.com/thumbs/%E5%B4%A9%E6%BA%83%E8%BE%B9%E7%BC%98%E7%9A%84%E5%A5%B3%E4%BA%BA(1988)/0024.webp",
       "https://img.yeguozi.com/thumbs/%E5%B4%A9%E6%BA%83%E8%BE%B9%E7%BC%98%E7%9A%84%E5%A5%B3%E4%BA%BA(1988)/0025.webp",
       "https://img.yeguozi.com/thumbs/%E5%B4%A9%E6%BA%83%E8%BE%B9%E7%BC%98%E7%9A%84%E5%A5%B3%E4%BA%BA(1988)/0026.webp",
-      "https://img.yeguozi.com/thumbs/%E5%B4%A9%E6%BA%83%E8%BE%B9%E7%BC%98%E7%9A%84%E5%A5%B3%E4%BA%BA(1988)/0027.webp",
-      "https://img.yeguozi.com/thumbs/%E5%B9%B3%E8%A1%8C%E7%9A%84%E6%AF%8D%E4%BA%B2(2021)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E5%85%B3%E4%BA%8E%E6%88%91%E6%AF%8D%E4%BA%B2%E7%9A%84%E4%B8%80%E5%88%87(1999)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E9%9A%94%E5%A3%81%E6%88%BF%E9%97%B4(2024)/0001.webp"
+      "https://img.yeguozi.com/thumbs/%E5%B4%A9%E6%BA%83%E8%BE%B9%E7%BC%98%E7%9A%84%E5%A5%B3%E4%BA%BA(1988)/0027.webp"
     ]
   },
   {
-    "id": "julie-julia-2009",
+    "id": "julie-and-julia-2009",
     "screenshotCount": 67,
     "screenshots": [
       "https://img.yeguozi.com/thumbs/%E6%9C%B1%E8%8E%89%E4%B8%8E%E6%9C%B1%E8%8E%89%E5%A8%85(2009)/0033.webp",
@@ -2732,11 +2554,7 @@ const FILM_DETAILS_FULL = [
       "https://img.yeguozi.com/thumbs/%E6%9C%B1%E8%8E%89%E4%B8%8E%E6%9C%B1%E8%8E%89%E5%A8%85(2009)/0060.webp",
       "https://img.yeguozi.com/thumbs/%E6%9C%B1%E8%8E%89%E4%B8%8E%E6%9C%B1%E8%8E%89%E5%A8%85(2009)/0061.webp",
       "https://img.yeguozi.com/thumbs/%E6%9C%B1%E8%8E%89%E4%B8%8E%E6%9C%B1%E8%8E%89%E5%A8%85(2009)/0062.webp",
-      "https://img.yeguozi.com/thumbs/%E6%9C%B1%E8%8E%89%E4%B8%8E%E6%9C%B1%E8%8E%89%E5%A8%85(2009)/0063.webp",
-      "https://img.yeguozi.com/thumbs/%E5%87%A0%E8%BF%91%E6%88%90%E5%90%8D(2000)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E7%BE%8E%E5%9B%BD%E7%B2%BE%E7%A5%9E%E7%97%85%E4%BA%BA(2000)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E9%9D%A9%E5%91%BD%E4%B9%8B%E8%B7%AF(2008)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E6%97%B6%E6%97%B6%E5%88%BB%E5%88%BB%EF%BC%882002%EF%BC%89/0001.webp"
+      "https://img.yeguozi.com/thumbs/%E6%9C%B1%E8%8E%89%E4%B8%8E%E6%9C%B1%E8%8E%89%E5%A8%85(2009)/0063.webp"
     ]
   },
   {
@@ -2809,18 +2627,13 @@ const FILM_DETAILS_FULL = [
       "https://img.yeguozi.com/thumbs/%E8%BF%B7%E9%AD%82%E8%AE%B0(1958)/0052.webp",
       "https://img.yeguozi.com/thumbs/%E8%BF%B7%E9%AD%82%E8%AE%B0(1958)/0053.webp",
       "https://img.yeguozi.com/thumbs/%E8%BF%B7%E9%AD%82%E8%AE%B0(1958)/0054.webp",
-      "https://img.yeguozi.com/thumbs/%E8%BF%B7%E9%AD%82%E8%AE%B0(1958)/0055.webp",
-      "https://img.yeguozi.com/thumbs/%E7%88%B1%E5%BE%88%E5%A4%8D%E6%9D%82(2009)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E9%97%AA%E7%81%B5(1980)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E5%B8%95%E7%89%B9%E6%A3%AE(2016)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E5%87%A0%E8%BF%91%E6%88%90%E5%90%8D(2000)/0001.webp"
+      "https://img.yeguozi.com/thumbs/%E8%BF%B7%E9%AD%82%E8%AE%B0(1958)/0055.webp"
     ]
   },
   {
     "id": "the-french-dispatch-2021",
     "screenshotCount": 40,
     "screenshots": [
-      "https://img.yeguozi.com/thumbs/%E9%A9%AC%E5%B0%94%E7%A7%91%E5%A7%86%E4%B8%8E%E7%8E%9B%E4%B8%BD%EF%BC%882021)/0001.webp",
       "https://img.yeguozi.com/thumbs/%E6%B3%95%E5%85%B0%E8%A5%BF%E7%89%B9%E6%B4%BE(2021)/0019.webp",
       "https://img.yeguozi.com/thumbs/%E6%B3%95%E5%85%B0%E8%A5%BF%E7%89%B9%E6%B4%BE(2021)/0002.webp",
       "https://img.yeguozi.com/thumbs/%E6%B3%95%E5%85%B0%E8%A5%BF%E7%89%B9%E6%B4%BE(2021)/0001.webp",
@@ -2856,10 +2669,7 @@ const FILM_DETAILS_FULL = [
       "https://img.yeguozi.com/thumbs/%E6%B3%95%E5%85%B0%E8%A5%BF%E7%89%B9%E6%B4%BE(2021)/0033.webp",
       "https://img.yeguozi.com/thumbs/%E6%B3%95%E5%85%B0%E8%A5%BF%E7%89%B9%E6%B4%BE(2021)/0034.webp",
       "https://img.yeguozi.com/thumbs/%E6%B3%95%E5%85%B0%E8%A5%BF%E7%89%B9%E6%B4%BE(2021)/0035.webp",
-      "https://img.yeguozi.com/thumbs/%E6%B3%95%E5%85%B0%E8%A5%BF%E7%89%B9%E6%B4%BE(2021)/0036.webp",
-      "https://img.yeguozi.com/thumbs/%E6%9C%88%E5%8D%87%E7%8E%8B%E5%9B%BD%EF%BC%882012%EF%BC%89/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E5%B8%83%E8%BE%BE%E4%BD%A9%E6%96%AF%E5%A4%A7%E9%A5%AD%E5%BA%97(2014)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E5%A4%A9%E6%89%8D%E4%B8%80%E6%97%8F%EF%BC%882001%EF%BC%89/0001.webp"
+      "https://img.yeguozi.com/thumbs/%E6%B3%95%E5%85%B0%E8%A5%BF%E7%89%B9%E6%B4%BE(2021)/0036.webp"
     ]
   },
   {
@@ -2896,11 +2706,7 @@ const FILM_DETAILS_FULL = [
       "https://img.yeguozi.com/thumbs/%E8%83%A1%E4%B8%BD%E5%8F%B6%E5%A1%94(2016)/0028.webp",
       "https://img.yeguozi.com/thumbs/%E8%83%A1%E4%B8%BD%E5%8F%B6%E5%A1%94(2016)/0029.webp",
       "https://img.yeguozi.com/thumbs/%E8%83%A1%E4%B8%BD%E5%8F%B6%E5%A1%94(2016)/0030.webp",
-      "https://img.yeguozi.com/thumbs/%E8%83%A1%E4%B8%BD%E5%8F%B6%E5%A1%94(2016)/0031.webp",
-      "https://img.yeguozi.com/thumbs/%E5%B9%B3%E8%A1%8C%E7%9A%84%E6%AF%8D%E4%BA%B2(2021)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E9%9A%94%E5%A3%81%E6%88%BF%E9%97%B4(2024)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E5%85%B3%E4%BA%8E%E6%88%91%E6%AF%8D%E4%BA%B2%E7%9A%84%E4%B8%80%E5%88%87(1999)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E5%B4%A9%E6%BA%83%E8%BE%B9%E7%BC%98%E7%9A%84%E5%A5%B3%E4%BA%BA(1988)/0001.webp"
+      "https://img.yeguozi.com/thumbs/%E8%83%A1%E4%B8%BD%E5%8F%B6%E5%A1%94(2016)/0031.webp"
     ]
   },
   {
@@ -2959,11 +2765,7 @@ const FILM_DETAILS_FULL = [
       "https://img.yeguozi.com/thumbs/%E5%8D%88%E5%A4%9C%E5%B7%B4%E9%BB%8E(2011)/0038.webp",
       "https://img.yeguozi.com/thumbs/%E5%8D%88%E5%A4%9C%E5%B7%B4%E9%BB%8E(2011)/0039.webp",
       "https://img.yeguozi.com/thumbs/%E5%8D%88%E5%A4%9C%E5%B7%B4%E9%BB%8E(2011)/0040.webp",
-      "https://img.yeguozi.com/thumbs/%E5%8D%88%E5%A4%9C%E5%B7%B4%E9%BB%8E(2011)/0041.webp",
-      "https://img.yeguozi.com/thumbs/%E7%88%B1%20Amour%C2%A0(2012)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E4%B9%94%E4%B9%94%E7%9A%84%E5%BC%82%E6%83%B3%E4%B8%96%E7%95%8C(2019)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E5%A5%B9(2013)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E5%A9%9A%E5%A7%BB%E6%95%85%E4%BA%8B(2019)/0001.webp"
+      "https://img.yeguozi.com/thumbs/%E5%8D%88%E5%A4%9C%E5%B7%B4%E9%BB%8E(2011)/0041.webp"
     ]
   },
   {
@@ -2998,18 +2800,13 @@ const FILM_DETAILS_FULL = [
       "https://img.yeguozi.com/thumbs/%E5%A4%A9%E7%94%9F%E4%B8%80%E5%AF%B9%EF%BC%881998%EF%BC%89/0026.webp",
       "https://img.yeguozi.com/thumbs/%E5%A4%A9%E7%94%9F%E4%B8%80%E5%AF%B9%EF%BC%881998%EF%BC%89/0027.webp",
       "https://img.yeguozi.com/thumbs/%E5%A4%A9%E7%94%9F%E4%B8%80%E5%AF%B9%EF%BC%881998%EF%BC%89/0028.webp",
-      "https://img.yeguozi.com/thumbs/%E5%A4%A9%E7%94%9F%E4%B8%80%E5%AF%B9%EF%BC%881998%EF%BC%89/0029.webp",
-      "https://img.yeguozi.com/thumbs/%E7%88%B1%E5%BE%88%E5%A4%8D%E6%9D%82(2009)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E6%81%8B%E7%88%B1%E5%81%87%E6%9C%9F(2006)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E9%A5%AE%E9%A3%9F%E7%94%B7%E5%A5%B3(1994)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E5%87%A0%E8%BF%91%E6%88%90%E5%90%8D(2000)/0001.webp"
+      "https://img.yeguozi.com/thumbs/%E5%A4%A9%E7%94%9F%E4%B8%80%E5%AF%B9%EF%BC%881998%EF%BC%89/0029.webp"
     ]
   },
   {
     "id": "the-royal-tenenbaums-2001",
     "screenshotCount": 90,
     "screenshots": [
-      "https://img.yeguozi.com/thumbs/%E5%A4%A9%E4%BD%BF%E7%88%B1%E7%BE%8E%E4%B8%BD%EF%BC%882001%EF%BC%89/0001.webp",
       "https://img.yeguozi.com/thumbs/%E5%A4%A9%E6%89%8D%E4%B8%80%E6%97%8F%EF%BC%882001%EF%BC%89/0044.webp",
       "https://img.yeguozi.com/thumbs/%E5%A4%A9%E6%89%8D%E4%B8%80%E6%97%8F%EF%BC%882001%EF%BC%89/0002.webp",
       "https://img.yeguozi.com/thumbs/%E5%A4%A9%E6%89%8D%E4%B8%80%E6%97%8F%EF%BC%882001%EF%BC%89/0001.webp",
@@ -3095,17 +2892,13 @@ const FILM_DETAILS_FULL = [
       "https://img.yeguozi.com/thumbs/%E5%A4%A9%E6%89%8D%E4%B8%80%E6%97%8F%EF%BC%882001%EF%BC%89/0083.webp",
       "https://img.yeguozi.com/thumbs/%E5%A4%A9%E6%89%8D%E4%B8%80%E6%97%8F%EF%BC%882001%EF%BC%89/0084.webp",
       "https://img.yeguozi.com/thumbs/%E5%A4%A9%E6%89%8D%E4%B8%80%E6%97%8F%EF%BC%882001%EF%BC%89/0085.webp",
-      "https://img.yeguozi.com/thumbs/%E5%A4%A9%E6%89%8D%E4%B8%80%E6%97%8F%EF%BC%882001%EF%BC%89/0086.webp",
-      "https://img.yeguozi.com/thumbs/%E6%9C%88%E5%8D%87%E7%8E%8B%E5%9B%BD%EF%BC%882012%EF%BC%89/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E5%B8%83%E8%BE%BE%E4%BD%A9%E6%96%AF%E5%A4%A7%E9%A5%AD%E5%BA%97(2014)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E6%B3%95%E5%85%B0%E8%A5%BF%E7%89%B9%E6%B4%BE(2021)/0001.webp"
+      "https://img.yeguozi.com/thumbs/%E5%A4%A9%E6%89%8D%E4%B8%80%E6%97%8F%EF%BC%882001%EF%BC%89/0086.webp"
     ]
   },
   {
     "id": "paterson-2016",
     "screenshotCount": 49,
     "screenshots": [
-      "https://img.yeguozi.com/thumbs/%E5%BD%B1%E5%AD%90%E5%86%99%E6%89%8B(2010)/0001.webp",
       "https://img.yeguozi.com/thumbs/%E5%B8%95%E7%89%B9%E6%A3%AE(2016)/0024.webp",
       "https://img.yeguozi.com/thumbs/%E5%B8%95%E7%89%B9%E6%A3%AE(2016)/0002.webp",
       "https://img.yeguozi.com/thumbs/%E5%B8%95%E7%89%B9%E6%A3%AE(2016)/0001.webp",
@@ -3150,10 +2943,7 @@ const FILM_DETAILS_FULL = [
       "https://img.yeguozi.com/thumbs/%E5%B8%95%E7%89%B9%E6%A3%AE(2016)/0042.webp",
       "https://img.yeguozi.com/thumbs/%E5%B8%95%E7%89%B9%E6%A3%AE(2016)/0043.webp",
       "https://img.yeguozi.com/thumbs/%E5%B8%95%E7%89%B9%E6%A3%AE(2016)/0044.webp",
-      "https://img.yeguozi.com/thumbs/%E5%B8%95%E7%89%B9%E6%A3%AE(2016)/0045.webp",
-      "https://img.yeguozi.com/thumbs/%E8%AF%B7%E4%BB%A5%E4%BD%A0%E7%9A%84%E5%90%8D%E5%AD%97%E5%91%BC%E5%94%A4%E6%88%91%EF%BC%882017%EF%BC%89/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E7%88%B1%20Amour%C2%A0(2012)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E5%B0%86%E6%9D%A5%E7%9A%84%E4%BA%8B%EF%BC%882016%EF%BC%89/0001.webp"
+      "https://img.yeguozi.com/thumbs/%E5%B8%95%E7%89%B9%E6%A3%AE(2016)/0045.webp"
     ]
   },
   {
@@ -3242,15 +3032,11 @@ const FILM_DETAILS_FULL = [
       "https://img.yeguozi.com/thumbs/%E7%BB%BF%E5%85%89(1986)/0068.webp",
       "https://img.yeguozi.com/thumbs/%E7%BB%BF%E5%85%89(1986)/0069.webp",
       "https://img.yeguozi.com/thumbs/%E7%BB%BF%E5%85%89(1986)/0070.webp",
-      "https://img.yeguozi.com/thumbs/%E7%BB%BF%E5%85%89(1986)/0071.webp",
-      "https://img.yeguozi.com/thumbs/%E6%B2%99%E6%BB%A9%E4%B8%8A%E7%9A%84%E5%AE%9D%E8%8E%B2(1983)/sha-tan-shang-de-bao-lian-1983-0001.webp",
-      "https://img.yeguozi.com/thumbs/%E7%A7%8B%E5%A4%A9%E7%9A%84%E6%95%85%E4%BA%8B(1998)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E5%A5%B3%E6%94%B6%E8%97%8F%E5%AE%B6(1967)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E5%86%AC%E5%A4%A9%E7%9A%84%E6%95%85%E4%BA%8B(1992%EF%BC%89/0001.webp"
+      "https://img.yeguozi.com/thumbs/%E7%BB%BF%E5%85%89(1986)/0071.webp"
     ]
   },
   {
-    "id": "all-about-my-mother",
+    "id": "all-about-my-mother-1999",
     "screenshotCount": 38,
     "description": {
       "en": "Almodóvar never treats space politely — the Barcelona apartments, backstage dressing rooms, and convent corridors in his films are all shot as spaces with strong personalities of their own.The interiors in this film have a deliberatetheatrical density: no bare walls, no empty surfaces, curtains and religious icons and old photographs layered on top of one another. This isn't clutter — it's a Spanish mode of emotional display, where objects carry weight and spaces speak. Pay attention to the recurringdark wood-framed mirrors and warm yellow table lamps; they press the characters' faces into a dim amber glow that feels at once like a stage spotlight and like the cheapest mood device you could put in a home. If you're working on a poorly lit secondary bedroom or a transitional space, this film is worth watching frame by frame for how it builds light through layered sources rather than natural light."
@@ -3265,7 +3051,6 @@ const FILM_DETAILS_FULL = [
     ],
     "letterboxd": "https://letterboxd.com/film/all-about-my-mother/",
     "screenshots": [
-      "https://img.yeguozi.com/thumbs/%E9%9A%94%E5%A3%81%E6%88%BF%E9%97%B4(2024)/0001.webp",
       "https://img.yeguozi.com/thumbs/%E5%85%B3%E4%BA%8E%E6%88%91%E6%AF%8D%E4%BA%B2%E7%9A%84%E4%B8%80%E5%88%87(1999)/0018.webp",
       "https://img.yeguozi.com/thumbs/%E5%85%B3%E4%BA%8E%E6%88%91%E6%AF%8D%E4%BA%B2%E7%9A%84%E4%B8%80%E5%88%87(1999)/0002.webp",
       "https://img.yeguozi.com/thumbs/%E5%85%B3%E4%BA%8E%E6%88%91%E6%AF%8D%E4%BA%B2%E7%9A%84%E4%B8%80%E5%88%87(1999)/0001.webp",
@@ -3299,10 +3084,7 @@ const FILM_DETAILS_FULL = [
       "https://img.yeguozi.com/thumbs/%E5%85%B3%E4%BA%8E%E6%88%91%E6%AF%8D%E4%BA%B2%E7%9A%84%E4%B8%80%E5%88%87(1999)/0031.webp",
       "https://img.yeguozi.com/thumbs/%E5%85%B3%E4%BA%8E%E6%88%91%E6%AF%8D%E4%BA%B2%E7%9A%84%E4%B8%80%E5%88%87(1999)/0032.webp",
       "https://img.yeguozi.com/thumbs/%E5%85%B3%E4%BA%8E%E6%88%91%E6%AF%8D%E4%BA%B2%E7%9A%84%E4%B8%80%E5%88%87(1999)/0033.webp",
-      "https://img.yeguozi.com/thumbs/%E5%85%B3%E4%BA%8E%E6%88%91%E6%AF%8D%E4%BA%B2%E7%9A%84%E4%B8%80%E5%88%87(1999)/0034.webp",
-      "https://img.yeguozi.com/thumbs/%E5%B4%A9%E6%BA%83%E8%BE%B9%E7%BC%98%E7%9A%84%E5%A5%B3%E4%BA%BA(1988)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E5%B9%B3%E8%A1%8C%E7%9A%84%E6%AF%8D%E4%BA%B2(2021)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E8%83%A1%E4%B8%BD%E5%8F%B6%E5%A1%94(2016)/0001.webp"
+      "https://img.yeguozi.com/thumbs/%E5%85%B3%E4%BA%8E%E6%88%91%E6%AF%8D%E4%BA%B2%E7%9A%84%E4%B8%80%E5%88%87(1999)/0034.webp"
     ]
   },
   {
@@ -3321,7 +3103,6 @@ const FILM_DETAILS_FULL = [
     ],
     "letterboxd": "https://letterboxd.com/film/the-grand-budapest-hotel/",
     "screenshots": [
-      "https://img.yeguozi.com/thumbs/%E5%A5%B9(2013)/0001.webp",
       "https://img.yeguozi.com/thumbs/%E5%B8%83%E8%BE%BE%E4%BD%A9%E6%96%AF%E5%A4%A7%E9%A5%AD%E5%BA%97(2014)/0053.webp",
       "https://img.yeguozi.com/thumbs/%E5%B8%83%E8%BE%BE%E4%BD%A9%E6%96%AF%E5%A4%A7%E9%A5%AD%E5%BA%97(2014)/0002.webp",
       "https://img.yeguozi.com/thumbs/%E5%B8%83%E8%BE%BE%E4%BD%A9%E6%96%AF%E5%A4%A7%E9%A5%AD%E5%BA%97(2014)/0001.webp",
@@ -3424,14 +3205,11 @@ const FILM_DETAILS_FULL = [
       "https://img.yeguozi.com/thumbs/%E5%B8%83%E8%BE%BE%E4%BD%A9%E6%96%AF%E5%A4%A7%E9%A5%AD%E5%BA%97(2014)/0100.webp",
       "https://img.yeguozi.com/thumbs/%E5%B8%83%E8%BE%BE%E4%BD%A9%E6%96%AF%E5%A4%A7%E9%A5%AD%E5%BA%97(2014)/0101.webp",
       "https://img.yeguozi.com/thumbs/%E5%B8%83%E8%BE%BE%E4%BD%A9%E6%96%AF%E5%A4%A7%E9%A5%AD%E5%BA%97(2014)/0102.webp",
-      "https://img.yeguozi.com/thumbs/%E5%B8%83%E8%BE%BE%E4%BD%A9%E6%96%AF%E5%A4%A7%E9%A5%AD%E5%BA%97(2014)/0103.webp",
-      "https://img.yeguozi.com/thumbs/%E6%9C%88%E5%8D%87%E7%8E%8B%E5%9B%BD%EF%BC%882012%EF%BC%89/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E6%B3%95%E5%85%B0%E8%A5%BF%E7%89%B9%E6%B4%BE(2021)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E5%A4%A9%E6%89%8D%E4%B8%80%E6%97%8F%EF%BC%882001%EF%BC%89/0001.webp"
+      "https://img.yeguozi.com/thumbs/%E5%B8%83%E8%BE%BE%E4%BD%A9%E6%96%AF%E5%A4%A7%E9%A5%AD%E5%BA%97(2014)/0103.webp"
     ]
   },
   {
-    "id": "the-hedgehog",
+    "id": "the-hedgehog-2009",
     "screenshotCount": 76,
     "description": {
       "en": "The film's central setting is aParisian Haussmann-style apartment building, but where director Mona Achache really puts her attention is the concierge's lodge at the bottom — low-ceilinged, cramped, filled wall to wall with books and cats, forming a very concrete class contrast with the grand living rooms of the residents upstairs. People who watch this film are usually struck by that lodge: the same worn wooden shelves, the same table lamps — how does it manage to feel so dense yet uncluttered? The answer is probably that Patrick Blossier keeps the camera very low, letting the texture of book spines, the weight of upholstered armchairs, and the edges of rugs come through clearly, rather than blurring the details with a wide shot. The upstairs apartments operate on an entirely different grammar:high ceilings, hard finishes, cold light, with furniture arranged to leave deliberate open space — which ends up projecting a kind of respectability that feels difficult to actually live in. The two spaces comment on each other, and by the end you'll find yourself looking differently at the \"cluttered\" corners of your own home."
@@ -3445,7 +3223,6 @@ const FILM_DETAILS_FULL = [
       "#121214"
     ],
     "screenshots": [
-      "https://img.yeguozi.com/thumbs/%E5%8D%88%E5%90%8E%E4%B9%8B%E7%88%B1(1972)/0001.webp",
       "https://img.yeguozi.com/thumbs/%E5%88%BA%E7%8C%AC%E7%9A%84%E4%BC%98%E9%9B%85%EF%BC%882009%EF%BC%89/0037.webp",
       "https://img.yeguozi.com/thumbs/%E5%88%BA%E7%8C%AC%E7%9A%84%E4%BC%98%E9%9B%85%EF%BC%882009%EF%BC%89/0002.webp",
       "https://img.yeguozi.com/thumbs/%E5%88%BA%E7%8C%AC%E7%9A%84%E4%BC%98%E9%9B%85%EF%BC%882009%EF%BC%89/0001.webp",
@@ -3517,10 +3294,7 @@ const FILM_DETAILS_FULL = [
       "https://img.yeguozi.com/thumbs/%E5%88%BA%E7%8C%AC%E7%9A%84%E4%BC%98%E9%9B%85%EF%BC%882009%EF%BC%89/0069.webp",
       "https://img.yeguozi.com/thumbs/%E5%88%BA%E7%8C%AC%E7%9A%84%E4%BC%98%E9%9B%85%EF%BC%882009%EF%BC%89/0070.webp",
       "https://img.yeguozi.com/thumbs/%E5%88%BA%E7%8C%AC%E7%9A%84%E4%BC%98%E9%9B%85%EF%BC%882009%EF%BC%89/0071.webp",
-      "https://img.yeguozi.com/thumbs/%E5%88%BA%E7%8C%AC%E7%9A%84%E4%BC%98%E9%9B%85%EF%BC%882009%EF%BC%89/0072.webp",
-      "https://img.yeguozi.com/thumbs/%E6%88%8F%E6%A2%A6%E5%B7%B4%E9%BB%8E%EF%BC%882003%EF%BC%89/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E5%A4%A9%E4%BD%BF%E7%88%B1%E7%BE%8E%E4%B8%BD%EF%BC%882001%EF%BC%89/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E9%9A%94%E5%A3%81%E6%88%BF%E9%97%B4(2024)/0001.webp"
+      "https://img.yeguozi.com/thumbs/%E5%88%BA%E7%8C%AC%E7%9A%84%E4%BC%98%E9%9B%85%EF%BC%882009%EF%BC%89/0072.webp"
     ],
     "letterboxd": "https://letterboxd.com/film/the-hedgehog/"
   },
@@ -3539,7 +3313,6 @@ const FILM_DETAILS_FULL = [
       "#121214"
     ],
     "screenshots": [
-      "https://img.yeguozi.com/thumbs/%E4%B9%B1(1985)/0001.webp",
       "https://img.yeguozi.com/thumbs/%E5%A4%A9%E4%BD%BF%E7%88%B1%E7%BE%8E%E4%B8%BD%EF%BC%882001%EF%BC%89/0077.webp",
       "https://img.yeguozi.com/thumbs/%E5%A4%A9%E4%BD%BF%E7%88%B1%E7%BE%8E%E4%B8%BD%EF%BC%882001%EF%BC%89/0002.webp",
       "https://img.yeguozi.com/thumbs/%E5%A4%A9%E4%BD%BF%E7%88%B1%E7%BE%8E%E4%B8%BD%EF%BC%882001%EF%BC%89/0001.webp",
@@ -3691,15 +3464,12 @@ const FILM_DETAILS_FULL = [
       "https://img.yeguozi.com/thumbs/%E5%A4%A9%E4%BD%BF%E7%88%B1%E7%BE%8E%E4%B8%BD%EF%BC%882001%EF%BC%89/0149.webp",
       "https://img.yeguozi.com/thumbs/%E5%A4%A9%E4%BD%BF%E7%88%B1%E7%BE%8E%E4%B8%BD%EF%BC%882001%EF%BC%89/0150.webp",
       "https://img.yeguozi.com/thumbs/%E5%A4%A9%E4%BD%BF%E7%88%B1%E7%BE%8E%E4%B8%BD%EF%BC%882001%EF%BC%89/0151.webp",
-      "https://img.yeguozi.com/thumbs/%E5%A4%A9%E4%BD%BF%E7%88%B1%E7%BE%8E%E4%B8%BD%EF%BC%882001%EF%BC%89/0152.webp",
-      "https://img.yeguozi.com/thumbs/%E6%88%8F%E6%A2%A6%E5%B7%B4%E9%BB%8E%EF%BC%882003%EF%BC%89/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E5%88%BA%E7%8C%AC%E7%9A%84%E4%BC%98%E9%9B%85%EF%BC%882009%EF%BC%89/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E5%A4%A9%E6%89%8D%E4%B8%80%E6%97%8F%EF%BC%882001%EF%BC%89/0001.webp"
+      "https://img.yeguozi.com/thumbs/%E5%A4%A9%E4%BD%BF%E7%88%B1%E7%BE%8E%E4%B8%BD%EF%BC%882001%EF%BC%89/0152.webp"
     ],
     "letterboxd": "https://letterboxd.com/film/amelie/"
   },
   {
-    "id": "the-hours",
+    "id": "the-hours-2002",
     "screenshotCount": 114,
     "description": {
       "en": "The Hours films one day in three women's lives as three distinct kinds of interior pressure — a brick-house bedroom on the outskirts of Sussex in the 1920s, astandard American kitchenin a 1950s Los Angeles suburb, and an apartment hallway in contemporary New York — yet cinematographer Seamus McGarvey pushes nearly every scene towarddarkness, letting curtain fabric, wooden bed frames, and tiled countertops all recede into background shadow, leaving light only on the characters' faces and the small patch of surface nearest their hands. The approach makes a clear statement: space here is not decoration — it is the container that traps people. The 1950s kitchen in particular is worth studying closely —cream-colored cabinets against cold-gray grouted tiles, flowers arranged in plain drinking glasses, the whole room so tidy it unsettles you. Virginia Woolf's side of the story has deep-wood door frames and heavy cotton curtains, with light angling in from the side to fall across a writing desk — a room that is genuinely meant for work, not for display."
@@ -3822,16 +3592,12 @@ const FILM_DETAILS_FULL = [
       "https://img.yeguozi.com/thumbs/%E6%97%B6%E6%97%B6%E5%88%BB%E5%88%BB%EF%BC%882002%EF%BC%89/0107.webp",
       "https://img.yeguozi.com/thumbs/%E6%97%B6%E6%97%B6%E5%88%BB%E5%88%BB%EF%BC%882002%EF%BC%89/0108.webp",
       "https://img.yeguozi.com/thumbs/%E6%97%B6%E6%97%B6%E5%88%BB%E5%88%BB%EF%BC%882002%EF%BC%89/0109.webp",
-      "https://img.yeguozi.com/thumbs/%E6%97%B6%E6%97%B6%E5%88%BB%E5%88%BB%EF%BC%882002%EF%BC%89/0110.webp",
-      "https://img.yeguozi.com/thumbs/%E7%BE%8E%E5%9B%BD%E7%B2%BE%E7%A5%9E%E7%97%85%E4%BA%BA(2000)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E9%9D%A9%E5%91%BD%E4%B9%8B%E8%B7%AF(2008)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E5%87%A0%E8%BF%91%E6%88%90%E5%90%8D(2000)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E6%81%8B%E7%88%B1%E5%81%87%E6%9C%9F(2006)/0001.webp"
+      "https://img.yeguozi.com/thumbs/%E6%97%B6%E6%97%B6%E5%88%BB%E5%88%BB%EF%BC%882002%EF%BC%89/0110.webp"
     ],
     "letterboxd": "https://letterboxd.com/film/the-hours/"
   },
   {
-    "id": "things-to-come",
+    "id": "things-to-come-2016",
     "screenshotCount": 80,
     "description": {
       "en": "Mia Hansen-Løve gives most of the film's screen time tothe everyday interiors of a Parisian middle-class intellectual's apartment— walls of books, a desk buried under annotated papers, old coats hanging in the hallway. The protagonist is a philosophy teacher; divorce, her mother's death, and a dropped book contract all arrive in quick succession, yet the camera never reaches for sentiment, always settling instead onconcrete interior details: afternoon light filtering through linen curtains, paperbacks stacked on the kitchen counter, canvas bags stuffed full of things. What Hansen-Løve is filming is not \"the French intellectual home\" as a symbol, but a space that has actually been used, lived in, and argued in — furniture mismatched, old and new mixed together,the density of objects itself a footnote to the character's personality. If you are working on a study or a multipurpose living room, the reference this film offers is: don't clear surfaces out — let every surface show signs of use."
@@ -3845,7 +3611,6 @@ const FILM_DETAILS_FULL = [
       "#121214"
     ],
     "screenshots": [
-      "https://img.yeguozi.com/thumbs/%E7%88%B1%20Amour%C2%A0(2012)/0001.webp",
       "https://img.yeguozi.com/thumbs/%E5%B0%86%E6%9D%A5%E7%9A%84%E4%BA%8B%EF%BC%882016%EF%BC%89/0039.webp",
       "https://img.yeguozi.com/thumbs/%E5%B0%86%E6%9D%A5%E7%9A%84%E4%BA%8B%EF%BC%882016%EF%BC%89/0002.webp",
       "https://img.yeguozi.com/thumbs/%E5%B0%86%E6%9D%A5%E7%9A%84%E4%BA%8B%EF%BC%882016%EF%BC%89/0001.webp",
@@ -3921,10 +3686,7 @@ const FILM_DETAILS_FULL = [
       "https://img.yeguozi.com/thumbs/%E5%B0%86%E6%9D%A5%E7%9A%84%E4%BA%8B%EF%BC%882016%EF%BC%89/0073.webp",
       "https://img.yeguozi.com/thumbs/%E5%B0%86%E6%9D%A5%E7%9A%84%E4%BA%8B%EF%BC%882016%EF%BC%89/0074.webp",
       "https://img.yeguozi.com/thumbs/%E5%B0%86%E6%9D%A5%E7%9A%84%E4%BA%8B%EF%BC%882016%EF%BC%89/0075.webp",
-      "https://img.yeguozi.com/thumbs/%E5%B0%86%E6%9D%A5%E7%9A%84%E4%BA%8B%EF%BC%882016%EF%BC%89/0076.webp",
-      "https://img.yeguozi.com/thumbs/%E5%B8%95%E7%89%B9%E6%A3%AE(2016)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E8%AF%B7%E4%BB%A5%E4%BD%A0%E7%9A%84%E5%90%8D%E5%AD%97%E5%91%BC%E5%94%A4%E6%88%91%EF%BC%882017%EF%BC%89/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E5%8B%92%E9%98%BF%E5%BC%97%E5%B0%94(2011%EF%BC%89/0001.webp"
+      "https://img.yeguozi.com/thumbs/%E5%B0%86%E6%9D%A5%E7%9A%84%E4%BA%8B%EF%BC%882016%EF%BC%89/0076.webp"
     ],
     "letterboxd": "https://letterboxd.com/film/things-to-come-2016/"
   },
@@ -3943,7 +3705,6 @@ const FILM_DETAILS_FULL = [
       "#121214"
     ],
     "screenshots": [
-      "https://img.yeguozi.com/thumbs/%E5%BD%B1%E5%AD%90%E5%86%99%E6%89%8B(2010)/0001.webp",
       "https://img.yeguozi.com/thumbs/%E8%AF%B7%E4%BB%A5%E4%BD%A0%E7%9A%84%E5%90%8D%E5%AD%97%E5%91%BC%E5%94%A4%E6%88%91%EF%BC%882017%EF%BC%89/0038.webp",
       "https://img.yeguozi.com/thumbs/%E8%AF%B7%E4%BB%A5%E4%BD%A0%E7%9A%84%E5%90%8D%E5%AD%97%E5%91%BC%E5%94%A4%E6%88%91%EF%BC%882017%EF%BC%89/0002.webp",
       "https://img.yeguozi.com/thumbs/%E8%AF%B7%E4%BB%A5%E4%BD%A0%E7%9A%84%E5%90%8D%E5%AD%97%E5%91%BC%E5%94%A4%E6%88%91%EF%BC%882017%EF%BC%89/0001.webp",
@@ -4017,15 +3778,12 @@ const FILM_DETAILS_FULL = [
       "https://img.yeguozi.com/thumbs/%E8%AF%B7%E4%BB%A5%E4%BD%A0%E7%9A%84%E5%90%8D%E5%AD%97%E5%91%BC%E5%94%A4%E6%88%91%EF%BC%882017%EF%BC%89/0071.webp",
       "https://img.yeguozi.com/thumbs/%E8%AF%B7%E4%BB%A5%E4%BD%A0%E7%9A%84%E5%90%8D%E5%AD%97%E5%91%BC%E5%94%A4%E6%88%91%EF%BC%882017%EF%BC%89/0072.webp",
       "https://img.yeguozi.com/thumbs/%E8%AF%B7%E4%BB%A5%E4%BD%A0%E7%9A%84%E5%90%8D%E5%AD%97%E5%91%BC%E5%94%A4%E6%88%91%EF%BC%882017%EF%BC%89/0073.webp",
-      "https://img.yeguozi.com/thumbs/%E8%AF%B7%E4%BB%A5%E4%BD%A0%E7%9A%84%E5%90%8D%E5%AD%97%E5%91%BC%E5%94%A4%E6%88%91%EF%BC%882017%EF%BC%89/0074.webp",
-      "https://img.yeguozi.com/thumbs/%E5%B0%86%E6%9D%A5%E7%9A%84%E4%BA%8B%EF%BC%882016%EF%BC%89/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E5%B8%95%E7%89%B9%E6%A3%AE(2016)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E5%8B%92%E9%98%BF%E5%BC%97%E5%B0%94(2011%EF%BC%89/0001.webp"
+      "https://img.yeguozi.com/thumbs/%E8%AF%B7%E4%BB%A5%E4%BD%A0%E7%9A%84%E5%90%8D%E5%AD%97%E5%91%BC%E5%94%A4%E6%88%91%EF%BC%882017%EF%BC%89/0074.webp"
     ],
     "letterboxd": "https://letterboxd.com/film/call-me-by-your-name/"
   },
   {
-    "id": "conte-de-printemps1990",
+    "id": "a-tale-of-springtime-1990",
     "screenshotCount": 52,
     "description": {
       "en": "Rohmer's camera never pretends to be making a film — it moves more like someone wandering through a Parisian intellectual's apartment. The spatial core of A Tale of Springtime (1990) is two sharply contrasting homes: the friend's flat where philosophy teacher Natacha is staying, and her father Igor's older bourgeois apartment, with its bookshelves running floor to ceiling and blankets draped casually over the sofa. Rohmer never stages these spaces with deliberate lighting or a cleared set — coffee cups left on the table, a few spider plants on the windowsill, a chair against the wall catching backlight. This is what French middle-class homes actually look like: not designed, but shaped by years of living until each object has found its own place. If your space is small and full of things, this film is worth pausing for screenshots: it models an approach to making a room feel good without emptying it out first."
@@ -4039,7 +3797,6 @@ const FILM_DETAILS_FULL = [
       "#121214"
     ],
     "screenshots": [
-      "https://img.yeguozi.com/thumbs/%E5%8D%88%E5%90%8E%E4%B9%8B%E7%88%B1(1972)/0001.webp",
       "https://img.yeguozi.com/thumbs/%E6%98%A5%E5%A4%A9%E7%9A%84%E6%95%85%E4%BA%8B%EF%BC%881990%EF%BC%89/0025.webp",
       "https://img.yeguozi.com/thumbs/%E6%98%A5%E5%A4%A9%E7%9A%84%E6%95%85%E4%BA%8B%EF%BC%881990%EF%BC%89/0002.webp",
       "https://img.yeguozi.com/thumbs/%E6%98%A5%E5%A4%A9%E7%9A%84%E6%95%85%E4%BA%8B%EF%BC%881990%EF%BC%89/0001.webp",
@@ -4087,10 +3844,7 @@ const FILM_DETAILS_FULL = [
       "https://img.yeguozi.com/thumbs/%E6%98%A5%E5%A4%A9%E7%9A%84%E6%95%85%E4%BA%8B%EF%BC%881990%EF%BC%89/0045.webp",
       "https://img.yeguozi.com/thumbs/%E6%98%A5%E5%A4%A9%E7%9A%84%E6%95%85%E4%BA%8B%EF%BC%881990%EF%BC%89/0046.webp",
       "https://img.yeguozi.com/thumbs/%E6%98%A5%E5%A4%A9%E7%9A%84%E6%95%85%E4%BA%8B%EF%BC%881990%EF%BC%89/0047.webp",
-      "https://img.yeguozi.com/thumbs/%E6%98%A5%E5%A4%A9%E7%9A%84%E6%95%85%E4%BA%8B%EF%BC%881990%EF%BC%89/0048.webp",
-      "https://img.yeguozi.com/thumbs/%E5%86%AC%E5%A4%A9%E7%9A%84%E6%95%85%E4%BA%8B(1992%EF%BC%89/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E5%A4%8F%E5%A4%A9%E7%9A%84%E6%95%85%E4%BA%8B(1996)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E7%A7%8B%E5%A4%A9%E7%9A%84%E6%95%85%E4%BA%8B(1998)/0001.webp"
+      "https://img.yeguozi.com/thumbs/%E6%98%A5%E5%A4%A9%E7%9A%84%E6%95%85%E4%BA%8B%EF%BC%881990%EF%BC%89/0048.webp"
     ],
     "letterboxd": "https://letterboxd.com/film/a-tale-of-springtime/"
   },
@@ -4156,11 +3910,7 @@ const FILM_DETAILS_FULL = [
       "https://img.yeguozi.com/thumbs/%E7%8E%A9%E4%B9%90%E6%97%B6%E9%97%B4%EF%BC%881967%EF%BC%89/0045.webp",
       "https://img.yeguozi.com/thumbs/%E7%8E%A9%E4%B9%90%E6%97%B6%E9%97%B4%EF%BC%881967%EF%BC%89/0046.webp",
       "https://img.yeguozi.com/thumbs/%E7%8E%A9%E4%B9%90%E6%97%B6%E9%97%B4%EF%BC%881967%EF%BC%89/0047.webp",
-      "https://img.yeguozi.com/thumbs/%E7%8E%A9%E4%B9%90%E6%97%B6%E9%97%B4%EF%BC%881967%EF%BC%89/0048.webp",
-      "https://img.yeguozi.com/thumbs/%E5%B9%B8%E7%A6%8F%20Le%20bonheur%C2%A0(1965)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E7%8B%82%E4%BA%BA%E7%9A%AE%E5%9F%83%E7%BD%97(1965)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E5%8D%88%E5%90%8E%E4%B9%8B%E7%88%B1(1972)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E5%8B%92%E9%98%BF%E5%BC%97%E5%B0%94(2011%EF%BC%89/0001.webp"
+      "https://img.yeguozi.com/thumbs/%E7%8E%A9%E4%B9%90%E6%97%B6%E9%97%B4%EF%BC%881967%EF%BC%89/0048.webp"
     ],
     "letterboxd": "https://letterboxd.com/film/playtime/"
   },
@@ -4179,7 +3929,6 @@ const FILM_DETAILS_FULL = [
       "#121214"
     ],
     "screenshots": [
-      "https://img.yeguozi.com/thumbs/%E6%97%B6%E6%97%B6%E5%88%BB%E5%88%BB%EF%BC%882002%EF%BC%89/0001.webp",
       "https://img.yeguozi.com/thumbs/%E6%88%8F%E6%A2%A6%E5%B7%B4%E9%BB%8E%EF%BC%882003%EF%BC%89/0026.webp",
       "https://img.yeguozi.com/thumbs/%E6%88%8F%E6%A2%A6%E5%B7%B4%E9%BB%8E%EF%BC%882003%EF%BC%89/0002.webp",
       "https://img.yeguozi.com/thumbs/%E6%88%8F%E6%A2%A6%E5%B7%B4%E9%BB%8E%EF%BC%882003%EF%BC%89/0001.webp",
@@ -4228,10 +3977,7 @@ const FILM_DETAILS_FULL = [
       "https://img.yeguozi.com/thumbs/%E6%88%8F%E6%A2%A6%E5%B7%B4%E9%BB%8E%EF%BC%882003%EF%BC%89/0046.webp",
       "https://img.yeguozi.com/thumbs/%E6%88%8F%E6%A2%A6%E5%B7%B4%E9%BB%8E%EF%BC%882003%EF%BC%89/0047.webp",
       "https://img.yeguozi.com/thumbs/%E6%88%8F%E6%A2%A6%E5%B7%B4%E9%BB%8E%EF%BC%882003%EF%BC%89/0048.webp",
-      "https://img.yeguozi.com/thumbs/%E6%88%8F%E6%A2%A6%E5%B7%B4%E9%BB%8E%EF%BC%882003%EF%BC%89/0049.webp",
-      "https://img.yeguozi.com/thumbs/%E5%88%BA%E7%8C%AC%E7%9A%84%E4%BC%98%E9%9B%85%EF%BC%882009%EF%BC%89/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E6%81%8B%E7%88%B1%E5%81%87%E6%9C%9F(2006)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E5%A4%A9%E4%BD%BF%E7%88%B1%E7%BE%8E%E4%B8%BD%EF%BC%882001%EF%BC%89/0001.webp"
+      "https://img.yeguozi.com/thumbs/%E6%88%8F%E6%A2%A6%E5%B7%B4%E9%BB%8E%EF%BC%882003%EF%BC%89/0049.webp"
     ],
     "letterboxd": "https://letterboxd.com/film/the-dreamers/"
   },
@@ -4250,7 +3996,6 @@ const FILM_DETAILS_FULL = [
       "#121214"
     ],
     "screenshots": [
-      "https://img.yeguozi.com/thumbs/%E5%85%8B%E8%8E%B1%E5%B0%94%E7%9A%84%E8%86%9D%E7%9B%96(1970)/0001.webp",
       "https://img.yeguozi.com/thumbs/%E5%9B%B0%E5%9C%A8%E6%97%B6%E9%97%B4%E9%87%8C%E7%9A%84%E7%88%B6%E4%BA%B2%EF%BC%882020%EF%BC%89/0020.webp",
       "https://img.yeguozi.com/thumbs/%E5%9B%B0%E5%9C%A8%E6%97%B6%E9%97%B4%E9%87%8C%E7%9A%84%E7%88%B6%E4%BA%B2%EF%BC%882020%EF%BC%89/0002.webp",
       "https://img.yeguozi.com/thumbs/%E5%9B%B0%E5%9C%A8%E6%97%B6%E9%97%B4%E9%87%8C%E7%9A%84%E7%88%B6%E4%BA%B2%EF%BC%882020%EF%BC%89/0001.webp",
@@ -4288,10 +4033,7 @@ const FILM_DETAILS_FULL = [
       "https://img.yeguozi.com/thumbs/%E5%9B%B0%E5%9C%A8%E6%97%B6%E9%97%B4%E9%87%8C%E7%9A%84%E7%88%B6%E4%BA%B2%EF%BC%882020%EF%BC%89/0035.webp",
       "https://img.yeguozi.com/thumbs/%E5%9B%B0%E5%9C%A8%E6%97%B6%E9%97%B4%E9%87%8C%E7%9A%84%E7%88%B6%E4%BA%B2%EF%BC%882020%EF%BC%89/0036.webp",
       "https://img.yeguozi.com/thumbs/%E5%9B%B0%E5%9C%A8%E6%97%B6%E9%97%B4%E9%87%8C%E7%9A%84%E7%88%B6%E4%BA%B2%EF%BC%882020%EF%BC%89/0037.webp",
-      "https://img.yeguozi.com/thumbs/%E5%9B%B0%E5%9C%A8%E6%97%B6%E9%97%B4%E9%87%8C%E7%9A%84%E7%88%B6%E4%BA%B2%EF%BC%882020%EF%BC%89/0038.webp",
-      "https://img.yeguozi.com/thumbs/%E7%8B%82%E4%BA%BA%E7%9A%AE%E5%9F%83%E7%BD%97(1965)/0001.webp",
-      "https://img.yeguozi.com/thumbs/%E6%B2%99%E6%BB%A9%E4%B8%8A%E7%9A%84%E5%AE%9D%E8%8E%B2(1983)/sha-tan-shang-de-bao-lian-1983-0001.webp",
-      "https://img.yeguozi.com/thumbs/%E6%81%8B%E7%88%B1%E5%81%87%E6%9C%9F(2006)/0001.webp"
+      "https://img.yeguozi.com/thumbs/%E5%9B%B0%E5%9C%A8%E6%97%B6%E9%97%B4%E9%87%8C%E7%9A%84%E7%88%B6%E4%BA%B2%EF%BC%882020%EF%BC%89/0038.webp"
     ],
     "letterboxd": "https://letterboxd.com/film/the-father-2020/"
   }

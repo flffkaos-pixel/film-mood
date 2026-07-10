@@ -147,38 +147,55 @@ function renderHome(main) {
 // ─── Films ───
 function renderFilms(main) {
   const regions = [...new Set(FILM_DATA.map(f => f.region[CURRENT_LANG]))].sort();
-  const decades = [...new Set(FILM_DATA.map(f => Math.floor(f.year / 10) * 10))].sort();
+  const genres = [...new Set(FILM_DATA.flatMap(f => f.genre || []))].sort();
   let html = `
     <div class="page-header">
       <h1>${lang('films')}</h1>
       <p>64 ${lang('filmsCount', { count: FILM_DATA.length })}</p>
     </div>
     <section class="section">
-      <div class="filter-bar" id="filmFilters">
+      <div class="filter-bar" id="genreFilters">
         <button class="filter-btn active" data-filter="all">${lang('all')}</button>
+        ${genres.map(g => `<button class="filter-btn" data-filter="${g}">${g}</button>`).join('')}
+      </div>
+      <div class="filter-bar" id="filmFilters">
+        <button class="filter-btn active" data-filter="all">${lang('allRegions')}</button>
         ${regions.map(r => `<button class="filter-btn" data-filter="${r}">${r}</button>`).join('')}
       </div>
       <div class="film-grid" id="filmGrid">${FILM_DATA.map(f => filmCardHTML(f)).join('')}</div>
     </section>
   `;
   main.innerHTML = html;
-  // Filter logic
+  function applyFilters() {
+    const genreFilter = qs('#genreFilters .filter-btn.active')?.dataset?.filter || 'all';
+    const regionFilter = qs('#filmFilters .filter-btn.active')?.dataset?.filter || 'all';
+    qsa('.film-card').forEach(c => {
+      const matchGenre = genreFilter === 'all' || (c.dataset.genre || '').split(' ').includes(genreFilter);
+      const matchRegion = regionFilter === 'all' || c.dataset.region === regionFilter;
+      c.style.display = matchGenre && matchRegion ? '' : 'none';
+    });
+  }
+  qs('#genreFilters').addEventListener('click', e => {
+    const btn = e.target.closest('.filter-btn');
+    if (!btn) return;
+    qsa('#genreFilters .filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    applyFilters();
+  });
   qs('#filmFilters').addEventListener('click', e => {
     const btn = e.target.closest('.filter-btn');
     if (!btn) return;
-    qsa('.filter-btn').forEach(b => b.classList.remove('active'));
+    qsa('#filmFilters .filter-btn').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
-    const filter = btn.dataset.filter;
-    qsa('.film-card').forEach(c => {
-      c.style.display = filter === 'all' || c.dataset.region === filter ? '' : 'none';
-    });
+    applyFilters();
   });
 }
 
 function filmCardHTML(f) {
   const title = f.title[CURRENT_LANG] || f.title.en;
+  const genreStr = (f.genre || []).join(' ');
   return `
-    <div class="film-card" data-region="${f.region[CURRENT_LANG] || f.region.en}" onclick="navigate('#/film/${f.id}')">
+    <div class="film-card" data-region="${f.region[CURRENT_LANG] || f.region.en}" data-genre="${genreStr}" onclick="navigate('#/film/${f.id}')">
       <div class="film-card-img">
         <img src="${pimg(f.screenshots?.[0] || f.poster)}" alt="${title}" loading="lazy">
         ${f.new ? '<span class="film-card-badge">' + lang('new') + '</span>' : ''}

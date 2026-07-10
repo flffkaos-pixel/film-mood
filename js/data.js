@@ -1,7 +1,8 @@
 const FILM_DATA = [
-  {
+  { genre: ["Drama"],
     id: "nostalghia-1983",
     title: { en: "Nostalghia", ko: "노스탤지어", zh: "乡愁" },
+
     year: 1983,
     director: { en: "Andrei Tarkovsky", ko: "안드레이 타르콥스키" },
     region: { en: "Soviet Union", ko: "소비에트 연방" },
@@ -14,9 +15,10 @@ const FILM_DATA = [
     featured: true,
     new: true
   },
-  {
+  { genre: ["Drama", "War"],
     id: "ivans-childhood-1962",
     title: { en: "Ivan's Childhood", ko: "이반의 어린 시절", zh: "伊万的童年" },
+
     year: 1962,
     director: { en: "Andrei Tarkovsky", ko: "안드레이 타르콥스키" },
     region: { en: "Soviet Union", ko: "소비에트 연방" },
@@ -29,9 +31,10 @@ const FILM_DATA = [
     featured: true,
     new: true
   },
-  {
+  { genre: ["Comedy", "Romance"],
     id: "its-complicated-2009",
     title: { en: "It's Complicated", ko: "이츠 컴플리케이티드", zh: "爱很复杂" },
+
     year: 2009,
     director: { en: "Nancy Meyers", ko: "낸시 마이어스" },
     region: { en: "USA", ko: "미국" },
@@ -44,9 +47,10 @@ const FILM_DATA = [
     featured: true,
     new: true
   },
-  {
+  { genre: ["Drama", "Thriller"],
     id: "parasite-2019",
     title: { en: "Parasite", ko: "기생충", zh: "寄生虫" },
+
     year: 2019,
     director: { en: "Bong Joon-ho", ko: "봉준호" },
     region: { en: "Korea", ko: "한국" },
@@ -69,9 +73,10 @@ const FILM_DATA = [
     featured: true,
     new: true
   },
-  {
+  { genre: ["Drama"],
     id: "the-room-next-door-2024",
     title: { en: "The Room Next Door", ko: "더 룸 넥스트 도어", zh: "隔壁房间" },
+
     year: 2024,
     director: { en: "Pedro Almodóvar", ko: "페드로 알모도바르" },
     region: { en: "Spain", ko: "스페인" },
@@ -84,9 +89,10 @@ const FILM_DATA = [
     featured: true,
     new: true
   },
-  {
+  { genre: ["Romance", "Drama"],
     id: "le-bonheur-1965",
     title: { en: "Le bonheur", ko: "르 보뇌르", zh: "幸福" },
+
     year: 1965,
     director: { en: "Agnès Varda", ko: "아녜스 바르다" },
     region: { en: "France", ko: "프랑스" },
@@ -99,9 +105,10 @@ const FILM_DATA = [
     featured: true,
     new: true
   },
-  {
+  { genre: ["Comedy", "Drama"],
     id: "le-havre-2011",
     title: { en: "Le Havre", ko: "르 아브르", zh: "勒阿弗尔" },
+
     year: 2011,
     director: { en: "Aki Kaurismäki", ko: "아키 카우리스마키" },
     region: { en: "Finland / France", ko: "핀란드 / 프랑스" },
@@ -114,9 +121,10 @@ const FILM_DATA = [
     featured: true,
     new: true
   },
-  {
+  { genre: ["Drama", "Romance"],
     id: "the-scent-of-green-papaya-1993",
     title: { en: "The Scent of Green Papaya", ko: "그린 파파야 향기", zh: "青木瓜之味" },
+
     year: 1993,
     director: { en: "Tran Anh Hung", ko: "트란 안 훙" },
     region: { en: "Vietnam", ko: "베트남" },
@@ -129,9 +137,10 @@ const FILM_DATA = [
     featured: true,
     new: true
   },
-  {
+  { genre: ["Thriller", "Horror"],
     id: "american-psycho-2000",
     title: { en: "American Psycho", ko: "아메리칸 사이코", zh: "美国精神病人" },
+
     year: 2000,
     director: { en: "Mary Harron", ko: "메리 해론" },
     region: { en: "USA", ko: "미국" },
@@ -144,9 +153,10 @@ const FILM_DATA = [
     featured: true,
     new: true
   },
-  {
+  { genre: ["Drama"],
     id: "the-wind-will-carry-us-1999",
     title: { en: "The Wind Will Carry Us", ko: "바람이 우리를 데려가리", zh: "随风而逝" },
+
     year: 1999,
     director: { en: "Abbas Kiarostami", ko: "압바스 키아로스타미" },
     region: { en: "Iran", ko: "이란" },
@@ -159,9 +169,10 @@ const FILM_DATA = [
     featured: true,
     new: true
   },
-  {
+  { genre: ["Drama"],
     id: "taste-of-cherry-1997",
     title: { en: "Taste of Cherry", ko: "체리의 맛", zh: "樱桃的滋味" },
+
     year: 1997,
     director: { en: "Abbas Kiarostami", ko: "압바스 키아로스타미" },
     region: { en: "Iran", ko: "이란" },
@@ -174,9 +185,10 @@ const FILM_DATA = [
     featured: true,
     new: true
   },
-  {
+  { genre: ["Romance", "Drama"],
     id: "a-tale-of-winter-1992",
     title: { en: "A Tale of Winter", ko: "겨울 이야기", zh: "冬天的故事" },
+
     year: 1992,
     director: { en: "Éric Rohmer", ko: "에릭 로메르" },
     region: { en: "France", ko: "프랑스" },
@@ -189,9 +201,10 @@ const FILM_DATA = [
     featured: true,
     new: true
   },
-  {
+  { genre: ["Romance", "Drama"],
     id: "autumn-tale-1998",
     title: { en: "Autumn Tale", ko: "가을 이야기", zh: "秋天的故事" },
+
     year: 1998,
     director: { en: "Éric Rohmer", ko: "에릭 로메르" },
     region: { en: "France", ko: "프랑스" },
@@ -204,9 +217,10 @@ const FILM_DATA = [
     featured: true,
     new: true
   },
-  {
+  { genre: ["Drama"],
     id: "amour-2012",
     title: { en: "Amour", ko: "아무르", zh: "爱" },
+
     year: 2012,
     director: { en: "Michael Haneke", ko: "미하엘 하네케" },
     region: { en: "France", ko: "프랑스" },
@@ -219,9 +233,10 @@ const FILM_DATA = [
     featured: true,
     new: true
   },
-  {
+  { genre: ["Drama", "Romance"],
     id: "marriage-story-2019",
     title: { en: "Marriage Story", ko: "메리지 스토리", zh: "婚姻故事" },
+
     year: 2019,
     director: { en: "Noah Baumbach", ko: "노아 바움백" },
     region: { en: "USA", ko: "미국" },
@@ -234,9 +249,10 @@ const FILM_DATA = [
     featured: true,
     new: true
   },
-  {
+  { genre: ["Crime", "Romance"],
     id: "pierrot-le-fou-1965",
     title: { en: "Pierrot le Fou", ko: "미치광이 삐에로", zh: "狂人皮埃罗" },
+
     year: 1965,
     director: { en: "Jean-Luc Godard", ko: "장뤽 고다르" },
     region: { en: "France", ko: "프랑스" },
@@ -249,9 +265,10 @@ const FILM_DATA = [
     featured: true,
     new: true
   },
-  {
+  { genre: ["Drama"],
     id: "aftersun-2022",
     title: { en: "Aftersun", ko: "애프터썬", zh: "晒后假日" },
+
     year: 2022,
     director: { en: "Charlotte Wells", ko: "샬럿 웰스" },
     region: { en: "USA", ko: "미국" },
@@ -264,9 +281,10 @@ const FILM_DATA = [
     featured: false,
     new: true
   },
-  {
+  { genre: ["Drama"],
     id: "an-autumn-afternoon-1962",
     title: { en: "An Autumn Afternoon", ko: "고추잠자리", zh: "秋刀鱼之味" },
+
     year: 1962,
     director: { en: "Yasujirô Ozu", ko: "오즈 야스지로" },
     region: { en: "Japan", ko: "일본" },
@@ -279,9 +297,10 @@ const FILM_DATA = [
     featured: false,
     new: true
   },
-  {
+  { genre: ["Comedy", "Romance"],
     id: "moonrise-kingdom-2012",
     title: { en: "Moonrise Kingdom", ko: "문라이즈 킹덤", zh: "月升王国" },
+
     year: 2012,
     director: { en: "Wes Anderson", ko: "웨스 앤더슨" },
     region: { en: "USA", ko: "미국" },
@@ -294,9 +313,10 @@ const FILM_DATA = [
     featured: false,
     new: true
   },
-  {
+  { genre: ["Thriller", "Mystery"],
     id: "the-ghost-writer-2010",
     title: { en: "The Ghost Writer", ko: "고스트 라이터", zh: "影子写手" },
+
     year: 2010,
     director: { en: "Roman Polanski", ko: "로만 폴란스키" },
     region: { en: "France / UK", ko: "프랑스 / 영국" },
@@ -309,9 +329,10 @@ const FILM_DATA = [
     featured: false,
     new: true
   },
-  {
+  { genre: ["Drama", "Comedy"],
     id: "eat-drink-man-woman-1994",
     title: { en: "Eat Drink Man Woman", ko: "음식남녀", zh: "饮食男女" },
+
     year: 1994,
     director: { en: "Ang Lee", ko: "리안" },
     region: { en: "Taiwan", ko: "대만" },
@@ -324,9 +345,10 @@ const FILM_DATA = [
     featured: false,
     new: true
   },
-  {
+  { genre: ["Drama"],
     id: "parallel-mothers-2021",
     title: { en: "Parallel Mothers", ko: "패러렐 마더스", zh: "平行的母亲" },
+
     year: 2021,
     director: { en: "Pedro Almodóvar", ko: "페드로 알모도바르" },
     region: { en: "Spain", ko: "스페인" },
@@ -339,9 +361,10 @@ const FILM_DATA = [
     featured: false,
     new: true
   },
-  {
+  { genre: ["Drama", "Romance"],
     id: "like-someone-in-love-2012",
     title: { en: "Like Someone in Love", ko: "라이크 섬원 인 러브", zh: "如沐爱河" },
+
     year: 2012,
     director: { en: "Abbas Kiarostami", ko: "압바스 키아로스타미" },
     region: { en: "Japan", ko: "일본" },
@@ -354,9 +377,10 @@ const FILM_DATA = [
     featured: false,
     new: true
   },
-  {
+  { genre: ["Romance", "Drama"],
     id: "claires-knee-1970",
     title: { en: "Claire's Knee", ko: "클레어의 무릎", zh: "克莱尔的膝盖" },
+
     year: 1970,
     director: { en: "Éric Rohmer", ko: "에릭 로메르" },
     region: { en: "France", ko: "프랑스" },
@@ -369,9 +393,10 @@ const FILM_DATA = [
     featured: false,
     new: true
   },
-  {
+  { genre: ["Drama"],
     id: "a-good-person-2023",
     title: { en: "A Good Person", ko: "어 굿 퍼슨", zh: "一个好人" },
+
     year: 2023,
     director: { en: "Zach Braff", ko: "잭 브래프" },
     region: { en: "USA", ko: "미국" },
@@ -384,9 +409,10 @@ const FILM_DATA = [
     featured: false,
     new: true
   },
-  {
+  { genre: ["Romance", "Drama"],
     id: "portrait-of-a-lady-on-fire-2019",
     title: { en: "Portrait of a Lady on Fire", ko: "타오르는 여인의 초상", zh: "燃烧女子的肖像" },
+
     year: 2019,
     director: { en: "Céline Sciamma", ko: "셀린 시아마" },
     region: { en: "France", ko: "프랑스" },
@@ -399,9 +425,10 @@ const FILM_DATA = [
     featured: false,
     new: true
   },
-  {
+  { genre: ["Drama"],
     id: "roma-2018",
     title: { en: "Roma", ko: "로마", zh: "罗马" },
+
     year: 2018,
     director: { en: "Alfonso Cuarón", ko: "알폰소 쿠아론" },
     region: { en: "USA", ko: "미국" },
@@ -414,9 +441,10 @@ const FILM_DATA = [
     featured: false,
     new: true
   },
-  {
+  { genre: ["Comedy", "Drama", "War"],
     id: "jojo-rabbit-2019",
     title: { en: "Jojo Rabbit", ko: "조조 래빗", zh: "乔乔的异想世界" },
+
     year: 2019,
     director: { en: "Taika Waititi", ko: "타이카 와이티티" },
     region: { en: "USA", ko: "미국" },
@@ -429,9 +457,10 @@ const FILM_DATA = [
     featured: false,
     new: true
   },
-  {
+  { genre: ["Drama", "Comedy"],
     id: "almost-famous-2000",
     title: { en: "Almost Famous", ko: "올모스트 페이머스", zh: "几近成名" },
+
     year: 2000,
     director: { en: "Cameron Crowe", ko: "카메론 크로우" },
     region: { en: "USA", ko: "미국" },
@@ -444,9 +473,10 @@ const FILM_DATA = [
     featured: false,
     new: true
   },
-  {
+  { genre: ["Horror", "Thriller"],
     id: "the-shining-1980",
     title: { en: "The Shining", ko: "샤이닝", zh: "闪灵" },
+
     year: 1980,
     director: { en: "Stanley Kubrick", ko: "스탠리 큐브릭" },
     region: { en: "UK / USA", ko: "영국 / 미국" },
@@ -459,9 +489,10 @@ const FILM_DATA = [
     featured: false,
     new: true
   },
-  {
+  { genre: ["Drama"],
     id: "the-sacrifice-1986",
     title: { en: "The Sacrifice", ko: "희생", zh: "牺牲" },
+
     year: 1986,
     director: { en: "Andrei Tarkovsky", ko: "안드레이 타르콥스키" },
     region: { en: "Soviet Union", ko: "소비에트 연방" },
@@ -474,9 +505,10 @@ const FILM_DATA = [
     featured: false,
     new: true
   },
-  {
+  { genre: ["Romance", "Musical"],
     id: "la-la-land-2016",
     title: { en: "La La Land", ko: "라라랜드", zh: "爱乐之城" },
+
     year: 2016,
     director: { en: "Damien Chazelle", ko: "데이미언 셔젤" },
     region: { en: "USA", ko: "미국" },
@@ -489,9 +521,10 @@ const FILM_DATA = [
     featured: false,
     new: true
   },
-  {
+  { genre: ["Romance", "Sci-Fi"],
     id: "her-2013",
     title: { en: "Her", ko: "허", zh: "她" },
+
     year: 2013,
     director: { en: "Spike Jonze", ko: "스파이크 존즈" },
     region: { en: "USA", ko: "미국" },
@@ -504,9 +537,10 @@ const FILM_DATA = [
     featured: false,
     new: true
   },
-  {
+  { genre: ["Drama"],
     id: "mirror-1975",
     title: { en: "Mirror", ko: "거울", zh: "镜子" },
+
     year: 1975,
     director: { en: "Andrei Tarkovsky", ko: "안드레이 타르콥스키" },
     region: { en: "Soviet Union", ko: "소비에트 연방" },
@@ -519,9 +553,10 @@ const FILM_DATA = [
     featured: false,
     new: true
   },
-  {
+  { genre: ["Drama", "Romance"],
     id: "revolutionary-road-2008",
     title: { en: "Revolutionary Road", ko: "레볼루셔너리 로드", zh: "革命之路" },
+
     year: 2008,
     director: { en: "Sam Mendes", ko: "샘 멘데스" },
     region: { en: "USA", ko: "미국" },
@@ -534,9 +569,10 @@ const FILM_DATA = [
     featured: false,
     new: true
   },
-  {
+  { genre: ["Comedy", "Drama", "Romance"],
     id: "fallen-leaves-2023",
     title: { en: "Fallen Leaves", ko: "낙엽", zh: "枯叶" },
+
     year: 2023,
     director: { en: "Aki Kaurismäki", ko: "아키 카우리스마키" },
     region: { en: "Finland", ko: "핀란드" },
@@ -549,9 +585,10 @@ const FILM_DATA = [
     featured: false,
     new: true
   },
-  {
+  { genre: ["Drama"],
     id: "raise-the-red-lantern-1991",
     title: { en: "Raise the Red Lantern", ko: "붉은 등롱", zh: "大红灯笼高高挂" },
+
     year: 1991,
     director: { en: "Zhang Yimou", ko: "장이머우" },
     region: { en: "China", ko: "중국" },
@@ -564,9 +601,10 @@ const FILM_DATA = [
     featured: false,
     new: true
   },
-  {
+  { genre: ["Drama", "Romance"],
     id: "malcolm-and-marie-2021",
     title: { en: "Malcolm & Marie", ko: "맬컴 & 마리", zh: "马尔科姆与玛丽" },
+
     year: 2021,
     director: { en: "Sam Levinson", ko: "샘 레빈슨" },
     region: { en: "USA", ko: "미국" },
@@ -579,9 +617,10 @@ const FILM_DATA = [
     featured: false,
     new: true
   },
-  {
+  { genre: ["Drama"],
     id: "columbus-2017",
     title: { en: "Columbus", ko: "콜럼버스", zh: "在哥伦布" },
+
     year: 2017,
     director: { en: "Kogonada", ko: "코고나다" },
     region: { en: "USA", ko: "미국" },
@@ -594,9 +633,10 @@ const FILM_DATA = [
     featured: false,
     new: true
   },
-  {
+  { genre: ["Romance", "Comedy"],
     id: "the-holiday-2006",
     title: { en: "The Holiday", ko: "러브 홀리데이", zh: "恋爱假期" },
+
     year: 2006,
     director: { en: "Nancy Meyers", ko: "낸시 마이어스" },
     region: { en: "UK", ko: "영국" },
@@ -609,9 +649,10 @@ const FILM_DATA = [
     featured: false,
     new: true
   },
-  {
+  { genre: ["Drama"],
     id: "our-little-sister-2015",
     title: { en: "Our Little Sister", ko: "우리 작은 언니", zh: "海街日记" },
+
     year: 2015,
     director: { en: "Hirokazu Kore-eda", ko: "고레에다 히로카즈" },
     region: { en: "Japan", ko: "일본" },
@@ -624,9 +665,10 @@ const FILM_DATA = [
     featured: false,
     new: true
   },
-  {
+  { genre: ["Drama"],
     id: "yi-yi-2000",
     title: { en: "Yi Yi", ko: "하나 그리고 둘", zh: "一一" },
+
     year: 2000,
     director: { en: "Edward Yang", ko: "에드워드 양" },
     region: { en: "Taiwan", ko: "대만" },
@@ -639,9 +681,10 @@ const FILM_DATA = [
     featured: false,
     new: true
   },
-  {
+  { genre: ["Drama", "Romance"],
     id: "taipei-story-1985",
     title: { en: "Taipei Story", ko: "타이베이 이야기", zh: "青梅竹马" },
+
     year: 1985,
     director: { en: "Edward Yang", ko: "에드워드 양" },
     region: { en: "Taiwan", ko: "대만" },
@@ -654,9 +697,10 @@ const FILM_DATA = [
     featured: false,
     new: true
   },
-  {
+  { genre: ["Comedy", "Drama"],
     id: "women-on-the-verge-1988",
     title: { en: "Women on the Verge of a Nervous Breakdown", ko: "신경쇠약 직전의 여자들", zh: "崩溃边缘的女人" },
+
     year: 1988,
     director: { en: "Pedro Almodóvar", ko: "페드로 알모도바르" },
     region: { en: "Spain", ko: "스페인" },
@@ -669,9 +713,10 @@ const FILM_DATA = [
     featured: false,
     new: true
   },
-  {
+  { genre: ["Drama", "Comedy"],
     id: "julie-and-julia-2009",
     title: { en: "Julie & Julia", ko: "줄리 & 줄리아", zh: "朱莉与朱莉娅" },
+
     year: 2009,
     director: { en: "Nora Ephron", ko: "노라 에프런" },
     region: { en: "USA", ko: "미국" },
@@ -684,9 +729,10 @@ const FILM_DATA = [
     featured: false,
     new: true
   },
-  {
+  { genre: ["Thriller", "Mystery", "Romance"],
     id: "vertigo-1958",
     title: { en: "Vertigo", ko: "현기증", zh: "迷魂记" },
+
     year: 1958,
     director: { en: "Alfred Hitchcock", ko: "알프레드 히치콕" },
     region: { en: "USA", ko: "미국" },
@@ -699,9 +745,10 @@ const FILM_DATA = [
     featured: false,
     new: true
   },
-  {
+  { genre: ["Comedy", "Drama"],
     id: "the-french-dispatch-2021",
     title: { en: "The French Dispatch", ko: "프렌치 디스패치", zh: "法兰西特派" },
+
     year: 2021,
     director: { en: "Wes Anderson", ko: "웨스 앤더슨" },
     region: { en: "USA / France", ko: "미국 / 프랑스" },
@@ -714,9 +761,10 @@ const FILM_DATA = [
     featured: false,
     new: true
   },
-  {
+  { genre: ["Drama", "Mystery"],
     id: "julieta-2016",
     title: { en: "Julieta", ko: "훌리에타", zh: "胡丽叶塔" },
+
     year: 2016,
     director: { en: "Pedro Almodóvar", ko: "페드로 알모도바르" },
     region: { en: "Spain", ko: "스페인" },
@@ -729,9 +777,10 @@ const FILM_DATA = [
     featured: false,
     new: true
   },
-  {
+  { genre: ["Comedy", "Romance", "Fantasy"],
     id: "midnight-in-paris-2011",
     title: { en: "Midnight in Paris", ko: "미드나잇 인 파리", zh: "午夜巴黎" },
+
     year: 2011,
     director: { en: "Woody Allen", ko: "우디 앨런" },
     region: { en: "USA", ko: "미국" },
@@ -744,24 +793,26 @@ const FILM_DATA = [
     featured: false,
     new: true
   },
-  {
+  { genre: ["Comedy", "Romance"],
     id: "the-parent-trap-1998",
     title: { en: "The Parent Trap", ko: "페어런트 트랩", zh: "天生一对" },
+
     year: 1998,
     director: { en: "Nancy Meyers", ko: "낸시 마이어스" },
     region: { en: "USA", ko: "미국" },
     cinematographer: "Dean Cundey",
     description: { en: "", ko: "" },
-    poster: "https://img.yeguozi.com/thumbs/%E5%A4%A9%E7%94%9F%E4%B8%80%E5%AF%B9%EF%BC%881998%EF%BC%89/0D0PHO8X.webp",
+    poster: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Stephen_A._Rotter_2024.jpg/330px-Stephen_A._Rotter_2024.jpg",
     screenshots: ["https://img.yeguozi.com/thumbs/%E5%A4%A9%E7%94%9F%E4%B8%80%E5%AF%B9%EF%BC%881998%EF%BC%89/0D0PHO8X.webp"],
     colors: ["#D4B888", "#E8D0A8"],
     douban: "",
     featured: false,
     new: true
   },
-  {
+  { genre: ["Comedy", "Drama"],
     id: "the-royal-tenenbaums-2001",
     title: { en: "The Royal Tenenbaums", ko: "로열 테넌바움스", zh: "天才一族" },
+
     year: 2001,
     director: { en: "Wes Anderson", ko: "웨스 앤더슨" },
     region: { en: "USA", ko: "미국" },
@@ -774,9 +825,10 @@ const FILM_DATA = [
     featured: false,
     new: true
   },
-  {
+  { genre: ["Drama", "Comedy"],
     id: "paterson-2016",
     title: { en: "Paterson", ko: "패터슨", zh: "帕特森" },
+
     year: 2016,
     director: { en: "Jim Jarmusch", ko: "짐 자무쉬" },
     region: { en: "USA / France", ko: "미국 / 프랑스" },
@@ -789,9 +841,10 @@ const FILM_DATA = [
     featured: false,
     new: true
   },
-  {
+  { genre: ["Romance", "Drama"],
     id: "the-green-ray-1986",
     title: { en: "The Green Ray", ko: "녹색 광선", zh: "绿光" },
+
     year: 1986,
     director: { en: "Éric Rohmer", ko: "에릭 로메르" },
     region: { en: "France", ko: "프랑스" },
@@ -804,9 +857,10 @@ const FILM_DATA = [
     featured: false,
     new: true
   },
-  {
+  { genre: ["Drama"],
     id: "all-about-my-mother-1999",
     title: { en: "All About My Mother", ko: "어머니에 관한 모든 것", zh: "关于我母亲的一切" },
+
     year: 1999,
     director: { en: "Pedro Almodóvar", ko: "페드로 알모도바르" },
     region: { en: "Spain", ko: "스페인" },
@@ -819,9 +873,10 @@ const FILM_DATA = [
     featured: false,
     new: true
   },
-  {
+  { genre: ["Comedy", "Adventure"],
     id: "the-grand-budapest-hotel-2014",
     title: { en: "The Grand Budapest Hotel", ko: "그랜드 부다페스트 호텔", zh: "布达佩斯大饭店" },
+
     year: 2014,
     director: { en: "Wes Anderson", ko: "웨스 앤더슨" },
     region: { en: "USA / Germany / UK", ko: "미국 / 독일 / 영국" },
@@ -834,9 +889,10 @@ const FILM_DATA = [
     featured: false,
     new: true
   },
-  {
+  { genre: ["Drama"],
     id: "the-hedgehog-2009",
     title: { en: "The Hedgehog", ko: "고슴도치의 우아함", zh: "刺猬的优雅" },
+
     year: 2009,
     director: { en: "Mona Achache", ko: "모나 아샤슈" },
     region: { en: "France", ko: "프랑스" },
@@ -849,9 +905,10 @@ const FILM_DATA = [
     featured: false,
     new: true
   },
-  {
+  { genre: ["Romance", "Comedy"],
     id: "amelie-2001",
     title: { en: "Amélie", ko: "아멜리에", zh: "天使爱美丽" },
+
     year: 2001,
     director: { en: "Jean-Pierre Jeunet", ko: "장피에르 죄네" },
     region: { en: "France", ko: "프랑스" },
@@ -864,9 +921,10 @@ const FILM_DATA = [
     featured: false,
     new: true
   },
-  {
+  { genre: ["Drama"],
     id: "the-hours-2002",
     title: { en: "The Hours", ko: "디 아워스", zh: "时时刻刻" },
+
     year: 2002,
     director: { en: "Stephen Daldry", ko: "스티븐 달드리" },
     region: { en: "USA / UK", ko: "미국 / 영국" },
@@ -879,9 +937,10 @@ const FILM_DATA = [
     featured: false,
     new: true
   },
-  {
+  { genre: ["Drama"],
     id: "things-to-come-2016",
     title: { en: "Things to Come", ko: "미래의 일들", zh: "将来的事" },
+
     year: 2016,
     director: { en: "Mia Hansen-Løve", ko: "미아 한센-러브" },
     region: { en: "France / Germany", ko: "프랑스 / 독일" },
@@ -894,9 +953,10 @@ const FILM_DATA = [
     featured: false,
     new: true
   },
-  {
+  { genre: ["Romance", "Drama"],
     id: "call-me-by-your-name-2017",
     title: { en: "Call Me by Your Name", ko: "콜 미 바이 유어 네임", zh: "请以你的名字呼唤我" },
+
     year: 2017,
     director: { en: "Luca Guadagnino", ko: "루카 구아다니노" },
     region: { en: "France / Italy", ko: "프랑스 / 이탈리아" },
@@ -909,9 +969,10 @@ const FILM_DATA = [
     featured: false,
     new: true
   },
-  {
+  { genre: ["Romance", "Drama"],
     id: "a-tale-of-springtime-1990",
     title: { en: "A Tale of Springtime", ko: "봄 이야기", zh: "春天的故事" },
+
     year: 1990,
     director: { en: "Éric Rohmer", ko: "에릭 로메르" },
     region: { en: "France", ko: "프랑스" },
@@ -924,24 +985,26 @@ const FILM_DATA = [
     featured: false,
     new: true
   },
-  {
+  { genre: ["Comedy"],
     id: "playtime-1967",
     title: { en: "PlayTime", ko: "플레이타임", zh: "玩乐时间" },
+
     year: 1967,
     director: { en: "Jacques Tati", ko: "자크 타티" },
     region: { en: "France / Italy", ko: "프랑스 / 이탈리아" },
     cinematographer: "Jean Badal",
     description: { en: "", ko: "" },
-    poster: "https://img.yeguozi.com/thumbs/%E7%8E%A9%E4%B9%90%E6%97%B6%E9%97%B4%EF%BC%881967%EF%BC%89/Playtime.1967.REMASTERED.1080p.BluRay.x264-SADPANDA_0051.webp",
-    screenshots: ["https://img.yeguozi.com/thumbs/%E7%8E%A9%E4%B9%90%E6%97%B6%E9%97%B4%EF%BC%881967%EF%BC%89/Playtime.1967.REMASTERED.1080p.BluRay.x264-SADPANDA_0051.webp"],
+    poster: "https://img.yeguozi.com/thumbs/%E7%8E%A9%E4%B9%90%E6%97%B6%E9%97%B4%EF%BC%881967%EF%BC%89/0001.webp",
+    screenshots: ["https://img.yeguozi.com/thumbs/%E7%8E%A9%E4%B9%90%E6%97%B6%E9%97%B4%EF%BC%881967%EF%BC%89/0001.webp"],
     colors: ["#6B6B6B", "#A8A8A8"],
     douban: "",
     featured: false,
     new: true
   },
-  {
+  { genre: ["Drama", "Romance"],
     id: "the-dreamers-2003",
     title: { en: "The Dreamers", ko: "드리머스", zh: "戏梦巴黎" },
+
     year: 2003,
     director: { en: "Bernardo Bertolucci", ko: "베르나르도 베르톨루치" },
     region: { en: "France / UK / Italy", ko: "프랑스 / 영국 / 이탈리아" },
@@ -954,9 +1017,10 @@ const FILM_DATA = [
     featured: false,
     new: true
   },
-  {
+  { genre: ["Drama"],
     id: "the-father-2020",
     title: { en: "The Father", ko: "더 파더", zh: "困在时间里的父亲" },
+
     year: 2020,
     director: { en: "Florian Zeller", ko: "플로리안 젤러" },
     region: { en: "UK / France", ko: "영국 / 프랑스" },
@@ -1040,12 +1104,12 @@ const DIRECTOR_DATA = [
 ];
 
 const CINEMATOGRAPHER_DATA = [
-  { name: { en: "Stephen A. Rotter", ko: "스티븐 A. 로터", zh: "史蒂芬·A·罗特尔" }, img: "https://img.yeguozi.com/thumbs/%E5%A4%A9%E7%94%9F%E4%B8%80%E5%AF%B9%EF%BC%881998%EF%BC%89/0D0PHO8X.webp" },
+  { name: { en: "Stephen A. Rotter", ko: "스티븐 A. 로터", zh: "史蒂芬·A·罗特尔" }, img: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Stephen_A._Rotter_2024.jpg/330px-Stephen_A._Rotter_2024.jpg" },
   { name: { en: "Abbas Kiarostami", ko: "압바스 키아로스타미", zh: "阿巴斯·基亚罗斯塔米" }, img: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Abbas_Kiarostami-Murcia_%28cropped%29.jpg/330px-Abbas_Kiarostami-Murcia_%28cropped%29.jpg" },
   { name: { en: "Alfonso Cuarón", ko: "알폰소 쿠아론", zh: "阿方索·卡隆" }, img: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Alfonso_Cuar%C3%B3n_2013_%28cropped%29.jpg/330px-Alfonso_Cuar%C3%B3n_2013_%28cropped%29.jpg" },
-  { name: { en: "Affonso Beato", ko: "아폰소 베아토", zh: "Beato" }, img: "https://img.yeguozi.com/thumbs/%E5%85%B3%E4%BA%8E%E6%88%91%E6%AF%8D%E4%BA%B2%E7%9A%84%E4%B8%80%E5%88%87(1999)/HQGVPM7I.webp" },
-  { name: { en: "Eduardo Grau", ko: "에두아르도 그라우", zh: "爱德华·格罗" }, img: "https://img.yeguozi.com/thumbs/%E9%9A%94%E5%A3%81%E6%88%BF%E9%97%B4(2024)/small_0B98HAQ3.webp" },
-  { name: { en: "Andrzej Sekuła", ko: "안제이 세쿠와", zh: "安德列·塞库拉" }, img: "https://img.yeguozi.com/thumbs/%E7%BE%8E%E5%9B%BD%E7%B2%BE%E7%A5%9E%E7%97%85%E4%BA%BA(2000)/RJQ32SUA.webp" }
+  { name: { en: "Affonso Beato", ko: "아폰소 베아토", zh: "Beato" }, img: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Affonso_Beato.jpg/330px-Affonso_Beato.jpg" },
+  { name: { en: "Eduardo Grau", ko: "에두아르도 그라우", zh: "爱德华·格罗" }, img: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Eduardo_Grau.jpg/330px-Eduardo_Grau.jpg" },
+  { name: { en: "Andrzej Sekuła", ko: "안제이 세쿠와", zh: "安德列·塞库拉" }, img: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Andrzej_Seku%C5%82a_2021.jpg/330px-Andrzej_Seku%C5%82a_2021.jpg" }
 ];
 
 const ACADEMY_DATA = [
