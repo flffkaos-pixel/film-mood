@@ -147,17 +147,12 @@ function renderHome(main) {
 // ─── Films ───
 function renderFilms(main) {
   const regions = [...new Set(FILM_DATA.map(f => f.region[CURRENT_LANG]))].sort();
-  const genres = [...new Set(FILM_DATA.flatMap(f => f.genre || []))].sort();
   let html = `
     <div class="page-header">
       <h1>${lang('films')}</h1>
       <p>64 ${lang('filmsCount', { count: FILM_DATA.length })}</p>
     </div>
     <section class="section">
-      <div class="filter-bar" id="genreFilters">
-        <button class="filter-btn active" data-filter="all">${lang('all')}</button>
-        ${genres.map(g => `<button class="filter-btn" data-filter="${g}">${g}</button>`).join('')}
-      </div>
       <div class="filter-bar" id="filmFilters">
         <button class="filter-btn active" data-filter="all">${lang('allRegions')}</button>
         ${regions.map(r => `<button class="filter-btn" data-filter="${r}">${r}</button>`).join('')}
@@ -166,36 +161,22 @@ function renderFilms(main) {
     </section>
   `;
   main.innerHTML = html;
-  function applyFilters() {
-    const genreFilter = qs('#genreFilters .filter-btn.active')?.dataset?.filter || 'all';
-    const regionFilter = qs('#filmFilters .filter-btn.active')?.dataset?.filter || 'all';
-    qsa('.film-card').forEach(c => {
-      const matchGenre = genreFilter === 'all' || (c.dataset.genre || '').split(' ').includes(genreFilter);
-      const matchRegion = regionFilter === 'all' || c.dataset.region === regionFilter;
-      c.style.display = matchGenre && matchRegion ? '' : 'none';
-    });
-  }
-  qs('#genreFilters').addEventListener('click', e => {
-    const btn = e.target.closest('.filter-btn');
-    if (!btn) return;
-    qsa('#genreFilters .filter-btn').forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-    applyFilters();
-  });
   qs('#filmFilters').addEventListener('click', e => {
     const btn = e.target.closest('.filter-btn');
     if (!btn) return;
-    qsa('#filmFilters .filter-btn').forEach(b => b.classList.remove('active'));
+    qsa('.filter-btn').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
-    applyFilters();
+    const filter = btn.dataset.filter;
+    qsa('.film-card').forEach(c => {
+      c.style.display = filter === 'all' || c.dataset.region === filter ? '' : 'none';
+    });
   });
 }
 
 function filmCardHTML(f) {
   const title = f.title[CURRENT_LANG] || f.title.en;
-  const genreStr = (f.genre || []).join(' ');
   return `
-    <div class="film-card" data-region="${f.region[CURRENT_LANG] || f.region.en}" data-genre="${genreStr}" onclick="navigate('#/film/${f.id}')">
+    <div class="film-card" data-region="${f.region[CURRENT_LANG] || f.region.en}" onclick="navigate('#/film/${f.id}')">
       <div class="film-card-img">
         <img src="${pimg(f.screenshots?.[0] || f.poster)}" alt="${title}" loading="lazy">
         ${f.new ? '<span class="film-card-badge">' + lang('new') + '</span>' : ''}
@@ -330,6 +311,28 @@ function renderAcademy(main) {
 }
 
 // ─── Color Detail ───
+function hexToRgb(hex) {
+  const h = hex.replace('#', '');
+  return { r: parseInt(h.substring(0,2), 16), g: parseInt(h.substring(2,4), 16), b: parseInt(h.substring(4,6), 16) };
+}
+function classifyHue(hex) {
+  const { r, g, b } = hexToRgb(hex);
+  const max = Math.max(r, g, b), min = Math.min(r, g, b);
+  const l = (max + min) / 2 / 255;
+  const s = max === 0 ? 0 : (max - min) / max;
+  if (s < 0.1 || l < 0.08) return 'mono';
+  let h;
+  if (max === r) h = ((g - b) / (max - min) + (g < b ? 6 : 0)) * 60;
+  else if (max === g) h = ((b - r) / (max - min) + 2) * 60;
+  else h = ((r - g) / (max - min) + 4) * 60;
+  if (h < 15 || h >= 345) return 'red';
+  if (h < 45) return 'orange';
+  if (h < 75) return 'yellow';
+  if (h < 165) return 'green';
+  if (h < 255) return 'blue';
+  if (h < 330) return 'purple';
+  return 'red';
+}
 function renderColorDetail(main, slug) {
   const color = COLORS_DATA.find(c => c.id === slug);
   if (!color) { main.innerHTML = `<div class="loading" style="padding:80px 24px"><p>Color not found</p><a href="#/colors" class="btn btn-secondary" style="margin-top:16px">← ${lang('colors')}</a></div>`; return; }
@@ -337,15 +340,22 @@ function renderColorDetail(main, slug) {
   const descKey = color.id + 'Desc';
   const name = lang(nameKey);
   const desc = lang(descKey);
+  // Gather screenshots from films whose palette matches this color
+  const shots = FILM_DATA.flatMap(f => {
+    if (!f.colors || !f.screenshots) return [];
+    const match = f.colors.some(c => classifyHue(c) === slug);
+    if (!match) return [];
+    return f.screenshots.slice(0, 10);
+  });
   main.innerHTML = `
     <div class="page-header">
       <h1>${name}</h1>
-      <p>${desc} · ${color.count} ${lang('screenshotsCount')}</p>
+      <p>${desc} · ${shots.length} ${lang('screenshotsCount')}</p>
     </div>
     <section class="section">
       <a href="#/colors" style="color:var(--text3);font-size:14px;display:inline-block;margin-bottom:24px">← ${lang('colors')}</a>
       <div class="film-screenshots">
-        ${color.thumbs.map(url => `<img src="${pimg(url)}" alt="${name}" loading="lazy" style="cursor:zoom-in" onclick="openLightbox('${url}')">`).join('')}
+        ${shots.map(url => `<img src="${pimg(url)}" alt="${name}" loading="lazy" style="cursor:zoom-in" onclick="openLightbox('${url}')">`).join('')}
       </div>
     </section>
   `;
