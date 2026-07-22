@@ -1,6 +1,39 @@
 const IMG_PROXY = 'https://film-mood-proxy.flffkaos.workers.dev/?url=';
 function pimg(url) { return url.includes('img.yeguozi.com') ? IMG_PROXY + encodeURIComponent(url) : url; }
 
+// Film title lookup from color thumb URL (Chinese dir name → film ID)
+const FILM_THUMB_MAP = {
+  "布达佩斯大饭店(2014)": "the-grand-budapest-hotel-2014",
+  "天才一族（2001）": "the-royal-tenenbaums-2001",
+  "大红灯笼高高挂(1991)": "raise-the-red-lantern-1991",
+  "樱桃的滋味(1997)": "taste-of-cherry-1997",
+  "闪灵(1980)": "the-shining-1980",
+  "随风而逝(1999)": "the-wind-will-carry-us-1999",
+  "狂人皮埃罗(1965)": "pierrot-le-fou-1965",
+  "天使爱美丽（2001）": "amelie-2001",
+  "克莱尔的膝盖(1970)": "claires-knee-1970",
+  "一个好人(2023)": "a-good-person-2023",
+  "困在时间里的父亲（2020）": "the-father-2020",
+  "绿光(1986)": "the-green-ray-1986",
+  "幸福 Le bonheur (1965)": "le-bonheur-1965",
+  "崩溃边缘的女人(1988)": "women-on-the-verge-1988",
+  "爱乐之城(2016)": "la-la-land-2016",
+  "牺牲(1986)": "the-sacrifice-1986",
+  "法兰西特派(2021)": "the-french-dispatch-2021",
+  "罗马(2018)": "roma-2018",
+  "伊万的童年(1962)": "ivans-childhood-1962",
+};
+function filmTitleFromThumb(url) {
+  const m = url.match(/thumbs\/([^\/]+)\/\d+\.webp/);
+  if (!m) return '';
+  const dir = decodeURIComponent(m[1]).trim();
+  const id = FILM_THUMB_MAP[dir];
+  if (!id) return '';
+  const f = FILM_DATA.find(x => x.id === id);
+  if (!f) return '';
+  return f.title[CURRENT_LANG] || f.title.en || '';
+}
+
 let CURRENT_LANG = localStorage.getItem('filmmood-lang') || 'ko';
 
 function switchLang() {
@@ -97,7 +130,7 @@ function renderHome(main) {
         <a href="#/films" class="btn btn-primary">${lang('browseFilms')}</a>
         <a href="#/colors" class="btn btn-secondary">${lang('exploreColors')}</a>
       </div>
-      <div class="hero-stats">64 ${lang('filmCount', { count: 3432 })}</div>
+      <div class="hero-stats">${FILM_DATA.length} ${lang('filmCount', { count: 3432 })}</div>
     </section>
     <section class="section">
       <div class="section-header">
@@ -203,6 +236,8 @@ function renderColors(main) {
           const descKey = c.id + 'Desc';
           const name = lang(nameKey);
           const desc = lang(descKey);
+          const thumbs = c.thumbs.slice(0, 6);
+          const colorNames = c.colorNames || [];
           return `
             <div class="color-card" onclick="navigate('#/color/${c.id}')">
               <div class="color-card-header">
@@ -213,8 +248,18 @@ function renderColors(main) {
                 </div>
               </div>
               <div class="color-card-thumbs">
-                ${c.thumbs.slice(0, 6).map(url => `<img src="${pimg(url)}" alt="" loading="lazy">`).join('')}
+                ${thumbs.map(url => `
+                  <div class="color-thumb-wrap">
+                    <img src="${pimg(url)}" alt="" loading="lazy">
+                    <span class="color-thumb-title">${filmTitleFromThumb(url)}</span>
+                  </div>
+                `).join('')}
               </div>
+              ${colorNames.length ? `
+                <div class="color-card-names">
+                  ${colorNames.slice(0, 6).map(n => `<span>${n}</span>`).join('')}
+                </div>
+              ` : ''}
             </div>
           `;
         }).join('')}
@@ -329,8 +374,10 @@ function classifyHue(hex) {
   if (h < 45) return 'orange';
   if (h < 75) return 'yellow';
   if (h < 165) return 'green';
+  if (h < 195) return 'teal';
   if (h < 255) return 'blue';
   if (h < 330) return 'purple';
+  if (s < 0.25 && l > 0.2 && l < 0.7) return 'earth';
   return 'red';
 }
 function renderColorDetail(main, slug) {
@@ -340,22 +387,27 @@ function renderColorDetail(main, slug) {
   const descKey = color.id + 'Desc';
   const name = lang(nameKey);
   const desc = lang(descKey);
-  // Gather screenshots from films whose palette matches this color
-  const shots = FILM_DATA.flatMap(f => {
-    if (!f.colors || !f.screenshots) return [];
+  const colorNames = color.colorNames || [];
+  // Curated thumbs
+  const curated = (color.thumbs || []).slice(0, 12);
+  // One representative screenshot per matching film
+  const filmShots = FILM_DATA.flatMap(f => {
+    if (!f.colors || !f.screenshots || !f.screenshots.length) return [];
     const match = f.colors.some(c => classifyHue(c) === slug);
     if (!match) return [];
-    return f.screenshots.slice(0, 10);
+    return [f.screenshots[0]];
   });
+  const uniqUrls = [...new Set([...curated, ...filmShots])];
   main.innerHTML = `
     <div class="page-header">
       <h1>${name}</h1>
-      <p>${desc} · ${shots.length} ${lang('screenshotsCount')}</p>
+      <p>${desc} · ${uniqUrls.length} ${lang('screenshotsCount')}</p>
     </div>
     <section class="section">
       <a href="#/colors" style="color:var(--text3);font-size:14px;display:inline-block;margin-bottom:24px">← ${lang('colors')}</a>
+      ${colorNames.length ? `<div class="color-card-names" style="margin-bottom:24px">${colorNames.slice(0, 12).map(n => `<span>${n}</span>`).join('')}</div>` : ''}
       <div class="film-screenshots">
-        ${shots.map(url => `<img src="${pimg(url)}" alt="${name}" loading="lazy" style="cursor:zoom-in" onclick="openLightbox('${url}')">`).join('')}
+        ${uniqUrls.map(url => `<img src="${pimg(url)}" alt="${name}" loading="lazy" style="cursor:zoom-in" onclick="openLightbox('${url}')">`).join('')}
       </div>
     </section>
   `;
