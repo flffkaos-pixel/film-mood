@@ -1,6 +1,22 @@
 const IMG_PROXY = 'https://film-mood-proxy.flffkaos.workers.dev/?url=';
 function pimg(url) { return url.includes('img.yeguozi.com') ? IMG_PROXY + encodeURIComponent(url) : url; }
 
+// Fix broken alphanumeric filenames in FILM_DATA → use working numeric format
+if (typeof FILM_DATA !== 'undefined') {
+  FILM_DATA.forEach(f => {
+    if (f.poster && f.poster.includes('img.yeguozi.com/thumbs/')) {
+      f.poster = f.poster.replace(/\/[^/]+\.webp$/, '/0001.webp');
+    }
+    if (f.screenshots) {
+      f.screenshots = f.screenshots.map((s, i) => {
+        if (!s.includes('img.yeguozi.com/thumbs/')) return s;
+        const num = String(i + 1).padStart(4, '0');
+        return s.replace(/\/[^/]+\.webp$/, '/' + num + '.webp');
+      });
+    }
+  });
+}
+
 // Film title lookup: Chinese dir name from thumb URL → film ID
 // Manual overrides for non-standard directory names
 const FILM_THUMB_MAP = {
