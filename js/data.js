@@ -2935,7 +2935,6 @@ const COLORS_DATA = [
     "https://img.yeguozi.com/thumbs/%E9%98%BF%E5%87%A1%E6%AD%A3%E4%BC%A0(2016)/0076.webp",
     "https://img.yeguozi.com/thumbs/%E6%82%AC%E5%B4%96%E4%B9%8B%E4%B8%8A%E7%9A%84%E9%A5%AD(2014)/0049.webp",
     "https://img.yeguozi.com/thumbs/%E8%83%AF%E5%85%93%E8%89%B2%E5%BD%A9(2012)/0005.webp",
-    "https://img.yeguozi.com/thumbs/%E6%82%AC%E5%B4%96%E4%B9%8B%E4%B8%8A%E7%9A%84%E9%A5%AD(2014)/0049.webp",
   ]},
 
   { id: "purple", name: "Purple", count: 233, tags: ["mystery","romance","dream","elegance","dusk","art"], colorNames: ["Putaojiuhong","Danlanzi","Yeputaozi","Yuweihui","Danlanzi 2","Xinhui","Jinzi","Anlongdanzi","Biqizi","Zihui","Shubeihui","Shanlidouhong"], thumbs: [

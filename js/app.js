@@ -1,28 +1,22 @@
 const IMG_PROXY = 'https://film-mood-proxy.flffkaos.workers.dev/?url=';
 function pimg(url) { return url.includes('img.yeguozi.com') ? IMG_PROXY + encodeURIComponent(url) : url; }
 
-// Film title lookup from color thumb URL (Chinese dir name → film ID)
+// Film title lookup: Chinese dir name from thumb URL → film ID
+// Manual overrides for non-standard directory names
 const FILM_THUMB_MAP = {
-  "布达佩斯大饭店(2014)": "the-grand-budapest-hotel-2014",
-  "天才一族（2001）": "the-royal-tenenbaums-2001",
-  "大红灯笼高高挂(1991)": "raise-the-red-lantern-1991",
-  "樱桃的滋味(1997)": "taste-of-cherry-1997",
-  "闪灵(1980)": "the-shining-1980",
-  "随风而逝(1999)": "the-wind-will-carry-us-1999",
-  "狂人皮埃罗(1965)": "pierrot-le-fou-1965",
-  "天使爱美丽（2001）": "amelie-2001",
-  "克莱尔的膝盖(1970)": "claires-knee-1970",
-  "一个好人(2023)": "a-good-person-2023",
-  "困在时间里的父亲（2020）": "the-father-2020",
-  "绿光(1986)": "the-green-ray-1986",
   "幸福 Le bonheur (1965)": "le-bonheur-1965",
-  "崩溃边缘的女人(1988)": "women-on-the-verge-1988",
-  "爱乐之城(2016)": "la-la-land-2016",
-  "牺牲(1986)": "the-sacrifice-1986",
-  "法兰西特派(2021)": "the-french-dispatch-2021",
-  "罗马(2018)": "roma-2018",
-  "伊万的童年(1962)": "ivans-childhood-1962",
+  "爱 Amour(2012)": "amour-2012",
 };
+// Auto-build from FILM_DATA using zh title + year
+if (typeof FILM_DATA !== 'undefined') {
+  FILM_DATA.forEach(f => {
+    const zh = f.title.zh || '';
+    if (zh && f.year) {
+      FILM_THUMB_MAP[zh.trim() + '(' + f.year + ')'] = f.id;
+      FILM_THUMB_MAP[zh.trim() + '（' + f.year + '）'] = f.id;
+    }
+  });
+}
 function filmTitleFromThumb(url) {
   const m = url.match(/thumbs\/([^\/]+)\/\d+\.webp/);
   if (!m) return '';
@@ -366,6 +360,8 @@ function classifyHue(hex) {
   const l = (max + min) / 2 / 255;
   const s = max === 0 ? 0 : (max - min) / max;
   if (s < 0.1 || l < 0.08) return 'mono';
+  // Earth: desaturated colors with warm-ish medium-lightness
+  if (s < 0.3 && l > 0.12 && l < 0.6) return 'earth';
   let h;
   if (max === r) h = ((g - b) / (max - min) + (g < b ? 6 : 0)) * 60;
   else if (max === g) h = ((b - r) / (max - min) + 2) * 60;
@@ -377,7 +373,6 @@ function classifyHue(hex) {
   if (h < 195) return 'teal';
   if (h < 255) return 'blue';
   if (h < 330) return 'purple';
-  if (s < 0.25 && l > 0.2 && l < 0.7) return 'earth';
   return 'red';
 }
 function renderColorDetail(main, slug) {
