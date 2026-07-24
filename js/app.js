@@ -62,7 +62,8 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbo
 // ─── Img helper ───
 function imgAttr(src, alt) {
   src = pimg(src);
-  return `src="${src}" alt="${alt}" loading="lazy" crossorigin="anonymous" onerror="this.onerror=null;this.parentElement.innerHTML='<div class=\\'img-error\\'>${alt}<br><span style=font-size:11px;opacity:.6>Failed to load</span></div>'" onload="this.classList.add('loaded')"`;
+  const escaped = alt.replace(/['"]/g, '');
+  return `src="${src}" alt="${escaped}" loading="lazy" crossorigin="anonymous" onerror="this.onerror=null;this.outerHTML='<div class=\\'img-error\\'>${escaped}<br><span style=font-size:11px;opacity:.6>Failed to load</span></div>'" onload="this.classList.add('loaded')"`;
 }
 
 // ─── Router ───
@@ -205,7 +206,7 @@ function filmCardHTML(f) {
   return `
     <div class="film-card" data-region="${f.region[CURRENT_LANG] || f.region.en}" onclick="navigate('#/film/${f.id}')">
       <div class="film-card-img">
-        <img src="${pimg(f.screenshots?.[0] || f.poster)}" alt="${title}" loading="lazy">
+        <img ${imgAttr(f.screenshots?.[0] || f.poster, title)}>
         ${f.new ? '<span class="film-card-badge">' + lang('new') + '</span>' : ''}
       </div>
       <div class="film-card-body">
@@ -244,7 +245,7 @@ function renderColors(main) {
               <div class="color-card-thumbs">
                 ${thumbs.map(url => `
                   <div class="color-thumb-wrap">
-                    <img src="${pimg(url)}" alt="" loading="lazy">
+                    <img ${imgAttr(url, filmTitleFromThumb(url))}>
                     <span class="color-thumb-title">${filmTitleFromThumb(url)}</span>
                   </div>
                 `).join('')}
@@ -383,15 +384,12 @@ function renderColorDetail(main, slug) {
   const name = lang(nameKey);
   const desc = lang(descKey);
   const colorNames = color.colorNames || [];
-  // Curated thumbs
-  const curated = (color.thumbs || []).slice(0, 12);
-  // One representative screenshot per matching film
-  const filmShots = FILM_DATA.flatMap(f => {
-    if (!f.colors || !f.screenshots || !f.screenshots.length) return [];
-    const match = f.colors.some(c => classifyHue(c) === slug);
-    if (!match) return [];
-    return [f.screenshots[0]];
-  });
+  // Films matching this color
+  const matchedFilms = FILM_DATA.filter(f => f.colors && f.colors.some(c => classifyHue(c) === slug));
+  // Curated thumbs with more items
+  const curated = (color.thumbs || []).slice(0, 24);
+  // Screenshots from matched films
+  const filmShots = matchedFilms.flatMap(f => (f.screenshots || []));
   const uniqUrls = [...new Set([...curated, ...filmShots])];
   main.innerHTML = `
     <div class="page-header">
@@ -400,9 +398,15 @@ function renderColorDetail(main, slug) {
     </div>
     <section class="section">
       <a href="#/colors" style="color:var(--text3);font-size:14px;display:inline-block;margin-bottom:24px">← ${lang('colors')}</a>
-      ${colorNames.length ? `<div class="color-card-names" style="margin-bottom:24px">${colorNames.slice(0, 12).map(n => `<span>${n}</span>`).join('')}</div>` : ''}
+      ${matchedFilms.length ? `
+        <h3 style="font-size:16px;font-weight:600;margin-bottom:16px">${lang('relatedFilms')}</h3>
+        <div class="film-grid" style="margin-bottom:40px">
+          ${matchedFilms.slice(0, 6).map(f => filmCardHTML(f)).join('')}
+        </div>
+      ` : ''}
+      ${colorNames.length ? `<div class="color-card-names" style="margin-bottom:24px">${colorNames.slice(0, 16).map(n => `<span>${n}</span>`).join('')}</div>` : ''}
       <div class="film-screenshots">
-        ${uniqUrls.map(url => `<img src="${pimg(url)}" alt="${name}" loading="lazy" style="cursor:zoom-in" onclick="openLightbox('${url}')">`).join('')}
+        ${uniqUrls.map(url => `<img ${imgAttr(url, name)} style="cursor:zoom-in" onclick="openLightbox('${url}')">`).join('')}
       </div>
     </section>
   `;
@@ -445,7 +449,7 @@ function renderFilmDetail(main, slug) {
       ` : ''}
       <h3 style="font-size:16px;font-weight:600;margin-top:32px;margin-bottom:12px">${lang('screenshots')} · ${shots.length}</h3>
       <div class="film-screenshots">
-        ${shots.map(s => `<img src="${pimg(s)}" alt="${title}" loading="lazy" style="cursor:zoom-in" onclick="openLightbox('${s}')">`).join('')}
+        ${shots.map(s => `<img ${imgAttr(s, title)} style="cursor:zoom-in" onclick="openLightbox('${s}')">`).join('')}
       </div>
     </div>
   `;
