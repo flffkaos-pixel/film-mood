@@ -78,8 +78,9 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbo
 // ─── Img helper ───
 function imgAttr(src, alt) {
   src = pimg(src);
-  const escaped = alt.replace(/['"]/g, '');
-  return `src="${src}" alt="${escaped}" loading="lazy" crossorigin="anonymous" onerror="this.onerror=null;this.outerHTML='<div class=\\'img-error\\'>${escaped}<br><span style=font-size:11px;opacity:.6>Failed to load</span></div>'" onload="this.classList.add('loaded')"`;
+  const escaped = (alt || '').replace(/['"]/g, '');
+  const errMsg = escaped ? escaped + '<br><span style=font-size:11px;opacity:.6>Failed to load</span>' : '';
+  return `src="${src}" alt="${escaped}" loading="lazy" onerror="this.onerror=null;this.outerHTML='<div class=\\'img-error\\'>${errMsg}</div>'" onload="this.classList.add('loaded')"`;
 }
 
 // ─── Router ───
