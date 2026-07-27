@@ -1,22 +1,25 @@
-const IMG_PROXY = 'https://film-mood-proxy.flffkaos.workers.dev/?url=';
-function pimg(url) { return url.includes('img.yeguozi.com') ? IMG_PROXY + encodeURIComponent(url) : url; }
+const IMG_PROXY = '';
+function pimg(url) { return url; }
 
-// Fix broken alphanumeric filenames in FILM_DATA → use working numeric format
+// Fix broken alphanumeric filenames in FILM_DATA → use local images from manifest
 (function fixFilmData() {
   try {
-    if (typeof FILM_DATA !== 'undefined' && Array.isArray(FILM_DATA)) {
+    if (typeof FILM_DATA !== 'undefined' && Array.isArray(FILM_DATA) && typeof IMAGES_MANIFEST !== 'undefined') {
       FILM_DATA.forEach(f => {
-        if (f.poster && f.poster.includes('img.yeguozi.com/thumbs/')) {
-          f.poster = f.poster.replace(/\/[^/]+\.webp$/, '/0001.webp');
-        }
-        if (f.screenshots && Array.isArray(f.screenshots)) {
-          f.screenshots = f.screenshots.map((s, i) => {
-            if (!s.includes('img.yeguozi.com/thumbs/')) return s;
-            const num = String(i + 1).padStart(4, '0');
-            return s.replace(/\/[^/]+\.webp$/, '/' + num + '.webp');
-          });
+        const entry = IMAGES_MANIFEST[f.id];
+        if (entry && entry.count > 0) {
+          f.poster = `images/${entry.dir}/0001.webp`;
+          const count = Math.min(f.screenshots?.length || 0, entry.count);
+          f.screenshots = Array.from({length: count}, (_, i) => 
+            `images/${entry.dir}/${String(i+1).padStart(4,'0')}.webp`
+          );
+        } else if (f.poster && f.poster.includes('img.yeguozi.com/thumbs/')) {
+          f.poster = 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 9"><rect fill="%231c1c1c" width="16" height="9"/><text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" font-size="1.5" fill="%23666" font-family="sans-serif">이미지 없음</text></svg>';
+          f.screenshots = [];
         }
       });
+      // Filter out films with no images at all
+      FILM_DATA = FILM_DATA.filter(f => f.poster || (f.screenshots && f.screenshots.length > 0));
     }
   } catch (e) {
     console.warn('fixFilmData error:', e);
@@ -91,8 +94,9 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbo
 function imgAttr(src, alt) {
   src = pimg(src);
   const escaped = (alt || '').replace(/['"]/g, '');
-  const errMsg = escaped ? escaped + '<br><span style=font-size:11px;opacity:.6>Failed to load</span>' : '';
-  return `src="${src}" alt="${escaped}" loading="lazy" onerror="this.onerror=null;this.outerHTML='<div class=\\'img-error\\'>${errMsg}</div>'" onload="this.classList.add('loaded')"`;
+  const placeholder = `data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 9'><rect fill='%231c1c1c' width='16' height='9'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-size='1.5' fill='%23666' font-family='sans-serif'>이미지 없음</text></svg>`;
+  const errMsg = escaped ? escaped + '<br><span style=font-size:11px;opacity:.6>이미지 없음</span>' : '';
+  return `src="${src}" alt="${escaped}" loading="lazy" onerror="this.onerror=null;this.src='${placeholder}';this.classList.remove('loaded');" onload="this.classList.add('loaded')"`;
 }
 
 // ─── Router ───
