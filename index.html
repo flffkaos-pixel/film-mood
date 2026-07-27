@@ -41,21 +41,30 @@
 <script>
   // Safety net: ensure app initializes even if app.js DOMContentLoaded handler fails
   (function() {
+    var debugDiv = document.createElement('div');
+    debugDiv.style.cssText = 'position:fixed;bottom:10px;right:10px;padding:10px;background:#000;color:#0f0;font:12px monospace;z-index:9999;border-radius:4px;max-width:300px;';
+    debugDiv.id = 'debug-info';
+    document.body.appendChild(debugDiv);
+    function log(msg) {
+      var d = document.getElementById('debug-info');
+      if (d) d.textContent += '\n' + msg;
+      console.log(msg);
+    }
     function tryInit() {
-      console.log('init: document.readyState =', document.readyState);
+      log('init: readyState=' + document.readyState);
       try {
-        console.log('init: typeof renderPage =', typeof renderPage);
-        console.log('init: typeof FILM_DATA =', typeof FILM_DATA);
-        console.log('init: typeof lang =', typeof lang);
-        console.log('init: typeof DIRECTOR_DATA =', typeof DIRECTOR_DATA);
+        log('init: renderPage=' + typeof renderPage);
+        log('init: FILM_DATA=' + typeof FILM_DATA);
+        log('init: lang=' + typeof lang);
+        log('init: DIRECTOR_DATA=' + typeof DIRECTOR_DATA);
         if (typeof renderPage === 'function') {
-          console.log('init: calling renderPage()');
+          log('init: calling renderPage()');
           renderPage();
         } else {
-          console.error('init: renderPage not available');
+          log('ERROR: renderPage not available');
         }
       } catch (e) {
-        console.error('Init error:', e);
+        log('Init ERROR: ' + e.message);
         var main = document.querySelector('main');
         if (main && !main.innerHTML.trim()) {
           main.innerHTML = '<div style="padding:40px;text-align:center;color:#666">Loading&hellip; Error: ' + e.message + '. Please refresh.</div>';
@@ -67,12 +76,11 @@
     } else {
       tryInit();
     }
-    // Also catch any unhandled errors
     window.addEventListener('error', function(e) {
-      console.error('Unhandled error:', e.error || e.message);
+      log('UNHANDLED ERROR: ' + (e.error?.message || e.message));
     });
     window.addEventListener('unhandledrejection', function(e) {
-      console.error('Unhandled rejection:', e.reason);
+      log('UNHANDLED REJECTION: ' + e.reason);
     });
   })();
 </script>
