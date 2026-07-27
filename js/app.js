@@ -1,12 +1,19 @@
 const IMG_PROXY = '';
 function pimg(url) { return url; }
 
+// Manual mapping: film ID -> manifest directory key (for mismatched IDs)
+const FILM_ID_TO_MANIFEST = {
+  'ashes-of-time-1986': 'ashes-of-time-1994',
+  // Add more mismatches here as needed
+};
+
 // Fix broken alphanumeric filenames in FILM_DATA → use local images from manifest
 (function fixFilmData() {
   try {
     if (typeof FILM_DATA !== 'undefined' && Array.isArray(FILM_DATA) && typeof IMAGES_MANIFEST !== 'undefined') {
       FILM_DATA.forEach(f => {
-        const entry = IMAGES_MANIFEST[f.id];
+        const manifestKey = FILM_ID_TO_MANIFEST[f.id] || f.id;
+        const entry = IMAGES_MANIFEST[manifestKey];
         if (entry && entry.count > 0) {
           f.poster = `images/${entry.dir}/0001.webp`;
           const count = Math.min(f.screenshots?.length || 0, entry.count);
