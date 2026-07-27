@@ -59,6 +59,25 @@
         log('init: DIRECTOR_DATA=' + typeof DIRECTOR_DATA);
         if (typeof renderPage === 'function') {
           log('init: calling renderPage()');
+          // Wrap renderPage to catch internal errors
+          var originalRenderPage = renderPage;
+          window.renderPage = function() {
+            log('renderPage: START');
+            var main = document.querySelector('main');
+            log('renderPage: main=' + (main ? 'found' : 'NOT FOUND'));
+            try {
+              var result = originalRenderPage.apply(this, arguments);
+              log('renderPage: original returned');
+              if (main) {
+                log('renderPage: main.innerHTML length=' + (main.innerHTML ? main.innerHTML.length : 0));
+                if (!main.innerHTML.trim()) log('renderPage: main is EMPTY!');
+              }
+              return result;
+            } catch (e) {
+              log('renderPage ERROR: ' + e.message);
+              throw e;
+            }
+          };
           renderPage();
           log('init: renderPage returned');
         } else {
