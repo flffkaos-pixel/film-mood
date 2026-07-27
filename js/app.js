@@ -2,20 +2,26 @@ const IMG_PROXY = 'https://film-mood-proxy.flffkaos.workers.dev/?url=';
 function pimg(url) { return url.includes('img.yeguozi.com') ? IMG_PROXY + encodeURIComponent(url) : url; }
 
 // Fix broken alphanumeric filenames in FILM_DATA → use working numeric format
-if (typeof FILM_DATA !== 'undefined') {
-  FILM_DATA.forEach(f => {
-    if (f.poster && f.poster.includes('img.yeguozi.com/thumbs/')) {
-      f.poster = f.poster.replace(/\/[^/]+\.webp$/, '/0001.webp');
-    }
-    if (f.screenshots) {
-      f.screenshots = f.screenshots.map((s, i) => {
-        if (!s.includes('img.yeguozi.com/thumbs/')) return s;
-        const num = String(i + 1).padStart(4, '0');
-        return s.replace(/\/[^/]+\.webp$/, '/' + num + '.webp');
+(function fixFilmData() {
+  try {
+    if (typeof FILM_DATA !== 'undefined' && Array.isArray(FILM_DATA)) {
+      FILM_DATA.forEach(f => {
+        if (f.poster && f.poster.includes('img.yeguozi.com/thumbs/')) {
+          f.poster = f.poster.replace(/\/[^/]+\.webp$/, '/0001.webp');
+        }
+        if (f.screenshots && Array.isArray(f.screenshots)) {
+          f.screenshots = f.screenshots.map((s, i) => {
+            if (!s.includes('img.yeguozi.com/thumbs/')) return s;
+            const num = String(i + 1).padStart(4, '0');
+            return s.replace(/\/[^/]+\.webp$/, '/' + num + '.webp');
+          });
+        }
       });
     }
-  });
-}
+  } catch (e) {
+    console.warn('fixFilmData error:', e);
+  }
+})();
 
 // Film title lookup: Chinese dir name from thumb URL → film ID
 // Manual overrides for non-standard directory names
@@ -24,15 +30,21 @@ const FILM_THUMB_MAP = {
   "爱 Amour(2012)": "amour-2012",
 };
 // Auto-build from FILM_DATA using zh title + year
-if (typeof FILM_DATA !== 'undefined') {
-  FILM_DATA.forEach(f => {
-    const zh = f.title.zh || '';
-    if (zh && f.year) {
-      FILM_THUMB_MAP[zh.trim() + '(' + f.year + ')'] = f.id;
-      FILM_THUMB_MAP[zh.trim() + '（' + f.year + '）'] = f.id;
+(function buildThumbMap() {
+  try {
+    if (typeof FILM_DATA !== 'undefined' && Array.isArray(FILM_DATA)) {
+      FILM_DATA.forEach(f => {
+        const zh = f.title?.zh || '';
+        if (zh && f.year) {
+          FILM_THUMB_MAP[zh.trim() + '(' + f.year + ')'] = f.id;
+          FILM_THUMB_MAP[zh.trim() + '（' + f.year + '）'] = f.id;
+        }
+      });
     }
-  });
-}
+  } catch (e) {
+    console.warn('buildThumbMap error:', e);
+  }
+})();
 function filmTitleFromThumb(url) {
   const m = url.match(/thumbs\/([^\/]+)\/\d+\.webp/);
   if (!m) return '';
@@ -93,15 +105,23 @@ function getRoute() {
 }
 
 // ─── Merge film details from enrichment ───
-const DETAILS_SRC = typeof FILM_DETAILS_FULL !== 'undefined' ? FILM_DETAILS_FULL : (typeof filmDetails !== 'undefined' ? filmDetails : []);
-DETAILS_SRC.forEach(d => {
-  const f = FILM_DATA.find(x => x.id === d.id);
-  if (!f) return;
-  if (d.description?.en && !f.description?.en) f.description = d.description;
-  if (d.colors?.length >= 3) f.colors = d.colors;
-  if (d.letterboxd) f.letterboxd = d.letterboxd;
-  if (d.screenshots?.length >= 5) f.screenshots = d.screenshots;
-});
+(function mergeDetails() {
+  try {
+    const DETAILS_SRC = typeof FILM_DETAILS_FULL !== 'undefined' ? FILM_DETAILS_FULL : (typeof filmDetails !== 'undefined' ? filmDetails : []);
+    if (typeof FILM_DATA !== 'undefined' && Array.isArray(FILM_DATA)) {
+      DETAILS_SRC.forEach(d => {
+        const f = FILM_DATA.find(x => x.id === d.id);
+        if (!f) return;
+        if (d.description?.en && !f.description?.en) f.description = d.description;
+        if (d.colors?.length >= 3) f.colors = d.colors;
+        if (d.letterboxd) f.letterboxd = d.letterboxd;
+        if (d.screenshots?.length >= 5) f.screenshots = d.screenshots;
+      });
+    }
+  } catch (e) {
+    console.warn('mergeDetails error:', e);
+  }
+})();
 
 // ─── Render ───
 function renderPage() {
