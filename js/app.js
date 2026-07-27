@@ -4,7 +4,8 @@ function pimg(url) { return url; }
 // Manual mapping: film ID -> manifest directory key (for mismatched IDs)
 const FILM_ID_TO_MANIFEST = {
   'ashes-of-time-1986': 'ashes-of-time-1994',
-  // Add more mismatches here as needed
+  'le-havre-2011': 'lei-a-fu-er-2011',
+  'a-tale-of-winter-1992': 'dong-tian-de-gu-shi-1992',
 };
 
 // Fix broken alphanumeric filenames in FILM_DATA → use local images from manifest
