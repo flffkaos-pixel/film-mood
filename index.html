@@ -42,18 +42,23 @@
   // Safety net: ensure app initializes even if app.js DOMContentLoaded handler fails
   (function() {
     function tryInit() {
+      console.log('init: document.readyState =', document.readyState);
       try {
+        console.log('init: typeof renderPage =', typeof renderPage);
+        console.log('init: typeof FILM_DATA =', typeof FILM_DATA);
+        console.log('init: typeof lang =', typeof lang);
+        console.log('init: typeof DIRECTOR_DATA =', typeof DIRECTOR_DATA);
         if (typeof renderPage === 'function') {
+          console.log('init: calling renderPage()');
           renderPage();
-        } else if (typeof appInit === 'function') {
-          appInit();
+        } else {
+          console.error('init: renderPage not available');
         }
       } catch (e) {
         console.error('Init error:', e);
-        // Fallback: show basic content
         var main = document.querySelector('main');
         if (main && !main.innerHTML.trim()) {
-          main.innerHTML = '<div style="padding:40px;text-align:center;color:#666">Loading&hellip; If this persists, please refresh.</div>';
+          main.innerHTML = '<div style="padding:40px;text-align:center;color:#666">Loading&hellip; Error: ' + e.message + '. Please refresh.</div>';
         }
       }
     }
@@ -65,6 +70,9 @@
     // Also catch any unhandled errors
     window.addEventListener('error', function(e) {
       console.error('Unhandled error:', e.error || e.message);
+    });
+    window.addEventListener('unhandledrejection', function(e) {
+      console.error('Unhandled rejection:', e.reason);
     });
   })();
 </script>
