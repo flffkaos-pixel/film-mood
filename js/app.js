@@ -121,7 +121,7 @@ function getRoute() {
           f.screenshots = Array.from({length: entry.count}, (_, i) =>
             `images/${entry.dir}/${String(i+1).padStart(4,'0')}.webp`
           );
-        } else if (f.poster && f.poster.includes('img.yeguozi.com/thumbs/')) {
+        } else if ((f.screenshots && f.screenshots.some(s => s && s.includes('yeguozi'))) || (f.poster && f.poster.includes('yeguozi'))) {
           f.poster = 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 9"><rect fill="%231c1c1c" width="16" height="9"/><text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" font-size="1.5" fill="%23666" font-family="sans-serif">이미지 없음</text></svg>';
           f.screenshots = [];
         }
