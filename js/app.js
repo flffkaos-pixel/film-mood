@@ -511,7 +511,7 @@ function classifyHue(hex) {
   else h = ((r - g) / (max - min) + 4) * 60;
   // Earth filter: only for low saturation warm hues (not purple)
   if (s < 0.3 && l > 0.12 && l < 0.6) {
-    if (!(h >= 255 && h < 330)) return 'earth';
+    if (!(h >= 255 && h < 345)) return 'earth';
   }
   if (h < 15 || h >= 345) return 'red';
   if (h < 45) return 'orange';
@@ -519,7 +519,7 @@ function classifyHue(hex) {
   if (h < 165) return 'green';
   if (h < 195) return 'teal';
   if (h < 255) return 'blue';
-  if (h < 330) return 'purple';
+  if (h < 345) return 'purple';
   return 'red';
 }
 function renderColorDetail(main, slug) {
