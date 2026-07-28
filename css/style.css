@@ -229,19 +229,19 @@ main { min-height: calc(100vh - 64px - 180px); }
 
 /* Color Detail Page */
 .color-grid-detail {
-  display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 24px;
+  display: grid; grid-template-columns: repeat(6, 1fr); gap: 4px;
 }
 .color-detail-card {
-  background: var(--bg3); border-radius: var(--radius); overflow: hidden;
-  border: 1px solid var(--border); transition: transform var(--transition), border-color var(--transition);
+  break-inside: avoid;
 }
-.color-detail-card:hover { transform: translateY(-2px); border-color: var(--accent2); }
-.color-detail-img { cursor: zoom-in; }
+.color-detail-img { cursor: zoom-in; line-height: 0; }
 .color-detail-img img { width: 100%; aspect-ratio: 16/9; object-fit: cover; display: block; }
 .color-detail-palette { display: flex; gap: 0; }
-.color-detail-swatch { flex: 1; height: 20px; cursor: pointer; transition: flex var(--transition); }
+.color-detail-swatch { flex: 1; height: 12px; display: block; transition: flex 0.15s; }
 .color-detail-swatch:hover { flex: 3; }
-.color-detail-title { padding: 8px 12px; font-size: 13px; color: var(--text2); }
+.color-detail-title { padding: 2px 0 8px; font-size: 12px; color: var(--text2); }
+.color-detail-title a { color: var(--text2); text-decoration: none; }
+.color-detail-title a:hover { color: var(--text); }
 
 /* Film Detail */
 .film-detail { max-width: 960px; margin: 0 auto; padding: 48px 24px; }
@@ -369,6 +369,7 @@ main { min-height: calc(100vh - 64px - 180px); }
   .color-grid { grid-template-columns: 1fr; }
   .hero { padding: 60px 16px 50px; }
   .section { padding: 40px 16px; }
+  .color-grid-detail { grid-template-columns: repeat(3, 1fr); }
   .film-screenshots { column-count: 1; }
   .person-row { grid-template-columns: repeat(3, 1fr); }
 }
