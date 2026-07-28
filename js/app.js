@@ -76,7 +76,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbo
 function imgAttr(src, alt) {
   src = pimg(src);
   const escaped = (alt || '').replace(/['"]/g, '');
-  const placeholder = `data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 9'><rect fill='%231c1c1c' width='16' height='9'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-size='1.5' fill='%23666' font-family='sans-serif'>이미지 없음</text></svg>`;
+  const placeholder = 'data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 9%27%3E%3Crect fill=%27%231c1c1c%27 width=%2716%27 height=%279%27/%3E%3Ctext x=%2750%25%27 y=%2755%25%27 dominant-baseline=%27middle%27 text-anchor=%27middle%27 font-size=%271.5%27 fill=%27%23666%27 font-family=%27sans-serif%27%3E이미지 없음%3C/text%3E%3C/svg%3E';
   const errMsg = escaped ? escaped + '<br><span style=font-size:11px;opacity:.6>이미지 없음</span>' : '';
   return `src="${src}" alt="${escaped}" loading="lazy" onerror="this.onerror=null;this.src='${placeholder}';this.classList.remove('loaded');" onload="this.classList.add('loaded')"`;
 }
