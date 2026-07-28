@@ -528,23 +528,11 @@ function renderColorDetail(main, slug) {
   const name = lang(nameKey);
   const desc = lang(descKey);
   const colorNames = color.colorNames || [];
-  // Build cards from curated thumbs + film screenshots
+  // Build cards from curated thumbs (matched to local images via fixColorData)
   const cards = [];
-  const added = new Set();
   (color.thumbs || []).forEach(url => {
-    if (added.has(url)) return;
-    added.add(url);
     const film = filmFromUrl(url);
-    cards.push({ url, film, fromThumb: true });
-  });
-  // Find films matching this color, add their screenshots as additional cards
-  const matchedFilms = FILM_DATA.filter(f => f.colors && f.colors.some(c => classifyHue(c) === slug));
-  matchedFilms.forEach(f => {
-    (f.screenshots || []).forEach(s => {
-      if (added.has(s)) return;
-      added.add(s);
-      cards.push({ url: s, film: f, fromThumb: false });
-    });
+    cards.push({ url, film });
   });
   main.innerHTML = `
     <div class="page-header">
