@@ -123,7 +123,7 @@ function getRoute() {
           f.screenshots = Array.from({length: entry.count}, (_, i) =>
             `images/${entry.dir}/${String(i+1).padStart(4,'0')}.webp`
           );
-        } else if ((f.screenshots && f.screenshots.some(s => s && s.includes('yeguozi'))) || (f.poster && f.poster.includes('yeguozi'))) {
+        } else if ((f.screenshots && f.screenshots.some(s => s && (s.includes('yeguozi') || s.includes('wikimedia')))) || (f.poster && (f.poster.includes('yeguozi') || f.poster.includes('wikimedia')))) {
           f.poster = PLACEHOLDER_SVG;
           f.screenshots = [];
         }
@@ -161,6 +161,18 @@ function getRoute() {
     }
   } catch (e) {
     console.warn('fixColorData error:', e);
+  }
+})();
+
+// Strip external image URLs from person data
+(function fixPersonData() {
+  try {
+    [DIRECTOR_DATA, CINEMATOGRAPHER_DATA].forEach(arr => {
+      if (!Array.isArray(arr)) return;
+      arr.forEach(p => { if (p.img && (p.img.includes('wikimedia') || p.img.includes('yeguozi'))) p.img = null; });
+    });
+  } catch (e) {
+    console.warn('fixPersonData error:', e);
   }
 })();
 
