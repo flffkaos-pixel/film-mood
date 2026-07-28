@@ -563,7 +563,7 @@ function renderColorDetail(main, slug) {
               <div class="color-detail-img" onclick="openLightbox('${card.url}')">
                 <img ${imgAttr(card.url, title)}>
               </div>
-              <div class="color-detail-palette">${colors.map(c => `<div class="color-detail-swatch" style="background:${c}" title="${c}"></div>`).join('')}</div>
+              <div class="color-detail-palette">${colors.map(c => `<a href="#/colors/${c.replace('#','')}" class="color-detail-swatch" style="background:${c}" title="${c}"></a>`).join('')}</div>
               ${title ? `<div class="color-detail-title"><a href="#/film/${filmId}">${title}</a></div>` : ''}
             </div>
           `;
