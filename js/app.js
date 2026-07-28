@@ -133,6 +133,32 @@ function getRoute() {
   }
 })();
 
+// Convert CDN URLs in COLORS_DATA thumbs to local film images
+(function fixColorData() {
+  try {
+    if (typeof COLORS_DATA !== 'undefined' && Array.isArray(COLORS_DATA) && typeof FILM_DATA !== 'undefined') {
+      COLORS_DATA.forEach(c => {
+        if (c.thumbs && Array.isArray(c.thumbs)) {
+          c.thumbs = c.thumbs.map(url => {
+            if (!url || !url.includes('yeguozi')) return url;
+            // Extract film ID from thumb URL
+            const m = url.match(/thumbs\/([^\/]+)\/\d+\.webp/);
+            if (!m) return url;
+            const dir = decodeURIComponent(m[1]).trim();
+            const id = (typeof FILM_THUMB_MAP !== 'undefined' ? FILM_THUMB_MAP[dir] : null);
+            if (!id) return url;
+            const film = FILM_DATA.find(f => f.id === id);
+            if (film && film.poster && film.poster.startsWith('images/')) return film.poster;
+            return url;
+          });
+        }
+      });
+    }
+  } catch (e) {
+    console.warn('fixColorData error:', e);
+  }
+})();
+
 // ─── Render ───
 function renderPage() {
   const route = getRoute();
