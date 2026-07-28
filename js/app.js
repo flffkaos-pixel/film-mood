@@ -528,23 +528,22 @@ function renderColorDetail(main, slug) {
   const name = lang(nameKey);
   const desc = lang(descKey);
   const colorNames = color.colorNames || [];
-  // Build cards from curated thumbs + film screenshots
+  // Build cards from curated thumbs + one poster per matched film
   const cards = [];
   const added = new Set();
   (color.thumbs || []).forEach(url => {
     if (added.has(url)) return;
     added.add(url);
     const film = filmFromUrl(url);
-    cards.push({ url, film, fromThumb: true });
+    cards.push({ url, film });
   });
-  // Find films matching this color, add their screenshots as additional cards
+  // Add one poster per film matching this color
   const matchedFilms = FILM_DATA.filter(f => f.colors && f.colors.some(c => classifyHue(c) === slug));
   matchedFilms.forEach(f => {
-    (f.screenshots || []).forEach(s => {
-      if (added.has(s)) return;
-      added.add(s);
-      cards.push({ url: s, film: f, fromThumb: false });
-    });
+    const poster = f.poster || (f.screenshots && f.screenshots[0]);
+    if (!poster || added.has(poster)) return;
+    added.add(poster);
+    cards.push({ url: poster, film: f });
   });
   main.innerHTML = `
     <div class="page-header">
