@@ -68,15 +68,28 @@ const FILM_THUMB_MAP = {
     console.warn('buildThumbMap error:', e);
   }
 })();
+function findFilmByLocalDir(dir) {
+  const film = FILM_DATA.find(f => {
+    const key = FILM_ID_TO_MANIFEST[f.id] || f.id;
+    return key === dir;
+  });
+  return film || null;
+}
+function filmFromUrl(url) {
+  if (!url) return null;
+  const m = url.match(/^images\/([^\/]+)\//);
+  if (m) return findFilmByLocalDir(m[1]);
+  const mt = url.match(/thumbs\/([^\/]+)\//);
+  if (mt) {
+    const dir = decodeURIComponent(mt[1]).trim();
+    const id = FILM_THUMB_MAP[dir];
+    return id ? (FILM_DATA.find(f => f.id === id) || null) : null;
+  }
+  return null;
+}
 function filmTitleFromThumb(url) {
-  const m = url.match(/thumbs\/([^\/]+)\/\d+\.webp/);
-  if (!m) return '';
-  const dir = decodeURIComponent(m[1]).trim();
-  const id = FILM_THUMB_MAP[dir];
-  if (!id) return '';
-  const f = FILM_DATA.find(x => x.id === id);
-  if (!f) return '';
-  return f.title[CURRENT_LANG] || f.title.en || '';
+  const f = filmFromUrl(url);
+  return f ? (f.title[CURRENT_LANG] || f.title.en || '') : '';
 }
 
 let CURRENT_LANG = localStorage.getItem('filmmood-lang') || 'ko';
@@ -515,29 +528,47 @@ function renderColorDetail(main, slug) {
   const name = lang(nameKey);
   const desc = lang(descKey);
   const colorNames = color.colorNames || [];
-  // Films matching this color
+  // Build cards from curated thumbs + film screenshots
+  const cards = [];
+  const added = new Set();
+  (color.thumbs || []).forEach(url => {
+    if (added.has(url)) return;
+    added.add(url);
+    const film = findFilmForThumb(url);
+    cards.push({ url, film, fromThumb: true });
+  });
+  // Find films matching this color, add their screenshots as additional cards
   const matchedFilms = FILM_DATA.filter(f => f.colors && f.colors.some(c => classifyHue(c) === slug));
-  // Curated thumbs with more items
-  const curated = (color.thumbs || []).slice(0, 24);
-  // Screenshots from matched films
-  const filmShots = matchedFilms.flatMap(f => (f.screenshots || []));
-  const uniqUrls = [...new Set([...curated, ...filmShots])];
+  matchedFilms.forEach(f => {
+    (f.screenshots || []).forEach(s => {
+      if (added.has(s)) return;
+      added.add(s);
+      cards.push({ url: s, film: f, fromThumb: false });
+    });
+  });
   main.innerHTML = `
     <div class="page-header">
       <h1>${name}</h1>
-      <p>${desc} · ${uniqUrls.length} ${lang('screenshotsCount')}</p>
+      <p>${desc} · ${cards.length} ${lang('screenshotsCount')}</p>
     </div>
     <section class="section">
       <a href="#/colors" style="color:var(--text3);font-size:14px;display:inline-block;margin-bottom:24px">← ${lang('colors')}</a>
-      ${matchedFilms.length ? `
-        <h3 style="font-size:16px;font-weight:600;margin-bottom:16px">${lang('relatedFilms')}</h3>
-        <div class="film-grid" style="margin-bottom:40px">
-          ${matchedFilms.slice(0, 6).map(f => filmCardHTML(f)).join('')}
-        </div>
-      ` : ''}
       ${colorNames.length ? `<div class="color-card-names" style="margin-bottom:24px">${colorNames.slice(0, 16).map(n => `<span>${n}</span>`).join('')}</div>` : ''}
-      <div class="film-screenshots">
-        ${uniqUrls.map(url => `<img ${imgAttr(url, name)} style="cursor:zoom-in" onclick="openLightbox('${url}')">`).join('')}
+      <div class="color-grid-detail">
+        ${cards.map(card => {
+          const colors = card.film ? (card.film.colors || []) : [];
+          const title = card.film ? (card.film.title[CURRENT_LANG] || card.film.title.en) : '';
+          const filmId = card.film ? card.film.id : '';
+          return `
+            <div class="color-detail-card">
+              <div class="color-detail-img" onclick="openLightbox('${card.url}')">
+                <img ${imgAttr(card.url, title)}>
+              </div>
+              <div class="color-detail-palette">${colors.map(c => `<div class="color-detail-swatch" style="background:${c}" title="${c}"></div>`).join('')}</div>
+              ${title ? `<div class="color-detail-title"><a href="#/film/${filmId}">${title}</a></div>` : ''}
+            </div>
+          `;
+        }).join('')}
       </div>
     </section>
   `;

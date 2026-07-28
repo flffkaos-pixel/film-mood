@@ -227,6 +227,22 @@ main { min-height: calc(100vh - 64px - 180px); }
 .color-card-names { padding: 12px 24px 20px; display: flex; flex-wrap: wrap; gap: 6px; border-top: 1px solid var(--border); }
 .color-card-names span { font-size: 12px; color: var(--text3); background: var(--bg2); padding: 3px 8px; border-radius: 4px; letter-spacing: 0.02em; }
 
+/* Color Detail Page */
+.color-grid-detail {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 24px;
+}
+.color-detail-card {
+  background: var(--bg3); border-radius: var(--radius); overflow: hidden;
+  border: 1px solid var(--border); transition: transform var(--transition), border-color var(--transition);
+}
+.color-detail-card:hover { transform: translateY(-2px); border-color: var(--accent2); }
+.color-detail-img { cursor: zoom-in; }
+.color-detail-img img { width: 100%; aspect-ratio: 16/9; object-fit: cover; display: block; }
+.color-detail-palette { display: flex; gap: 0; }
+.color-detail-swatch { flex: 1; height: 20px; cursor: pointer; transition: flex var(--transition); }
+.color-detail-swatch:hover { flex: 3; }
+.color-detail-title { padding: 8px 12px; font-size: 13px; color: var(--text2); }
+
 /* Film Detail */
 .film-detail { max-width: 960px; margin: 0 auto; padding: 48px 24px; }
 .film-detail-header { margin-bottom: 32px; }
