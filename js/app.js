@@ -23,6 +23,7 @@ const FILM_THUMB_MAP = {
         const zh = f.title?.zh || '';
         if (zh && f.year) {
           FILM_THUMB_MAP[zh.trim() + '(' + f.year + ')'] = f.id;
+          FILM_THUMB_MAP[zh.trim() + ' (' + f.year + ')'] = f.id;
           FILM_THUMB_MAP[zh.trim() + '（' + f.year + '）'] = f.id;
         }
       });
