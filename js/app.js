@@ -14,6 +14,7 @@ const FILM_ID_TO_MANIFEST = {
 const FILM_THUMB_MAP = {
   "幸福 Le bonheur (1965)": "le-bonheur-1965",
   "爱 Amour(2012)": "amour-2012",
+  "镜像(1975)": "mirror-1975",
 };
 // Auto-build from FILM_DATA using zh title + year
 (function buildThumbMap() {
@@ -149,7 +150,10 @@ function getRoute() {
             const id = (typeof FILM_THUMB_MAP !== 'undefined' ? FILM_THUMB_MAP[dir] : null);
             if (!id) return url;
             const film = FILM_DATA.find(f => f.id === id);
-            if (film && film.poster && film.poster.startsWith('images/')) return film.poster;
+            if (film && film.poster) {
+              if (film.poster.startsWith('images/')) return film.poster;
+              if (film.poster.startsWith('data:')) return film.poster;
+            }
             return url;
           });
         }
