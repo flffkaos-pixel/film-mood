@@ -44,12 +44,26 @@ const FILM_ID_TO_MANIFEST = {
   'three-colours-blue-1993': 'lan-bai-hong-san-bu-qu-zhi-lan-1993',
 };
 
-// Film title lookup: Chinese dir name from thumb URL → film ID
-// Manual overrides for non-standard directory names
+// Chinese dir name → film ID (for mapping curated thumbs to local images)
 const FILM_THUMB_MAP = {
-  "幸福 Le bonheur (1965)": "le-bonheur-1965",
+  "布达佩斯大饭店(2014)": "the-grand-budapest-hotel-2014",
+  "英雄(2002)": "hero-2002",
+  "大红灯笼高高挂(1991)": "raise-the-red-lantern-1991",
+  "爱乐之城(2016)": "la-la-land-2016",
+  "闪灵(1980)": "the-shining-1980",
+  "刺猬的优雅（2009）": "the-hedgehog-2009",
+  "一个好人(2023)": "a-good-person-2023",
+  "勒阿弗尔 (2011)": "le-havre-2011",
+  "美国精神病人(2000)": "american-psycho-2000",
+  "恋爱假期(2006)": "the-holiday-2006",
+  "夏天的故事(1996)": "a-tale-of-summer-1996",
+  "月升王国（2012）": "moonrise-kingdom-2012",
+  "青木瓜之味（1993）": "the-scent-of-green-papaya-1993",
+  "乡愁(1983)": "nostalghia-1983",
+  "镜子(1975)": "mirror-1975",
+  "迷魂记(1958)": "vertigo-1958",
+  "牺牲(1986)": "the-sacrifice-1986",
   "爱 Amour(2012)": "amour-2012",
-  "镜像(1975)": "mirror-1975",
 };
 // Auto-build from FILM_DATA using zh title + year
 (function buildThumbMap() {
@@ -185,7 +199,7 @@ function getRoute() {
 // Convert CDN URLs in COLORS_DATA thumbs to local film images
 (function fixColorData() {
   try {
-    if (typeof COLORS_DATA !== 'undefined' && Array.isArray(COLORS_DATA) && typeof FILM_DATA !== 'undefined') {
+    if (typeof COLORS_DATA !== 'undefined' && Array.isArray(COLORS_DATA)) {
       COLORS_DATA.forEach(c => {
         if (c.thumbs && Array.isArray(c.thumbs)) {
           c.thumbs = c.thumbs.map(url => {
@@ -194,15 +208,21 @@ function getRoute() {
             if (!m) return url;
             const chDir = decodeURIComponent(m[1]).trim();
             const fileName = m[2] + '.webp';
-            const id = (typeof FILM_THUMB_MAP !== 'undefined' ? FILM_THUMB_MAP[chDir] : null);
+            // Get film ID from Chinese dir name
+            const id = typeof FILM_THUMB_MAP !== 'undefined' ? FILM_THUMB_MAP[chDir] : null;
             if (!id) return PLACEHOLDER_SVG;
-            const film = FILM_DATA.find(f => f.id === id);
-            if (!film) return PLACEHOLDER_SVG;
+            // Get manifest directory key
             const mKey = (typeof FILM_ID_TO_MANIFEST !== 'undefined' ? FILM_ID_TO_MANIFEST[id] : null) || id;
             const entry = typeof IMAGES_MANIFEST !== 'undefined' ? IMAGES_MANIFEST[mKey] : null;
             if (!entry || !entry.count || !entry.files) {
-              if (film.poster && film.poster.startsWith('images/')) return film.poster;
-              if (film.poster && film.poster.startsWith('data:')) return film.poster;
+              // Fallback: try film poster if film exists in FILM_DATA
+              if (typeof FILM_DATA !== 'undefined') {
+                const film = FILM_DATA.find(f => f.id === id);
+                if (film) {
+                  if (film.poster && film.poster.startsWith('images/')) return film.poster;
+                  if (film.poster && film.poster.startsWith('data:')) return film.poster;
+                }
+              }
               return PLACEHOLDER_SVG;
             }
             if (entry.files.includes(fileName)) {
