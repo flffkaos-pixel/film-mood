@@ -1,4 +1,4 @@
-const FILM_DATA = [
+var FILM_DATA = [
   { genre: ["Drama"],
     id: "nostalghia-1983",
     title: { en: "Nostalghia", ko: "노스탤지어", zh: "乡愁" },
