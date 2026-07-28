@@ -177,18 +177,25 @@ function getRoute() {
         if (c.thumbs && Array.isArray(c.thumbs)) {
           c.thumbs = c.thumbs.map(url => {
             if (!url || !url.includes('yeguozi')) return url;
-            // Extract film ID from thumb URL
-            const m = url.match(/thumbs\/([^\/]+)\/\d+\.webp/);
+            const m = url.match(/thumbs\/([^\/]+)\/(.+?)\.webp/);
             if (!m) return url;
-            const dir = decodeURIComponent(m[1]).trim();
-            const id = (typeof FILM_THUMB_MAP !== 'undefined' ? FILM_THUMB_MAP[dir] : null);
-            if (!id) return url;
+            const chDir = decodeURIComponent(m[1]).trim();
+            const fileName = m[2] + '.webp';
+            const id = (typeof FILM_THUMB_MAP !== 'undefined' ? FILM_THUMB_MAP[chDir] : null);
+            if (!id) return PLACEHOLDER_SVG;
             const film = FILM_DATA.find(f => f.id === id);
-            if (film && film.poster) {
-              if (film.poster.startsWith('images/')) return film.poster;
-              if (film.poster.startsWith('data:')) return film.poster;
+            if (!film) return PLACEHOLDER_SVG;
+            const mKey = (typeof FILM_ID_TO_MANIFEST !== 'undefined' ? FILM_ID_TO_MANIFEST[id] : null) || id;
+            const entry = typeof IMAGES_MANIFEST !== 'undefined' ? IMAGES_MANIFEST[mKey] : null;
+            if (!entry || !entry.count || !entry.files) {
+              if (film.poster && film.poster.startsWith('images/')) return film.poster;
+              if (film.poster && film.poster.startsWith('data:')) return film.poster;
+              return PLACEHOLDER_SVG;
             }
-            return url;
+            if (entry.files.includes(fileName)) {
+              return 'images/' + entry.dir + '/' + fileName;
+            }
+            return 'images/' + entry.dir + '/' + entry.files[0];
           });
         }
       });
