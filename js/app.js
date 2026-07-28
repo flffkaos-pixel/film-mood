@@ -530,7 +530,7 @@ function renderColorDetail(main, slug) {
   const name = lang(nameKey);
   const desc = lang(descKey);
   const colorNames = color.colorNames || [];
-  // Build cards from curated thumbs + one poster per matched film
+  // Build cards from curated thumbs + all screenshots from matched films
   const cards = [];
   const added = new Set();
   (color.thumbs || []).forEach(url => {
@@ -539,13 +539,14 @@ function renderColorDetail(main, slug) {
     const film = filmFromUrl(url);
     cards.push({ url, film });
   });
-  // Add one poster per film matching this color
+  // Add all screenshots from films matching this color
   const matchedFilms = FILM_DATA.filter(f => f.colors && f.colors.some(c => classifyHue(c) === slug));
   matchedFilms.forEach(f => {
-    const poster = f.poster || (f.screenshots && f.screenshots[0]);
-    if (!poster || added.has(poster)) return;
-    added.add(poster);
-    cards.push({ url: poster, film: f });
+    (f.screenshots || []).forEach(url => {
+      if (!url || added.has(url)) return;
+      added.add(url);
+      cards.push({ url, film: f });
+    });
   });
   main.innerHTML = `
     <div class="page-header">
