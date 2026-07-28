@@ -505,12 +505,14 @@ function classifyHue(hex) {
   const l = (max + min) / 2 / 255;
   const s = max === 0 ? 0 : (max - min) / max;
   if (s < 0.1 || l < 0.08) return 'mono';
-  // Earth: desaturated colors with warm-ish medium-lightness
-  if (s < 0.3 && l > 0.12 && l < 0.6) return 'earth';
   let h;
   if (max === r) h = ((g - b) / (max - min) + (g < b ? 6 : 0)) * 60;
   else if (max === g) h = ((b - r) / (max - min) + 2) * 60;
   else h = ((r - g) / (max - min) + 4) * 60;
+  // Earth filter: only for low saturation warm hues (not purple)
+  if (s < 0.3 && l > 0.12 && l < 0.6) {
+    if (!(h >= 255 && h < 330)) return 'earth';
+  }
   if (h < 15 || h >= 345) return 'red';
   if (h < 45) return 'orange';
   if (h < 75) return 'yellow';
