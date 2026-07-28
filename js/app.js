@@ -534,7 +534,7 @@ function renderColorDetail(main, slug) {
   (color.thumbs || []).forEach(url => {
     if (added.has(url)) return;
     added.add(url);
-    const film = findFilmForThumb(url);
+    const film = filmFromUrl(url);
     cards.push({ url, film, fromThumb: true });
   });
   // Find films matching this color, add their screenshots as additional cards
