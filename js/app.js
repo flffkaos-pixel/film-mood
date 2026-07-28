@@ -154,10 +154,9 @@ function getRoute() {
         const manifestKey = FILM_ID_TO_MANIFEST[f.id] || f.id;
         const entry = IMAGES_MANIFEST[manifestKey];
         if (entry && entry.count > 0) {
-          f.poster = `images/${entry.dir}/0001.webp`;
-          f.screenshots = Array.from({length: entry.count}, (_, i) =>
-            `images/${entry.dir}/${String(i+1).padStart(4,'0')}.webp`
-          );
+          const files = entry.files || Array.from({length: entry.count}, (_, i) => `${String(i+1).padStart(4,'0')}.webp`);
+          f.poster = `images/${entry.dir}/${files[0]}`;
+          f.screenshots = files.map(fn => `images/${entry.dir}/${fn}`);
         } else if ((f.screenshots && f.screenshots.some(s => s && (s.includes('yeguozi') || s.includes('wikimedia')))) || (f.poster && (f.poster.includes('yeguozi') || f.poster.includes('wikimedia')))) {
           f.poster = PLACEHOLDER_SVG;
           f.screenshots = [];
