@@ -1,0 +1,4 @@
+﻿User-agent: *
+Allow: /
+Allow: /research/
+Sitemap: https://film-mood.pages.dev/sitemap.xml
