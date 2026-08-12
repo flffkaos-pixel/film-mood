@@ -122,9 +122,14 @@ function filmTitleFromThumb(url) {
 
 // Map filmSlug from yeguozi API to local image directory
 function filmSlugToLocalDir(filmSlug) {
-  // First check FILM_ID_TO_MANIFEST
+  // Direct match against manifest keys (yeguozi filmSlug == manifest dir)
+  if (typeof IMAGES_MANIFEST !== 'undefined' && IMAGES_MANIFEST[filmSlug]) return filmSlug;
+  // Try mapping via FILM_ID_TO_MANIFEST (filmSlug might be a film id we know)
   if (FILM_ID_TO_MANIFEST[filmSlug]) return FILM_ID_TO_MANIFEST[filmSlug];
-  // Then check if filmSlug matches a local dir directly
+  // Reverse lookup: yeguozi filmSlug may equal the manifest dir of a known film id
+  for (const [filmId, manifestKey] of Object.entries(FILM_ID_TO_MANIFEST)) {
+    if (manifestKey === filmSlug) return filmSlug;
+  }
   return filmSlug;
 }
 
@@ -163,7 +168,16 @@ function qsa(s, p) { return (p || document).querySelectorAll(s); }
 function personAvatar(d) {
   const name = d.name[CURRENT_LANG] || d.name.en || d.name.zh || '?';
   const initial = name.charAt(0) || '?';
-  return d.img || 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect fill="%23252525" width="100" height="100"/><text font-size="32" fill="%236b6966" text-anchor="middle" x="50" y="58">' + encodeURIComponent(initial) + '</text></svg>';
+  const fallback = 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect fill="%23252525" width="100" height="100"/><text font-size="32" fill="%236b6966" text-anchor="middle" x="50" y="58">' + encodeURIComponent(initial) + '</text></svg>';
+  // d.img가 있으면 실제 이미지 URL 사용, 없으면 폴백 SVG
+  return d.img || fallback;
+}
+function personAvatarAttr(d) {
+  const name = d.name[CURRENT_LANG] || d.name.en || d.name.zh || '?';
+  const initial = name.charAt(0) || '?';
+  const fallback = 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect fill="%23252525" width="100" height="100"/><text font-size="32" fill="%236b6966" text-anchor="middle" x="50" y="58">' + encodeURIComponent(initial) + '</text></svg>';
+  const src = d.img || fallback;
+  return `src="${src}" alt="${name.replace(/['"]/g,'')}" loading="lazy" onerror="this.onerror=null;this.src='${fallback}';this.classList.remove('loaded');" onload="this.classList.add('loaded')"`;
 }
 
 // ─── Lightbox ───
@@ -282,6 +296,7 @@ function getRoute() {
 })();
 
 // Strip external image URLs from person data
+/*
 (function fixPersonData() {
   try {
     [DIRECTOR_DATA, CINEMATOGRAPHER_DATA].forEach(arr => {
@@ -292,6 +307,7 @@ function getRoute() {
     console.warn('fixPersonData error:', e);
   }
 })();
+*/
 
 // ─── Render ───
 function renderPage() {
@@ -352,9 +368,9 @@ function renderHome(main) {
         </div>
       </div>
       <div class="person-row">
-        ${directors.map(d => `
+${directors.map(d => `
           <div class="person-card">
-            <img class="person-avatar" src="${personAvatar(d)}" alt="${d.name[CURRENT_LANG] || d.name.en}">
+            <img class="person-avatar" ${personAvatarAttr(d)} />
             <div class="person-name">${d.name[CURRENT_LANG] || d.name.en}</div>
           </div>
         `).join('')}
@@ -368,9 +384,9 @@ function renderHome(main) {
         </div>
       </div>
       <div class="person-row">
-        ${cines.map(d => `
+${cines.map(d => `
           <div class="person-card">
-            <img class="person-avatar" src="${personAvatar(d)}" alt="${d.name[CURRENT_LANG] || d.name.en}">
+            <img class="person-avatar" ${personAvatarAttr(d)} />
             <div class="person-name">${d.name[CURRENT_LANG] || d.name.en}</div>
           </div>
         `).join('')}
@@ -616,13 +632,26 @@ function renderColorDetail(main, slug) {
       if (!localPath || added.has(localPath)) continue;
       added.add(localPath);
       const filmSlug = frame.filmSlug;
-      const filmTitleEn = frame.filmTitleEn || frame.filmTitle || '';
-      const filmTitleKo = frame.filmTitle || '';
+      // FILM_DATA에서 영화 찾기: direct id 매칭 또는 reverse 매핑
+      let localFilm = FILM_DATA.find(f => f.id === filmSlug);
+      if (!localFilm) {
+        // reverse lookup: FILM_ID_TO_MANIFEST의 value(중국어 디렉터리 키) === filmSlug
+        for (const [filmId, manifestKey] of Object.entries(FILM_ID_TO_MANIFEST)) {
+          if (manifestKey === filmSlug) {
+            localFilm = FILM_DATA.find(f => f.id === filmId);
+            break;
+          }
+        }
+      }
+      // 보조 폴백: localFilm이 없으면 frame에서 제목 사용
+      const filmTitleEn = (localFilm && localFilm.title.en) || frame.filmTitleEn || '';
+      const filmTitleKo = (localFilm && localFilm.title.ko) || (localFilm && localFilm.title.en) || filmTitleEn || '';
+      const filmId = localFilm ? localFilm.id : filmSlug;
       const palette = frame.palette.map(p => p.hex);
       cards.push({
         url: localPath,
         film: {
-          id: frame.filmSlug,
+          id: filmId,
           title: { en: filmTitleEn, ko: filmTitleKo },
           colors: palette
         },
