@@ -2,6 +2,20 @@ const IMG_PROXY = '';
 function pimg(url) { return url; }
 const PLACEHOLDER_SVG = 'data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 9%27%3E%3Crect fill=%27%231c1c1c%27 width=%2716%27 height=%279%27/%3E%3Ctext x=%2750%25%27 y=%2755%25%27 dominant-baseline=%27middle%27 text-anchor=%27middle%27 font-size=%271.5%27 fill=%27%23666%27 font-family=%27sans-serif%27%3E%EC%9D%B4%EB%AF%B8%EC%A7%80%20%EC%97%86%EC%9D%8C%3C/text%3E%3C/svg%3E';
 
+// Load original yeguozi color stills data (4620 frames with exact palettes)
+let YEGUOZI_COLOR_STILLS = null;
+async function loadYeguoziColorStills() {
+  if (YEGUOZI_COLOR_STILLS) return YEGUOZI_COLOR_STILLS;
+  try {
+    const resp = await fetch('yeguozi-color-stills.json');
+    if (resp.ok) YEGUOZI_COLOR_STILLS = await resp.json();
+  } catch (e) {
+    console.warn('Failed to load yeguozi-color-stills.json:', e);
+    YEGUOZI_COLOR_STILLS = {};
+  }
+  return YEGUOZI_COLOR_STILLS;
+}
+
 // Manual mapping: film ID -> manifest directory key (for mismatched IDs)
 const FILM_ID_TO_MANIFEST = {
   'le-havre-2011': 'lei-a-fu-er-2011',
@@ -104,6 +118,35 @@ function filmFromUrl(url) {
 function filmTitleFromThumb(url) {
   const f = filmFromUrl(url);
   return f ? (f.title[CURRENT_LANG] || f.title.en || '') : '';
+}
+
+// Map filmSlug from yeguozi API to local image directory
+function filmSlugToLocalDir(filmSlug) {
+  // First check FILM_ID_TO_MANIFEST
+  if (FILM_ID_TO_MANIFEST[filmSlug]) return FILM_ID_TO_MANIFEST[filmSlug];
+  // Then check if filmSlug matches a local dir directly
+  return filmSlug;
+}
+
+// Get local image path for a yeguozi frame
+function getLocalFramePath(frame) {
+  if (!frame || !frame.filmSlug) return null;
+  const localDir = filmSlugToLocalDir(frame.filmSlug);
+  const fileName = frame.thumbPath.split('/').pop().replace('.webp', '.webp');
+  // Check if we have this specific file
+  if (IMAGES_MANIFEST && IMAGES_MANIFEST[localDir] && IMAGES_MANIFEST[localDir].files) {
+    if (IMAGES_MANIFEST[localDir].files.includes(fileName)) {
+      return `images/${localDir}/${fileName}`;
+    }
+    // Fallback to first available file
+    if (IMAGES_MANIFEST[localDir].files.length > 0) {
+      return `images/${localDir}/${IMAGES_MANIFEST[localDir].files[0]}`;
+    }
+  }
+  // Fallback to film poster from FILM_DATA
+  const film = FILM_DATA.find(f => f.id === filmSlug);
+  if (film && film.poster && film.poster.startsWith('images/')) return film.poster;
+  return null;
 }
 
 let CURRENT_LANG = localStorage.getItem('filmmood-lang') || 'ko';
@@ -542,7 +585,7 @@ function classifyHue(hex) {
   if (h < 345) return 'purple';
   return 'red';
 }
-function renderColorDetail(main, slug) {
+async function renderColorDetail(main, slug) {
   const color = COLORS_DATA.find(c => c.id === slug);
   if (!color) { main.innerHTML = `<div class="loading" style="padding:80px 24px"><p>Color not found</p><a href="#/colors" class="btn btn-secondary" style="margin-top:16px">← ${lang('colors')}</a></div>`; return; }
   const nameKey = color.id;
@@ -550,24 +593,43 @@ function renderColorDetail(main, slug) {
   const name = lang(nameKey);
   const desc = lang(descKey);
   const colorNames = color.colorNames || [];
-  // Build cards from curated thumbs + all screenshots from matched films
+
+  // Load original yeguozi frames for this color
+  const stillsData = await loadYeguoziColorStills();
+  const frames = (stillsData[slug] || []).filter(f => f.palette && f.palette.length > 0);
+
+  // Build cards from original frames with exact palettes
   const cards = [];
   const added = new Set();
-  (color.thumbs || []).forEach(url => {
-    if (added.has(url)) return;
-    added.add(url);
-    const film = filmFromUrl(url);
-    cards.push({ url, film });
-  });
-  // Add all screenshots from films matching this color
-  const matchedFilms = FILM_DATA.filter(f => f.colors && f.colors.some(c => classifyHue(c) === slug));
-  matchedFilms.forEach(f => {
-    (f.screenshots || []).forEach(url => {
-      if (!url || added.has(url)) return;
-      added.add(url);
-      cards.push({ url, film: f });
+  for (const frame of frames) {
+    const localPath = getLocalFramePath(frame);
+    if (!localPath || added.has(localPath)) continue;
+    added.add(localPath);
+    const filmSlug = frame.filmSlug;
+    const filmTitleEn = frame.filmTitleEn || frame.filmTitle || '';
+    const filmTitleKo = frame.filmTitle || '';
+    const palette = frame.palette.map(p => p.hex);
+    cards.push({ 
+      url: localPath, 
+      film: { 
+        id: frame.filmSlug, 
+        title: { en: filmTitleEn, ko: filmTitleKo }, 
+        colors: palette 
+      },
+      palette: frame.palette
     });
-  });
+  }
+
+  // Fallback: add curated thumbs if not enough original frames
+  if (cards.length < 24) {
+    (color.thumbs || []).forEach(url => {
+      if (added.has(url)) return;
+      added.add(url);
+      const film = filmFromUrl(url);
+      cards.push({ url, film });
+    });
+  }
+
   main.innerHTML = `
     <div class="page-header">
       <h1>${name}</h1>
@@ -578,15 +640,20 @@ function renderColorDetail(main, slug) {
       ${colorNames.length ? `<div class="color-card-names" style="margin-bottom:24px">${colorNames.slice(0, 16).map(n => `<span>${n}</span>`).join('')}</div>` : ''}
       <div class="color-grid-detail">
         ${cards.map(card => {
-          const colors = card.film ? (card.film.colors || []) : [];
-          const title = card.film ? (card.film.title[CURRENT_LANG] || card.film.title.en) : '';
+          const palette = card.palette || (card.film ? (card.film.colors || []) : []);
+          const title = card.film ? (card.film.title[CURRENT_LANG] || card.film.title.en || '') : '';
           const filmId = card.film ? card.film.id : '';
+          const paletteHtml = (card.palette || palette).map(p => {
+            const hex = p.hex || p;
+            const pct = p.pct ? ` (${p.pct}%)` : '';
+            return `<a href="#/colors/${hex.replace('#','')}" class="color-detail-swatch" style="background:${hex}" title="${hex}${pct}"></a>`;
+          }).join('');
           return `
             <div class="color-detail-card">
               <div class="color-detail-img" onclick="openLightbox('${card.url}')">
                 <img ${imgAttr(card.url, title)}>
               </div>
-              <div class="color-detail-palette">${colors.map(c => `<a href="#/colors/${c.replace('#','')}" class="color-detail-swatch" style="background:${c}" title="${c}"></a>`).join('')}</div>
+              <div class="color-detail-palette">${paletteHtml}</div>
               ${title ? `<div class="color-detail-title"><a href="#/film/${filmId}">${title}</a></div>` : ''}
             </div>
           `;
