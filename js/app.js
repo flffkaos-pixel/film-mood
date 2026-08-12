@@ -144,9 +144,10 @@ function getLocalFramePath(frame) {
     }
   }
   // Fallback to film poster from FILM_DATA
-  const film = FILM_DATA.find(f => f.id === filmSlug);
+  const film = FILM_DATA.find(f => f.id === frame.filmSlug);
   if (film && film.poster && film.poster.startsWith('images/')) return film.poster;
   return null;
+}
 }
 
 let CURRENT_LANG = localStorage.getItem('filmmood-lang') || 'ko';
