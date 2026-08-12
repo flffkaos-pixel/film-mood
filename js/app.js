@@ -148,7 +148,6 @@ function getLocalFramePath(frame) {
   if (film && film.poster && film.poster.startsWith('images/')) return film.poster;
   return null;
 }
-}
 
 let CURRENT_LANG = localStorage.getItem('filmmood-lang') || 'ko';
 
