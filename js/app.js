@@ -176,7 +176,17 @@ function personAvatarAttr(d) {
   const name = d.name[CURRENT_LANG] || d.name.en || d.name.zh || '?';
   const initial = name.charAt(0) || '?';
   const fallback = 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect fill="%23252525" width="100" height="100"/><text font-size="32" fill="%236b6966" text-anchor="middle" x="50" y="58">' + encodeURIComponent(initial) + '</text></svg>';
-  const src = d.img || fallback;
+  // Proxy Wikimedia images to avoid hotlinking issues
+  let src = d.img || fallback;
+  if (d.img && d.img.includes('upload.wikimedia.org')) {
+    try {
+      const encodedUrl = encodeURIComponent(d.img);
+      src = `https://images.weserv.nl/?url=${encodedUrl}`;
+    } catch (e) {
+      // If encoding fails, fall back to original URL
+      src = d.img;
+    }
+  }
   return `src="${src}" alt="${name.replace(/['"]/g,'')}" loading="lazy" onerror="this.onerror=null;this.src='${fallback}';this.classList.remove('loaded');" onload="this.classList.add('loaded')"`;
 }
 
