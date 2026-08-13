@@ -1,6 +1,9 @@
 const IMG_PROXY = '';
 function pimg(url) { return url; }
-const PLACEHOLDER_SVG = 'data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 9%27%3E%3Crect fill=%27%23555555%27 width=%2716%27 height=%279%27/%3E%3C/svg%3E';
+const PLACEHOLDER_SVG = 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 9"><rect fill="%23555555" width="16" height="9"/></svg>';
+function escapeQuotes(str) {
+  return str.replace(/"/g, '&quot;');
+}
 
 // Load original yeguozi color stills data (4620 frames with exact palettes)
 let YEGUOZI_COLOR_STILLS = null;
@@ -168,14 +171,14 @@ function qsa(s, p) { return (p || document).querySelectorAll(s); }
 function personAvatar(d) {
   const name = d.name[CURRENT_LANG] || d.name.en || d.name.zh || '?';
   const initial = name.charAt(0) || '?';
-  const fallback = 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect fill="%23252525" width="100" height="100"/><text font-size="32" fill="%236b6966" text-anchor="middle" x="50" y="58">' + encodeURIComponent(initial) + '</text></svg>';
-  // d.img가 있으면 실제 이미지 URL 사용, 없으면 폴백 SVG
+  const fallback = `data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect fill="%23252525" width="100" height="100"/><text font-size="32" fill="%236b6966" text-anchor="middle" x="50" y="58">${encodeURIComponent(initial)}</text></svg>`;
+  // d.img가 있으면 실제 이미지 URL 사용, 없이는 폴백 SVG
   return d.img || fallback;
 }
 function personAvatarAttr(d) {
   const name = d.name[CURRENT_LANG] || d.name.en || d.name.zh || '?';
   const initial = name.charAt(0) || '?';
-  const fallback = 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect fill="%23252525" width="100" height="100"/><text font-size="32" fill="%236b6966" text-anchor="middle" x="50" y="58">' + encodeURIComponent(initial) + '</text></svg>';
+  const fallback = `data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect fill="%23252525" width="100" height="100"/><text font-size="32" fill="%236b6966" text-anchor="middle" x="50" y="58">${encodeURIComponent(initial)}</text></svg>`;
   // Proxy Wikimedia images to avoid hotlinking issues
   let src = d.img || fallback;
   if (d.img && d.img.includes('upload.wikimedia.org')) {
@@ -187,7 +190,8 @@ function personAvatarAttr(d) {
       src = d.img;
     }
   }
-  return `src="${src}" alt="${name.replace(/['"]/g,'')}" loading="lazy" onerror="this.onerror=null;this.src='${fallback}';this.classList.remove('loaded');" onload="this.classList.add('loaded')"`;
+  const alt = name.replace(/['"]/g, '');
+  return `src="${escapeQuotes(src)}" alt="${escapeQuotes(alt)}" loading="lazy" onerror="this.onerror=null;this.src='${escapeQuotes(fallback)}';this.classList.remove('loaded');" onload="this.classList.add('loaded')"`;
 }
 
 // ─── Lightbox ───
@@ -209,7 +213,7 @@ function imgAttr(src, alt) {
   src = pimg(src);
   const escaped = (alt || '').replace(/['"]/g, '');
   const errMsg = escaped ? escaped + '<br><span style=font-size:11px;opacity:.6>이미지 없음</span>' : '';
-  return `src="${src}" alt="${escaped}" loading="lazy" onerror="this.onerror=null;this.src='${PLACEHOLDER_SVG}';this.classList.remove('loaded');" onload="this.classList.add('loaded')"`;
+  return `src="${escapeQuotes(src)}" alt="${escapeQuotes(escaped)}" loading="lazy" onerror="this.onerror=null;this.src='${escapeQuotes(PLACEHOLDER_SVG)}';this.classList.remove('loaded');" onload="this.classList.add('loaded')"`;
 }
 
 // ─── Router ───
@@ -379,11 +383,11 @@ function renderHome(main) {
       </div>
       <div class="person-row">
 ${directors.map(d => `
-          <div class="person-card">
-            <img class="person-avatar" ${personAvatarAttr(d)} />
-            <p class="person-name">${d.name[CURRENT_LANG] || d.name.en}</p>
-          </div>
-        `).join('')}
+           <div class="person-card">
+             <img class="person-avatar" ${imgAttr(personAvatar(d), d.name[CURRENT_LANG] || d.name.en)} />
+             <p class="person-name">${d.name[CURRENT_LANG] || d.name.en}</p>
+           </div>
+         `).join('')}
       </div>
     </section>
     <section class="section">
@@ -460,36 +464,21 @@ function renderColors(main) {
     <section class="section">
       <div class="color-grid">
         ${COLORS_DATA.map(c => {
-          const nameKey = c.id;
-          const descKey = c.id + 'Desc';
-          const name = lang(nameKey);
-          const desc = lang(descKey);
-          const thumbs = c.thumbs.slice(0, 6);
-          const colorNames = c.colorNames || [];
-          return `
-            <div class="color-card" onclick="navigate('#/color/${c.id}')">
-              <div class="color-card-header">
-                <div class="color-card-name">${name}</div>
-                <div class="color-card-count">${c.count} ${lang('screenshotsCount')}</div>
-                <div class="color-card-tags">
-                  ${desc.split(', ').map(t => `<span>${t}</span>`).join('')}
-                </div>
-              </div>
-              <div class="color-card-thumbs">
-                ${thumbs.map(url => `
-                  <div class="color-thumb-wrap">
-                    <img ${imgAttr(url, filmTitleFromThumb(url))}>
-                    <span class="color-thumb-title">${filmTitleFromThumb(url)}</span>
-                  </div>
-                `).join('')}
-              </div>
-              ${colorNames.length ? `
-                <div class="color-card-names">
-                  ${colorNames.slice(0, 6).map(n => `<span>${n}</span>`).join('')}
-                </div>
-              ` : ''}
-            </div>
-          `;
+           const nameKey = c.id;
+           const descKey = c.id + 'Desc';
+           const name = lang(nameKey);
+           const desc = lang(descKey);
+           return `
+             <div class="color-card" onclick="navigate('#/color/${c.id}')">
+               <div class="color-card-header">
+                 <div class="color-card-name">${name}</div>
+                 <div class="color-card-count">${c.count} ${lang('screenshotsCount')}</div>
+                 <div class="color-card-tags">
+                   ${desc.split(', ').map(t => `<span>${t}</span>`).join('')}
+                 </div>
+               </div>
+             </div>
+           `;
         }).join('')}
       </div>
     </section>
@@ -627,7 +616,7 @@ function renderColorDetail(main, slug) {
     </div>
     <section class="section">
       <a href="#/colors" style="color:var(--text3);font-size:14px;display:inline-block;margin-bottom:24px">← ${lang('colors')}</a>
-      ${colorNames.length ? `<div class="color-card-names" style="margin-bottom:24px">${colorNames.slice(0, 16).map(n => `<span>${n}</span>`).join('')}</div>` : ''}
+
       <div class="color-grid-detail"><div class="loading" style="grid-column:1/-1;text-align:center;padding:40px"><div class="spinner"></div>${lang('loading')}</div></div>
     </section>
   `;
