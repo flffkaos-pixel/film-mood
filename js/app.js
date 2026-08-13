@@ -156,8 +156,20 @@ function getLocalFramePath(frame) {
   if (film && film.poster && film.poster.startsWith('images/')) return film.poster;
   return null;
 }
+function getLocalImageFromFilm(film) {
+  if (!film) return PLACEHOLDER_SVG;
+  // Prefer poster if exists and is local
+  if (film.poster && film.poster.startsWith('images/')) return film.poster;
+  // else try first screenshot
+  if (film.screenshots && film.screenshots.length > 0) {
+    const first = film.screenshots[0];
+    if (first && first.startsWith('images/')) return first;
+  }
+  return PLACEHOLDER_SVG;
+}
 
 let CURRENT_LANG = localStorage.getItem('filmmood-lang') || 'ko';
+
 
 function switchLang() {
   CURRENT_LANG = CURRENT_LANG === 'ko' ? 'en' : 'ko';
@@ -463,23 +475,37 @@ function renderColors(main) {
     </div>
     <section class="section">
       <div class="color-grid">
-        ${COLORS_DATA.map(c => {
-           const nameKey = c.id;
-           const descKey = c.id + 'Desc';
-           const name = lang(nameKey);
-           const desc = lang(descKey);
-           return `
-             <div class="color-card" onclick="navigate('#/color/${c.id}')">
-               <div class="color-card-header">
-                 <div class="color-card-name">${name}</div>
-                 <div class="color-card-count">${c.count} ${lang('screenshotsCount')}</div>
-                 <div class="color-card-tags">
-                   ${desc.split(', ').map(t => `<span>${t}</span>`).join('')}
-                 </div>
-               </div>
-             </div>
-           `;
-        }).join('')}
+${COLORS_DATA.map(c => {
+            const nameKey = c.id;
+            const descKey = c.id + 'Desc';
+            const name = lang(nameKey);
+            const desc = lang(descKey);
+            const thumbs = c.thumbs.slice(0,6);
+            return `
+              <div class="color-card" onclick="navigate('#/color/${c.id}')">
+                <div class="color-card-header">
+                  <div class="color-card-name">${name}</div>
+                  <div class="color-card-count">${c.count} ${lang('screenshotsCount')}</div>
+                  <div class="color-card-tags">
+                    ${desc.split(', ').map(t => `<span>${t}</span>`).join('')}
+                  </div>
+                </div>
+                <div class="color-card-thumbs">
+                  ${thumbs.map(url => {
+                    const film = filmFromUrl(url);
+                    const localImg = getLocalImageFromFilm(film);
+                    const title = filmTitleFromThumb(url);
+                    return `
+                      <div class="color-thumb-wrap">
+                        <img ${imgAttr(localImg, title)}>
+                        <span class="color-thumb-title">${title}</span>
+                      </div>
+                    `;
+                  }).join('')}
+                </div>
+              </div>
+            `;
+          }).join('')}
       </div>
     </section>
   `;
