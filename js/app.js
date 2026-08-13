@@ -1,6 +1,6 @@
 const IMG_PROXY = '';
 function pimg(url) { return url; }
-const PLACEHOLDER_SVG = 'data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 9%27%3E%3Crect fill=%27%231c1c1c%27 width=%2716%27 height=%279%27/%3E%3Ctext x=%2750%25%27 y=%2755%25%27 dominant-baseline=%27middle%27 text-anchor=%27middle%27 font-size=%271.5%27 fill=%27%23666%27 font-family=%27sans-serif%27%3E%EC%9D%B4%EB%AF%B8%EC%A7%80%20%EC%97%86%EC%9D%8C%3C/text%3E%3C/svg%3E';
+const PLACEHOLDER_SVG = 'data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 9%27%3E%3Crect fill=%27%23555555%27 width=%2716%27 height=%279%27/%3E%3C/svg%3E';
 
 // Load original yeguozi color stills data (4620 frames with exact palettes)
 let YEGUOZI_COLOR_STILLS = null;
@@ -9,10 +9,10 @@ async function loadYeguoziColorStills() {
   try {
     const resp = await fetch('yeguozi-color-stills.json');
     if (resp.ok) YEGUOZI_COLOR_STILLS = await resp.json();
-  } catch (e) {
-    console.warn('Failed to load yeguozi-color-stills.json:', e);
-    YEGUOZI_COLOR_STILLS = {};
-  }
+   } catch (e) {
+     // console.warn('Failed to load yeguozi-color-stills.json:', e);
+     YEGUOZI_COLOR_STILLS = {};
+   }
   return YEGUOZI_COLOR_STILLS;
 }
 
@@ -92,9 +92,9 @@ const FILM_THUMB_MAP = {
         }
       });
     }
-  } catch (e) {
-    console.warn('buildThumbMap error:', e);
-  }
+   } catch (e) {
+     // console.warn('buildThumbMap error:', e);
+   }
 })();
 function findFilmByLocalDir(dir) {
   const film = FILM_DATA.find(f => {
@@ -381,7 +381,7 @@ function renderHome(main) {
 ${directors.map(d => `
           <div class="person-card">
             <img class="person-avatar" ${personAvatarAttr(d)} />
-            <div class="person-name">${d.name[CURRENT_LANG] || d.name.en}</div>
+            <p class="person-name">${d.name[CURRENT_LANG] || d.name.en}</p>
           </div>
         `).join('')}
       </div>
@@ -397,7 +397,7 @@ ${directors.map(d => `
 ${cines.map(d => `
           <div class="person-card">
             <img class="person-avatar" ${personAvatarAttr(d)} />
-            <div class="person-name">${d.name[CURRENT_LANG] || d.name.en}</div>
+            <p class="person-name">${d.name[CURRENT_LANG] || d.name.en}</p>
           </div>
         `).join('')}
       </div>
@@ -705,11 +705,11 @@ function renderColorDetail(main, slug) {
     // Update count in header
     const countEl = main.querySelector('.page-header p');
     if (countEl) countEl.textContent = `${desc} · ${cards.length} ${lang('screenshotsCount')}`;
-  }).catch(err => {
-    console.error('Failed to load color detail:', err);
-    const grid = main.querySelector('.color-grid-detail');
-    if (grid) grid.innerHTML = `<div style="grid-column:1/-1;text-align:center;padding:40px;color:var(--text3)">${lang('errorLoading')}</div>`;
-  });
+   }).catch(err => {
+     // console.error('Failed to load color detail:', err);
+     const grid = main.querySelector('.color-grid-detail');
+     if (grid) grid.innerHTML = `<div style="grid-column:1/-1;text-align:center;padding:40px;color:var(--text3)">${lang('errorLoading')}</div>`;
+   });
 }
 
 // ─── Film Detail ───
