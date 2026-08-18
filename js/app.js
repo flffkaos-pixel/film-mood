@@ -175,7 +175,29 @@ function switchLang() {
   CURRENT_LANG = CURRENT_LANG === 'ko' ? 'en' : 'ko';
   localStorage.setItem('filmmood-lang', CURRENT_LANG);
   document.querySelector('.lang-toggle').textContent = CURRENT_LANG === 'ko' ? 'English' : '한국어';
+  applyStaticI18n();
   renderPage();
+}
+
+function applyStaticI18n() {
+  const brand = lang('brand');
+  const logo = document.querySelector('.site-logo');
+  if (logo) logo.textContent = brand;
+  document.title = brand;
+  const md = document.querySelector('meta[name="description"]');
+  if (md) md.setAttribute('content', lang('siteDescription'));
+  const navMap = {
+    '#/films': lang('films'),
+    '#/colors': lang('colors'),
+    '#/academy': lang('academy'),
+    '#/about': lang('about')
+  };
+  document.querySelectorAll('.nav-links a').forEach(a => {
+    const key = a.getAttribute('href');
+    if (navMap[key]) a.textContent = navMap[key];
+  });
+  const footer = document.querySelector('.site-footer p');
+  if (footer) footer.textContent = lang('copyright');
 }
 
 function qs(s, p) { return (p || document).querySelector(s); }
@@ -519,10 +541,6 @@ function renderAbout(main) {
     </div>
     <section class="section">
       <div class="about-content">
-        <h2>${lang('introTitle')}</h2>
-        <p>${lang('introP1')}</p>
-        <p>${lang('introP2')}</p>
-        <p>${lang('introP3')}</p>
         <h2>${lang('notesTitle')}</h2>
         <ul>${Array.isArray(notes) ? notes.map(n => `<li>${n}</li>`).join('') : ''}</ul>
         <h2>${lang('knowTitle')}</h2>
@@ -774,5 +792,6 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelector('.lang-toggle').addEventListener('click', switchLang);
   // Set initial lang button text
   document.querySelector('.lang-toggle').textContent = CURRENT_LANG === 'ko' ? 'English' : '한국어';
+  applyStaticI18n();
   renderPage();
 });

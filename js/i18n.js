@@ -41,10 +41,6 @@ const LANG = {
     siteDescription: "영화 속 인테리어와 컬러 팔레트에서 집 꾸미기 영감을 찾아보세요. 큐레이션된 영화 스크린샷으로 공간, 조명, 분위기를 탐험하세요.",
     github: "GitHub 저장소",
     copyright: "© 2026 필름무드 · 영화 & 홈 인테리어",
-    introTitle: "소개",
-    introP1: "필름무드는 영화 속 � 컬러와 공간에서 집 꾸미기 영감을 얻을 수 있는 아카이브입니다.",
-    introP2: "다양한 영화의 스크린�샷을 통해 색조, 조명, 인테리어를 탐색하고, 실제 공간에 적용할 수 있는 아이디어를 얻어보세요.",
-    introP3: "모든 콘텐츠는 직접 선별했으며, 느긋하게 살펴보며 새로운 시각을 발견해 보세요.",
     notesTitle: "참고 사항",
     notesList: [
       "일부 영화는 스포일러를 포함할 수 있습니다",
@@ -128,10 +124,6 @@ const LANG = {
     siteDescription: "Find home color and decor inspiration from cinema. Curated film screenshots rich in interior, space, and palette.",
     github: "GitHub repo",
     copyright: "© 2026 Film Mood · Film & Home Inspiration",
-    introTitle: "Introduction",
-    introP1: "This is a personal passion project. I maintain the site in my spare time, mainly collecting screenshots from films that speak to space, color, light, and home.",
-    introP2: "There is no fixed rule for which films or frames I share. I lean toward work that feels lived-in, sincere, and worth sitting with—not spectacle for its own sake. You may find everyday inspiration for home and color here, but I don't encourage copying film sets literally; those palettes and layouts serve the story first.",
-    introP3: "My understanding of cinema and interiors is modest, but every film and frame here was chosen by hand (64 films, 3400+ images). I hope you'll slow down, notice the details, and maybe feel something new.",
     notesTitle: "Notes",
     notesList: [
       "Some films may contain spoilers",
