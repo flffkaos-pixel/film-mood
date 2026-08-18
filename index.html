@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
@@ -43,88 +43,5 @@
 <script src="js/academy-full.js"></script>
 <script src="js/i18n.js"></script>
 <script src="js/app.js"></script>
-<script>
-  // Safety net with debug overlay
-  (function() {
-    var debugDiv = document.createElement('div');
-    debugDiv.style.cssText = 'position:fixed;bottom:10px;right:10px;padding:10px;background:#000;color:#0f0;font:12px monospace;z-index:9999;border-radius:4px;max-width:300px;';
-    debugDiv.id = 'debug-info';
-    document.body.appendChild(debugDiv);
-    function log(msg) {
-      var d = document.getElementById('debug-info');
-      if (d) d.textContent += '\n' + msg;
-      console.log(msg);
-    }
-    function tryInit() {
-      log('init: readyState=' + document.readyState);
-      try {
-        log('init: renderPage=' + typeof renderPage);
-        log('init: FILM_DATA=' + typeof FILM_DATA);
-        log('init: lang=' + typeof lang);
-        log('init: DIRECTOR_DATA=' + typeof DIRECTOR_DATA);
-        if (typeof renderPage === 'function') {
-          log('init: calling renderPage()');
-          // Wrap renderPage to catch internal errors
-          var originalRenderPage = renderPage;
-          window.renderPage = function() {
-            log('renderPage: START');
-            var main = document.querySelector('main');
-            log('renderPage: main=' + (main ? 'found' : 'NOT FOUND'));
-            try {
-              var result = originalRenderPage.apply(this, arguments);
-              log('renderPage: original returned');
-              if (main) {
-                log('renderPage: main.innerHTML length=' + (main.innerHTML ? main.innerHTML.length : 0));
-                if (!main.innerHTML.trim()) log('renderPage: main is EMPTY!');
-                // Check computed style of main
-                var cs = window.getComputedStyle(main);
-                log('renderPage: main display=' + cs.display + ' visibility=' + cs.visibility + ' opacity=' + cs.opacity);
-              }
-              return result;
-            } catch (e) {
-              log('renderPage ERROR: ' + e.message);
-              throw e;
-            }
-          };
-          renderPage();
-          log('init: renderPage returned');
-          // Check main content after a short delay
-          setTimeout(function() {
-            var main = document.querySelector('main');
-            if (main) {
-              log('setTimeout: main.innerHTML=' + main.innerHTML.length);
-              var cs = window.getComputedStyle(main);
-              log('setTimeout: main display=' + getComputedStyle(main).display + ' opacity=' + getComputedStyle(main).opacity);
-              // Check first child
-              if (main.firstElementChild) {
-                var cs2 = window.getComputedStyle(main.firstElementChild);
-                log('setTimeout: firstChild display=' + cs2.display + ' opacity=' + cs2.opacity + ' visibility=' + cs2.visibility);
-              }
-            }
-          }, 100);
-        } else {
-          log('ERROR: renderPage not available');
-        }
-      } catch (e) {
-        log('Init ERROR: ' + e.message);
-        var main = document.querySelector('main');
-        if (main && !main.innerHTML.trim()) {
-          main.innerHTML = '<div style="padding:40px;text-align:center;color:#666">Loading&hellip; Error: ' + e.message + '. Please refresh.</div>';
-        }
-      }
-    }
-    if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', tryInit);
-    } else {
-      tryInit();
-    }
-    window.addEventListener('error', function(e) {
-      log('UNHANDLED ERROR: ' + (e.error?.message || e.message));
-    });
-    window.addEventListener('unhandledrejection', function(e) {
-      log('UNHANDLED REJECTION: ' + e.reason);
-    });
-  })();
-</script>
 </body>
 </html>
