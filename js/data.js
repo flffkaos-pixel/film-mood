@@ -1058,7 +1058,7 @@ var FILM_DATA = [
     title: { zh: "天堂之日", en: "Days of Heaven", ko: "천국의 나날들" },
     year: 1978,
     director: { en: "Terrence Malick", ko: "테렌스 맬릭" },
-    region: { en: "United States", ko: "미국" },
+    region: { en: "USA", ko: "미국" },
     poster: "https://img.yeguozi.com/thumbs/%E5%A4%A9%E5%A0%82%E4%B9%8B%E6%97%A5(1978)/0001.webp",
     screenshots: [
     "https://img.yeguozi.com/thumbs/%E5%A4%A9%E5%A0%82%E4%B9%8B%E6%97%A5(1978)/0001.webp",
@@ -1333,7 +1333,7 @@ var FILM_DATA = [
     title: { zh: "德州巴黎", en: "Paris, Texas", ko: "파리, 텍사스" },
     year: 1984,
     director: { en: "Wim Wenders", ko: "빔 벤더스" },
-    region: { en: "United States", ko: "미국" },
+    region: { en: "USA", ko: "미국" },
     poster: "https://img.yeguozi.com/thumbs/%E5%BE%B7%E5%B7%9E%E5%B7%B4%E9%BB%8E(1984)/0001.webp",
     screenshots: [
     "https://img.yeguozi.com/thumbs/%E5%BE%B7%E5%B7%9E%E5%B7%B4%E9%BB%8E(1984)/0001.webp",
@@ -2011,7 +2011,7 @@ var FILM_DATA = [
     title: { zh: "走出非洲", en: "Out of Africa", ko: "아웃 오브 아프리카" },
     year: 1985,
     director: { en: "Sydney Pollack", ko: "시드니 폴락" },
-    region: { en: "United States", ko: "미국" },
+    region: { en: "USA", ko: "미국" },
     poster: "https://img.yeguozi.com/thumbs/%E8%B5%B0%E5%87%BA%E9%9D%9E%E6%B4%B2(1985)/0001.webp",
     screenshots: [
     "https://img.yeguozi.com/thumbs/%E8%B5%B0%E5%87%BA%E9%9D%9E%E6%B4%B2(1985)/0001.webp",
