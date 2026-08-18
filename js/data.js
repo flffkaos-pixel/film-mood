@@ -4416,7 +4416,7 @@ var FILM_DATA = [
   "id": "a-nie-si-de-hai-tan-2008",
   "title": {
     "en": "a nie si de hai tan 2008",
-    "ko": "",
+    "ko": "안느 시의 해변",
     "zh": ""
   },
   "year": 2008,
@@ -4482,7 +4482,7 @@ var FILM_DATA = [
   "id": "all-about-my-mother",
   "title": {
     "en": "all about my mother",
-    "ko": "",
+    "ko": "내 어머니의 모든 것",
     "zh": ""
   },
   "year": 0,
@@ -4549,7 +4549,7 @@ var FILM_DATA = [
   "id": "ba-li-ye-mei-gui-1986",
   "title": {
     "en": "ba li ye mei gui 1986",
-    "ko": "",
+    "ko": "파리의 연인",
     "zh": ""
   },
   "year": 1986,
@@ -4657,7 +4657,7 @@ var FILM_DATA = [
   "id": "beng-kui-bian-yuan-de-nv-ren-1988",
   "title": {
     "en": "beng kui bian yuan de nv ren 1988",
-    "ko": "",
+    "ko": "무너지는 경계의 여자",
     "zh": ""
   },
   "year": 1988,
@@ -4717,7 +4717,7 @@ var FILM_DATA = [
   "id": "bu-lv-bu-ting-2008",
   "title": {
     "en": "bu lv bu ting 2008",
-    "ko": "",
+    "ko": "멈추지 않는 걸음",
     "zh": ""
   },
   "year": 2008,
@@ -4794,7 +4794,7 @@ var FILM_DATA = [
   "id": "chen-guang-zheng-hao-2022",
   "title": {
     "en": "chen guang zheng hao 2022",
-    "ko": "",
+    "ko": "아침 빛은 맑고",
     "zh": ""
   },
   "year": 2022,
@@ -4883,7 +4883,7 @@ var FILM_DATA = [
   "id": "chong-qing-sen-lin-1994",
   "title": {
     "en": "chong qing sen lin 1994",
-    "ko": "",
+    "ko": "중경삼림",
     "zh": ""
   },
   "year": 1994,
@@ -4972,7 +4972,7 @@ var FILM_DATA = [
   "id": "chun-guang-zha-xie-1997",
   "title": {
     "en": "chun guang zha xie 1997",
-    "ko": "",
+    "ko": "춘광사설",
     "zh": ""
   },
   "year": 1997,
@@ -5061,7 +5061,7 @@ var FILM_DATA = [
   "id": "conte-de-printemps1990",
   "title": {
     "en": "conte de printemps1990",
-    "ko": "",
+    "ko": "봄 이야기",
     "zh": ""
   },
   "year": 0,
@@ -5142,7 +5142,7 @@ var FILM_DATA = [
   "id": "de-zhou-ba-li-1984",
   "title": {
     "en": "de zhou ba li 1984",
-    "ko": "",
+    "ko": "파리, 텍사스",
     "zh": ""
   },
   "year": 1984,
@@ -5243,7 +5243,7 @@ var FILM_DATA = [
   "id": "dong-tian-de-gu-shi-1992",
   "title": {
     "en": "dong tian de gu shi 1992",
-    "ko": "",
+    "ko": "겨울 이야기",
     "zh": ""
   },
   "year": 1992,
@@ -5337,7 +5337,7 @@ var FILM_DATA = [
   "id": "dong-xie-xi-du-1994",
   "title": {
     "en": "dong xie xi du 1994",
-    "ko": "",
+    "ko": "동사서독",
     "zh": ""
   },
   "year": 1994,
@@ -5402,7 +5402,7 @@ var FILM_DATA = [
   "id": "dou-ling-zhi-ma-2011",
   "title": {
     "en": "dou ling zhi ma 2011",
-    "ko": "",
+    "ko": "두링지마",
     "zh": ""
   },
   "year": 2011,
@@ -5475,7 +5475,7 @@ var FILM_DATA = [
   "id": "fa-lan-xi-te-pai-2021",
   "title": {
     "en": "fa lan xi te pai 2021",
-    "ko": "",
+    "ko": "프랑스 특파원",
     "zh": ""
   },
   "year": 2021,
@@ -5544,7 +5544,7 @@ var FILM_DATA = [
   "id": "gu-ling-jie-shao-nian-1991",
   "title": {
     "en": "gu ling jie shao nian 1991",
-    "ko": "",
+    "ko": "고령가의 소년",
     "zh": ""
   },
   "year": 1991,
@@ -5631,7 +5631,7 @@ var FILM_DATA = [
   "id": "hu-han-yu-xi-yu-1972",
   "title": {
     "en": "hu han yu xi yu 1972",
-    "ko": "",
+    "ko": "호한우서우",
     "zh": ""
   },
   "year": 1972,
@@ -5687,7 +5687,7 @@ var FILM_DATA = [
   "id": "hu-li-ye-ta-2016",
   "title": {
     "en": "hu li ye ta 2016",
-    "ko": "",
+    "ko": "후리예타",
     "zh": ""
   },
   "year": 2016,
@@ -5751,7 +5751,7 @@ var FILM_DATA = [
   "id": "hua-yang-nian-hua-2000",
   "title": {
     "en": "hua yang nian hua 2000",
-    "ko": "",
+    "ko": "화양연화",
     "zh": ""
   },
   "year": 2000,
@@ -5835,7 +5835,7 @@ var FILM_DATA = [
   "id": "hun-yin-sheng-huo-1970",
   "title": {
     "en": "hun yin sheng huo 1970",
-    "ko": "",
+    "ko": "결혼 생활",
     "zh": ""
   },
   "year": 1970,
@@ -5905,7 +5905,7 @@ var FILM_DATA = [
   "id": "it-s-complicated-2009",
   "title": {
     "en": "it s complicated 2009",
-    "ko": "",
+    "ko": "이츠 컴플리케이티드",
     "zh": ""
   },
   "year": 2009,
@@ -5981,7 +5981,7 @@ var FILM_DATA = [
   "id": "ji-jin-cheng-ming-2000",
   "title": {
     "en": "ji jin cheng ming 2000",
-    "ko": "",
+    "ko": "지진성명",
     "zh": ""
   },
   "year": 2000,
@@ -6080,7 +6080,7 @@ var FILM_DATA = [
   "id": "jia-shi-wo-de-che-2021",
   "title": {
     "en": "jia shi wo de che 2021",
-    "ko": "",
+    "ko": "드라이브 마이 카",
     "zh": ""
   },
   "year": 2021,
@@ -6150,7 +6150,7 @@ var FILM_DATA = [
   "id": "jiang-ai-fang-zhu-2007",
   "title": {
     "en": "jiang ai fang zhu 2007",
-    "ko": "",
+    "ko": "장애방주",
     "zh": ""
   },
   "year": 2007,
@@ -6265,7 +6265,7 @@ var FILM_DATA = [
   "id": "ke-lai-er-de-xi-gai-1970",
   "title": {
     "en": "ke lai er de xi gai 1970",
-    "ko": "",
+    "ko": "클레르의 무릎",
     "zh": ""
   },
   "year": 1970,
@@ -6337,7 +6337,7 @@ var FILM_DATA = [
   "id": "ku-ye-2023",
   "title": {
     "en": "ku ye 2023",
-    "ko": "",
+    "ko": "쿠예",
     "zh": ""
   },
   "year": 2023,
@@ -6408,7 +6408,7 @@ var FILM_DATA = [
   "id": "lan-bai-hong-san-bu-qu-zhi-lan-1993",
   "title": {
     "en": "lan bai hong san bu qu zhi lan 1993",
-    "ko": "",
+    "ko": "세 가지 색: 블루",
     "zh": ""
   },
   "year": 1993,
@@ -6468,7 +6468,7 @@ var FILM_DATA = [
   "id": "lei-a-fu-er-2011",
   "title": {
     "en": "lei a fu er 2011",
-    "ko": "",
+    "ko": "르 아브르",
     "zh": ""
   },
   "year": 2011,
@@ -6547,7 +6547,7 @@ var FILM_DATA = [
   "id": "lian-ai-jia-qi-2006",
   "title": {
     "en": "lian ai jia qi 2006",
-    "ko": "",
+    "ko": "연애의 휴가",
     "zh": ""
   },
   "year": 2006,
@@ -6628,7 +6628,7 @@ var FILM_DATA = [
   "id": "lian-pang-cun-zhuang-2017",
   "title": {
     "en": "lian pang cun zhuang 2017",
-    "ko": "",
+    "ko": "리안팡춘장",
     "zh": ""
   },
   "year": 2017,
@@ -6709,7 +6709,7 @@ var FILM_DATA = [
   "id": "ma-er-ke-mu-yu-ma-li-2021",
   "title": {
     "en": "ma er ke mu yu ma li 2021",
-    "ko": "",
+    "ko": "말콤과 마리",
     "zh": ""
   },
   "year": 2021,
@@ -6782,7 +6782,7 @@ var FILM_DATA = [
   "id": "nv-shou-cang-jia-1967",
   "title": {
     "en": "nv shou cang jia 1967",
-    "ko": "",
+    "ko": "여자 수집가",
     "zh": ""
   },
   "year": 1967,
@@ -6891,7 +6891,7 @@ var FILM_DATA = [
   "id": "pa-te-sen-2016",
   "title": {
     "en": "pa te sen 2016",
-    "ko": "",
+    "ko": "파테슨",
     "zh": ""
   },
   "year": 2016,
@@ -6969,7 +6969,7 @@ var FILM_DATA = [
   "id": "ping-xing-de-mu-qin-2021",
   "title": {
     "en": "ping xing de mu qin 2021",
-    "ko": "",
+    "ko": "평행의 어머니",
     "zh": ""
   },
   "year": 2021,
@@ -7033,7 +7033,7 @@ var FILM_DATA = [
   "id": "play-time-1967",
   "title": {
     "en": "play time 1967",
-    "ko": "",
+    "ko": "플레이타임",
     "zh": ""
   },
   "year": 1967,
@@ -7114,7 +7114,7 @@ var FILM_DATA = [
   "id": "qing-gan-jia-zhi-2025",
   "title": {
     "en": "qing gan jia zhi 2025",
-    "ko": "",
+    "ko": "감정의 가치",
     "zh": ""
   },
   "year": 2025,
@@ -7210,7 +7210,7 @@ var FILM_DATA = [
   "id": "qing-mei-zhu-ma-1985",
   "title": {
     "en": "qing mei zhu ma 1985",
-    "ko": "",
+    "ko": "청매죽마",
     "zh": ""
   },
   "year": 1985,
@@ -7286,7 +7286,7 @@ var FILM_DATA = [
   "id": "qiu-ri-zou-ming-qu-1978",
   "title": {
     "en": "qiu ri zou ming qu 1978",
-    "ko": "",
+    "ko": "가을날의 산책",
     "zh": ""
   },
   "year": 1978,
@@ -7346,7 +7346,7 @@ var FILM_DATA = [
   "id": "qiu-tian-de-gu-shi-1998",
   "title": {
     "en": "qiu tian de gu shi 1998",
-    "ko": "",
+    "ko": "가을 이야기",
     "zh": ""
   },
   "year": 1998,
@@ -7447,7 +7447,7 @@ var FILM_DATA = [
   "id": "ru-mu-ai-he-2012",
   "title": {
     "en": "ru mu ai he 2012",
-    "ko": "",
+    "ko": "루무아이허",
     "zh": ""
   },
   "year": 2012,
@@ -7515,7 +7515,7 @@ var FILM_DATA = [
   "id": "sha-tan-shang-de-bao-lian-1983",
   "title": {
     "en": "sha tan shang de bao lian 1983",
-    "ko": "",
+    "ko": "모래 위의 연꽃",
     "zh": ""
   },
   "year": 1983,
@@ -7552,7 +7552,7 @@ var FILM_DATA = [
   "id": "shai-hou-jia-ri-2022",
   "title": {
     "en": "shai hou jia ri 2022",
-    "ko": "",
+    "ko": "그늘진 날들",
     "zh": ""
   },
   "year": 2022,
@@ -7612,7 +7612,7 @@ var FILM_DATA = [
   "id": "shang-di-zhi-shou-2021",
   "title": {
     "en": "shang di zhi shou 2021",
-    "ko": "",
+    "ko": "신의 손",
     "zh": ""
   },
   "year": 2021,
@@ -7697,7 +7697,7 @@ var FILM_DATA = [
   "id": "shi-jie-shang-zui-zao-gao-de-ren-2021",
   "title": {
     "en": "shi jie shang zui zao gao de ren 2021",
-    "ko": "",
+    "ko": "세상에서 가장 나쁜 사람",
     "zh": ""
   },
   "year": 2021,
@@ -7734,7 +7734,7 @@ var FILM_DATA = [
   "id": "the-hedgehog",
   "title": {
     "en": "the hedgehog",
-    "ko": "",
+    "ko": "고슴도치",
     "zh": ""
   },
   "year": 0,
@@ -7839,7 +7839,7 @@ var FILM_DATA = [
   "id": "the-hours",
   "title": {
     "en": "the hours",
-    "ko": "",
+    "ko": "디 아워스",
     "zh": ""
   },
   "year": 0,
@@ -7982,7 +7982,7 @@ var FILM_DATA = [
   "id": "things-to-come",
   "title": {
     "en": "things to come",
-    "ko": "",
+    "ko": "다가올 것들",
     "zh": ""
   },
   "year": 0,
@@ -8091,7 +8091,7 @@ var FILM_DATA = [
   "id": "tian-cai-yi-zu-2001",
   "title": {
     "en": "tian cai yi zu 2001",
-    "ko": "",
+    "ko": "천재 일족",
     "zh": ""
   },
   "year": 2001,
@@ -8204,7 +8204,7 @@ var FILM_DATA = [
   "id": "tian-sheng-yi-dui-1998",
   "title": {
     "en": "tian sheng yi dui 1998",
-    "ko": "",
+    "ko": "천생일대",
     "zh": ""
   },
   "year": 1998,
@@ -8266,7 +8266,7 @@ var FILM_DATA = [
   "id": "tian-tang-zhi-ri-1978",
   "title": {
     "en": "tian tang zhi ri 1978",
-    "ko": "",
+    "ko": "천국의 나날",
     "zh": ""
   },
   "year": 1978,
@@ -8384,7 +8384,7 @@ var FILM_DATA = [
   "id": "tong-nian-wang-shi-1985",
   "title": {
     "en": "tong nian wang shi 1985",
-    "ko": "",
+    "ko": "동년왕사",
     "zh": ""
   },
   "year": 1985,
@@ -8478,7 +8478,7 @@ var FILM_DATA = [
   "id": "wu-hou-zhi-ai-1972",
   "title": {
     "en": "wu hou zhi ai 1972",
-    "ko": "",
+    "ko": "오후의 사랑",
     "zh": ""
   },
   "year": 1972,
@@ -8553,7 +8553,7 @@ var FILM_DATA = [
   "id": "wu-zhu-zhi-zuo-2018",
   "title": {
     "en": "wu zhu zhi zuo 2018",
-    "ko": "",
+    "ko": "무주지작",
     "zh": ""
   },
   "year": 2018,
@@ -8666,7 +8666,7 @@ var FILM_DATA = [
   "id": "xia-tian-de-gu-shi-1996",
   "title": {
     "en": "xia tian de gu shi 1996",
-    "ko": "",
+    "ko": "여름 이야기",
     "zh": ""
   },
   "year": 1996,
@@ -8759,7 +8759,7 @@ var FILM_DATA = [
   "id": "xia-tian-de-zi-wei-2000",
   "title": {
     "en": "xia tian de zi wei 2000",
-    "ko": "",
+    "ko": "여름의 자위",
     "zh": ""
   },
   "year": 2000,
@@ -8796,7 +8796,7 @@ var FILM_DATA = [
   "id": "yi-ge-chang-yi-ge-bu-chang-1977",
   "title": {
     "en": "yi ge chang yi ge bu chang 1977",
-    "ko": "",
+    "ko": "한 곡 부르고 한 곡 안 부르고",
     "zh": ""
   },
   "year": 1977,
@@ -8881,7 +8881,7 @@ var FILM_DATA = [
   "id": "yi-ge-hao-ren-2023",
   "title": {
     "en": "yi ge hao ren 2023",
-    "ko": "",
+    "ko": "한 착한 사람",
     "zh": ""
   },
   "year": 2023,
@@ -8951,7 +8951,7 @@ var FILM_DATA = [
   "id": "ying-xiong-2002",
   "title": {
     "en": "ying xiong 2002",
-    "ko": "",
+    "ko": "영웅",
     "zh": ""
   },
   "year": 2002,
@@ -9033,7 +9033,7 @@ var FILM_DATA = [
   "id": "ying-zi-xie-shou-2010",
   "title": {
     "en": "ying zi xie shou 2010",
-    "ko": "",
+    "ko": "그림자 악수",
     "zh": ""
   },
   "year": 2010,
@@ -9090,7 +9090,7 @@ var FILM_DATA = [
   "id": "yuan-fang-2002",
   "title": {
     "en": "yuan fang 2002",
-    "ko": "",
+    "ko": "원방",
     "zh": ""
   },
   "year": 2002,
@@ -9168,7 +9168,7 @@ var FILM_DATA = [
   "id": "yue-sheng-wang-guo-2012",
   "title": {
     "en": "yue sheng wang guo 2012",
-    "ko": "",
+    "ko": "월승왕국",
     "zh": ""
   },
   "year": 2012,
@@ -9235,7 +9235,7 @@ var FILM_DATA = [
   "id": "zai-ge-lun-bu-2017",
   "title": {
     "en": "zai ge lun bu 2017",
-    "ko": "",
+    "ko": "자이거룬부",
     "zh": ""
   },
   "year": 2017,
@@ -9304,7 +9304,7 @@ var FILM_DATA = [
   "id": "zhu-li-yu-zhu-li-ya-2009",
   "title": {
     "en": "zhu li yu zhu li ya 2009",
-    "ko": "",
+    "ko": "줄리와 줄리아",
     "zh": ""
   },
   "year": 2009,
@@ -9400,7 +9400,7 @@ var FILM_DATA = [
   "id": "zou-chu-fei-zhou-1985",
   "title": {
     "en": "zou chu fei zhou 1985",
-    "ko": "",
+    "ko": "아프리카에서",
     "zh": ""
   },
   "year": 1985,
