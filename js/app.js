@@ -488,26 +488,23 @@ function filmCardHTML(f) {
 }
 
 // ─── Colors ───
-function colorCardThumbs(c) {
-  const thumbs = (c.thumbs || []).slice(0, 6)
-    .map(url => {
-      const film = filmFromUrl(url);
-      return { img: getLocalImageFromFilm(film), film, url };
-    })
-    .filter(t => t.img && t.img.startsWith('images/'));
-  if (thumbs.length < 6) {
-    const used = new Set(thumbs.map(t => t.film ? t.film.id : ''));
-    const pool = FILM_DATA.filter(f =>
-      f.colors && f.colors.length && f.poster && f.poster.startsWith('images/')
-    );
-    const byHue = pool.filter(f => f.colors.some(hex => classifyHue(hex) === c.id));
-    const fallback = pool.filter(f => !byHue.includes(f));
-    for (const f of [...byHue, ...fallback]) {
-      if (thumbs.length >= 6) break;
-      if (used.has(f.id)) continue;
-      thumbs.push({ img: f.poster, film: f, url: '' });
-      used.add(f.id);
+function colorCardThumbsFromStills(c, stills, usedImages) {
+  const frames = ((stills && stills[c.id]) || []).filter(f => f.palette && f.palette.length > 0);
+  const thumbs = [];
+  for (const frame of frames) {
+    const localPath = getLocalFramePath(frame);
+    if (!localPath || !localPath.startsWith('images/') || usedImages.has(localPath)) continue;
+    usedImages.add(localPath);
+    let localFilm = FILM_DATA.find(f => f.id === frame.filmSlug);
+    if (!localFilm) {
+      for (const [filmId, manifestKey] of Object.entries(FILM_ID_TO_MANIFEST)) {
+        if (manifestKey === frame.filmSlug) { localFilm = FILM_DATA.find(f => f.id === filmId); break; }
+      }
     }
+    const titleEn = (localFilm && localFilm.title.en) || frame.filmTitleEn || '';
+    const titleKo = (localFilm && localFilm.title.ko) || (localFilm && localFilm.title.en) || titleEn;
+    thumbs.push({ img: localPath, film: { id: localFilm ? localFilm.id : frame.filmSlug, title: { en: titleEn, ko: titleKo } } });
+    if (thumbs.length >= 6) break;
   }
   return thumbs;
 }
@@ -525,7 +522,6 @@ ${COLORS_DATA.map(c => {
             const descKey = c.id + 'Desc';
             const name = lang(nameKey);
             const desc = lang(descKey);
-            const thumbs = colorCardThumbs(c);
             return `
               <div class="color-card" onclick="navigate('#/color/${c.id}')">
                 <div class="color-card-header">
@@ -535,23 +531,31 @@ ${COLORS_DATA.map(c => {
                     ${desc.split(', ').map(t => `<span>${t}</span>`).join('')}
                   </div>
                 </div>
-                <div class="color-card-thumbs">
-                  ${thumbs.map(t => {
-                    const title = t.film ? (t.film.title[CURRENT_LANG] || t.film.title.en || '') : '';
-                    return `
-                      <div class="color-thumb-wrap">
-                        <img ${imgAttr(t.img, title)}>
-                        <span class="color-thumb-title">${title}</span>
-                      </div>
-                    `;
-                  }).join('')}
-                </div>
+                <div class="color-card-thumbs"><div class="loading" style="padding:24px;text-align:center;color:var(--text3);font-size:13px">${lang('loading')}</div></div>
               </div>
             `;
           }).join('')}
       </div>
     </section>
   `;
+  loadYeguoziColorStills().then(stillsData => {
+    const usedImages = new Set();
+    main.querySelectorAll('.color-card').forEach((card, i) => {
+      const c = COLORS_DATA[i];
+      const thumbs = colorCardThumbsFromStills(c, stillsData, usedImages);
+      const wrap = card.querySelector('.color-card-thumbs');
+      if (!wrap) return;
+      wrap.innerHTML = thumbs.map(t => {
+        const title = t.film.title[CURRENT_LANG] || t.film.title.en || '';
+        return `
+          <div class="color-thumb-wrap">
+            <img ${imgAttr(t.img, title)}>
+            <span class="color-thumb-title">${title}</span>
+          </div>
+        `;
+      }).join('');
+    });
+  });
 }
 
 // ─── About ───
