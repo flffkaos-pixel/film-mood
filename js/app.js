@@ -488,6 +488,30 @@ function filmCardHTML(f) {
 }
 
 // ─── Colors ───
+function colorCardThumbs(c) {
+  const thumbs = (c.thumbs || []).slice(0, 6)
+    .map(url => {
+      const film = filmFromUrl(url);
+      return { img: getLocalImageFromFilm(film), film, url };
+    })
+    .filter(t => t.img && t.img.startsWith('images/'));
+  if (thumbs.length < 6) {
+    const used = new Set(thumbs.map(t => t.film ? t.film.id : ''));
+    const pool = FILM_DATA.filter(f =>
+      f.colors && f.colors.length && f.poster && f.poster.startsWith('images/')
+    );
+    const byHue = pool.filter(f => f.colors.some(hex => classifyHue(hex) === c.id));
+    const fallback = pool.filter(f => !byHue.includes(f));
+    for (const f of [...byHue, ...fallback]) {
+      if (thumbs.length >= 6) break;
+      if (used.has(f.id)) continue;
+      thumbs.push({ img: f.poster, film: f, url: '' });
+      used.add(f.id);
+    }
+  }
+  return thumbs;
+}
+
 function renderColors(main) {
   main.innerHTML = `
     <div class="page-header">
@@ -501,7 +525,7 @@ ${COLORS_DATA.map(c => {
             const descKey = c.id + 'Desc';
             const name = lang(nameKey);
             const desc = lang(descKey);
-            const thumbs = c.thumbs.slice(0,6);
+            const thumbs = colorCardThumbs(c);
             return `
               <div class="color-card" onclick="navigate('#/color/${c.id}')">
                 <div class="color-card-header">
@@ -512,13 +536,11 @@ ${COLORS_DATA.map(c => {
                   </div>
                 </div>
                 <div class="color-card-thumbs">
-                  ${thumbs.map(url => {
-                    const film = filmFromUrl(url);
-                    const localImg = getLocalImageFromFilm(film);
-                    const title = filmTitleFromThumb(url);
+                  ${thumbs.map(t => {
+                    const title = t.film ? (t.film.title[CURRENT_LANG] || t.film.title.en || '') : '';
                     return `
                       <div class="color-thumb-wrap">
-                        <img ${imgAttr(localImg, title)}>
+                        <img ${imgAttr(t.img, title)}>
                         <span class="color-thumb-title">${title}</span>
                       </div>
                     `;
