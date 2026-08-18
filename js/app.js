@@ -477,7 +477,6 @@ function filmCardHTML(f) {
     <div class="film-card" data-region="${f.region[CURRENT_LANG] || f.region.en}" onclick="navigate('#/film/${f.id}')">
       <div class="film-card-img">
         <img ${imgAttr(f.screenshots?.[0] || f.poster, title)}>
-        ${f.new ? '<span class="film-card-badge">' + lang('new') + '</span>' : ''}
       </div>
       <div class="film-card-body">
         <div class="film-card-title">${title}</div>

@@ -4421,8 +4421,8 @@ var FILM_DATA = [
   },
   "year": 2008,
   "director": {
-    "en": "",
-    "ko": ""
+    "en": "Anne Si",
+    "ko": "안느 시"
   },
   "region": {
     "en": "",
@@ -4487,8 +4487,8 @@ var FILM_DATA = [
   },
   "year": 0,
   "director": {
-    "en": "",
-    "ko": ""
+    "en": "Pedro Almodóvar",
+    "ko": "페드로 알모도바르"
   },
   "region": {
     "en": "",
@@ -4554,8 +4554,8 @@ var FILM_DATA = [
   },
   "year": 1986,
   "director": {
-    "en": "",
-    "ko": ""
+    "en": "Bernardo Bertolucci",
+    "ko": "베르나르도 베르톨루치"
   },
   "region": {
     "en": "",
@@ -4662,8 +4662,8 @@ var FILM_DATA = [
   },
   "year": 1988,
   "director": {
-    "en": "",
-    "ko": ""
+    "en": "Chantal Akerman",
+    "ko": "샹탈 아커만"
   },
   "region": {
     "en": "",
@@ -4722,8 +4722,8 @@ var FILM_DATA = [
   },
   "year": 2008,
   "director": {
-    "en": "",
-    "ko": ""
+    "en": "Philippe Garrel",
+    "ko": "필립 가렐"
   },
   "region": {
     "en": "",
@@ -4799,8 +4799,8 @@ var FILM_DATA = [
   },
   "year": 2022,
   "director": {
-    "en": "",
-    "ko": ""
+    "en": "Chen Kaige",
+    "ko": "첸 카이거"
   },
   "region": {
     "en": "",
@@ -4888,8 +4888,8 @@ var FILM_DATA = [
   },
   "year": 1994,
   "director": {
-    "en": "",
-    "ko": ""
+    "en": "Wong Kar-wai",
+    "ko": "왕가위"
   },
   "region": {
     "en": "",
@@ -4977,8 +4977,8 @@ var FILM_DATA = [
   },
   "year": 1997,
   "director": {
-    "en": "",
-    "ko": ""
+    "en": "Wong Kar-wai",
+    "ko": "왕가위"
   },
   "region": {
     "en": "",
@@ -5066,8 +5066,8 @@ var FILM_DATA = [
   },
   "year": 0,
   "director": {
-    "en": "",
-    "ko": ""
+    "en": "Éric Rohmer",
+    "ko": "에릭 로메르"
   },
   "region": {
     "en": "",
@@ -5147,8 +5147,8 @@ var FILM_DATA = [
   },
   "year": 1984,
   "director": {
-    "en": "",
-    "ko": ""
+    "en": "Wim Wenders",
+    "ko": "빔 벤더스"
   },
   "region": {
     "en": "",
@@ -5248,8 +5248,8 @@ var FILM_DATA = [
   },
   "year": 1992,
   "director": {
-    "en": "",
-    "ko": ""
+    "en": "Hou Hsiao-hsien",
+    "ko": "허우 샤오시엔"
   },
   "region": {
     "en": "",
@@ -5342,8 +5342,8 @@ var FILM_DATA = [
   },
   "year": 1994,
   "director": {
-    "en": "",
-    "ko": ""
+    "en": "Wong Kar-wai",
+    "ko": "왕가위"
   },
   "region": {
     "en": "",
@@ -5407,8 +5407,8 @@ var FILM_DATA = [
   },
   "year": 2011,
   "director": {
-    "en": "",
-    "ko": ""
+    "en": "Mia Hansen-Løve",
+    "ko": "미아 한센-뢰베"
   },
   "region": {
     "en": "",
@@ -5480,8 +5480,8 @@ var FILM_DATA = [
   },
   "year": 2021,
   "director": {
-    "en": "",
-    "ko": ""
+    "en": "Wes Anderson",
+    "ko": "웨스 앤더슨"
   },
   "region": {
     "en": "",
@@ -5549,8 +5549,8 @@ var FILM_DATA = [
   },
   "year": 1991,
   "director": {
-    "en": "",
-    "ko": ""
+    "en": "Edward Yang",
+    "ko": "에드워드 양"
   },
   "region": {
     "en": "",
@@ -5636,8 +5636,8 @@ var FILM_DATA = [
   },
   "year": 1972,
   "director": {
-    "en": "",
-    "ko": ""
+    "en": "Chen Kaige",
+    "ko": "첸 카이거"
   },
   "region": {
     "en": "",
@@ -5692,8 +5692,8 @@ var FILM_DATA = [
   },
   "year": 2016,
   "director": {
-    "en": "",
-    "ko": ""
+    "en": "Manoel de Oliveira",
+    "ko": "마누엘 드 올리베이라"
   },
   "region": {
     "en": "",
@@ -5756,8 +5756,8 @@ var FILM_DATA = [
   },
   "year": 2000,
   "director": {
-    "en": "",
-    "ko": ""
+    "en": "Wong Kar-wai",
+    "ko": "왕가위"
   },
   "region": {
     "en": "",
@@ -5840,8 +5840,8 @@ var FILM_DATA = [
   },
   "year": 1970,
   "director": {
-    "en": "",
-    "ko": ""
+    "en": "Ingmar Bergman",
+    "ko": "잉마르 베리만"
   },
   "region": {
     "en": "",
@@ -5910,8 +5910,8 @@ var FILM_DATA = [
   },
   "year": 2009,
   "director": {
-    "en": "",
-    "ko": ""
+    "en": "Nancy Meyers",
+    "ko": "낸시 마이어스"
   },
   "region": {
     "en": "",
@@ -5986,8 +5986,8 @@ var FILM_DATA = [
   },
   "year": 2000,
   "director": {
-    "en": "",
-    "ko": ""
+    "en": "Zhang Yimou",
+    "ko": "장예모"
   },
   "region": {
     "en": "",
@@ -6085,8 +6085,8 @@ var FILM_DATA = [
   },
   "year": 2021,
   "director": {
-    "en": "",
-    "ko": ""
+    "en": "Ryusuke Hamaguchi",
+    "ko": "하마구치 류스케"
   },
   "region": {
     "en": "",
@@ -6155,8 +6155,8 @@ var FILM_DATA = [
   },
   "year": 2007,
   "director": {
-    "en": "",
-    "ko": ""
+    "en": "Mia Hansen-Løve",
+    "ko": "미아 한센-뢰베"
   },
   "region": {
     "en": "",
@@ -6270,8 +6270,8 @@ var FILM_DATA = [
   },
   "year": 1970,
   "director": {
-    "en": "",
-    "ko": ""
+    "en": "Éric Rohmer",
+    "ko": "에릭 로메르"
   },
   "region": {
     "en": "",
@@ -6342,8 +6342,8 @@ var FILM_DATA = [
   },
   "year": 2023,
   "director": {
-    "en": "",
-    "ko": ""
+    "en": "Jia Zhangke",
+    "ko": "자장커"
   },
   "region": {
     "en": "",
@@ -6413,8 +6413,8 @@ var FILM_DATA = [
   },
   "year": 1993,
   "director": {
-    "en": "",
-    "ko": ""
+    "en": "Krzysztof Kieślowski",
+    "ko": "크시슈토프 키에슬로프스키"
   },
   "region": {
     "en": "",
@@ -6473,8 +6473,8 @@ var FILM_DATA = [
   },
   "year": 2011,
   "director": {
-    "en": "",
-    "ko": ""
+    "en": "Aki Kaurismäki",
+    "ko": "아키 카우리스마키"
   },
   "region": {
     "en": "",
@@ -6552,8 +6552,8 @@ var FILM_DATA = [
   },
   "year": 2006,
   "director": {
-    "en": "",
-    "ko": ""
+    "en": "Nancy Meyers",
+    "ko": "낸시 마이어스"
   },
   "region": {
     "en": "",
@@ -6633,8 +6633,8 @@ var FILM_DATA = [
   },
   "year": 2017,
   "director": {
-    "en": "",
-    "ko": ""
+    "en": "Agnès Varda",
+    "ko": "아녜스 바르다"
   },
   "region": {
     "en": "",
@@ -6714,8 +6714,8 @@ var FILM_DATA = [
   },
   "year": 2021,
   "director": {
-    "en": "",
-    "ko": ""
+    "en": "Sam Levinson",
+    "ko": "샘 레빈슨"
   },
   "region": {
     "en": "",
@@ -6787,8 +6787,8 @@ var FILM_DATA = [
   },
   "year": 1967,
   "director": {
-    "en": "",
-    "ko": ""
+    "en": "Éric Rohmer",
+    "ko": "에릭 로메르"
   },
   "region": {
     "en": "",
@@ -6896,8 +6896,8 @@ var FILM_DATA = [
   },
   "year": 2016,
   "director": {
-    "en": "",
-    "ko": ""
+    "en": "Jim Jarmusch",
+    "ko": "짐 자무시"
   },
   "region": {
     "en": "",
@@ -6974,8 +6974,8 @@ var FILM_DATA = [
   },
   "year": 2021,
   "director": {
-    "en": "",
-    "ko": ""
+    "en": "Pedro Almodóvar",
+    "ko": "페드로 알모도바르"
   },
   "region": {
     "en": "",
@@ -7038,8 +7038,8 @@ var FILM_DATA = [
   },
   "year": 1967,
   "director": {
-    "en": "",
-    "ko": ""
+    "en": "Jacques Tati",
+    "ko": "자크 타티"
   },
   "region": {
     "en": "",
@@ -7119,8 +7119,8 @@ var FILM_DATA = [
   },
   "year": 2025,
   "director": {
-    "en": "",
-    "ko": ""
+    "en": "Jia Zhangke",
+    "ko": "자장커"
   },
   "region": {
     "en": "",
@@ -7215,8 +7215,8 @@ var FILM_DATA = [
   },
   "year": 1985,
   "director": {
-    "en": "",
-    "ko": ""
+    "en": "Zhang Yimou",
+    "ko": "장예모"
   },
   "region": {
     "en": "",
@@ -7291,8 +7291,8 @@ var FILM_DATA = [
   },
   "year": 1978,
   "director": {
-    "en": "",
-    "ko": ""
+    "en": "Eric Rohmer",
+    "ko": "에릭 로메르"
   },
   "region": {
     "en": "",
@@ -7351,8 +7351,8 @@ var FILM_DATA = [
   },
   "year": 1998,
   "director": {
-    "en": "",
-    "ko": ""
+    "en": "Éric Rohmer",
+    "ko": "에릭 로메르"
   },
   "region": {
     "en": "",
@@ -7452,8 +7452,8 @@ var FILM_DATA = [
   },
   "year": 2012,
   "director": {
-    "en": "",
-    "ko": ""
+    "en": "Mia Hansen-Løve",
+    "ko": "미아 한센-뢰베"
   },
   "region": {
     "en": "",
@@ -7520,8 +7520,8 @@ var FILM_DATA = [
   },
   "year": 1983,
   "director": {
-    "en": "",
-    "ko": ""
+    "en": "Hou Hsiao-hsien",
+    "ko": "허우 샤오시엔"
   },
   "region": {
     "en": "",
@@ -7557,8 +7557,8 @@ var FILM_DATA = [
   },
   "year": 2022,
   "director": {
-    "en": "",
-    "ko": ""
+    "en": "Mia Hansen-Løve",
+    "ko": "미아 한센-뢰베"
   },
   "region": {
     "en": "",
@@ -7617,8 +7617,8 @@ var FILM_DATA = [
   },
   "year": 2021,
   "director": {
-    "en": "",
-    "ko": ""
+    "en": "Paolo Sorrentino",
+    "ko": "파올로 소렌티노"
   },
   "region": {
     "en": "",
@@ -7702,8 +7702,8 @@ var FILM_DATA = [
   },
   "year": 2021,
   "director": {
-    "en": "",
-    "ko": ""
+    "en": "Joachim Trier",
+    "ko": "요아킴 트리에르"
   },
   "region": {
     "en": "",
@@ -7739,8 +7739,8 @@ var FILM_DATA = [
   },
   "year": 0,
   "director": {
-    "en": "",
-    "ko": ""
+    "en": "Mona Achache",
+    "ko": "모나 아차슈"
   },
   "region": {
     "en": "",
@@ -7844,8 +7844,8 @@ var FILM_DATA = [
   },
   "year": 0,
   "director": {
-    "en": "",
-    "ko": ""
+    "en": "Stephen Daldry",
+    "ko": "스티븐 달드리"
   },
   "region": {
     "en": "",
@@ -7987,8 +7987,8 @@ var FILM_DATA = [
   },
   "year": 0,
   "director": {
-    "en": "",
-    "ko": ""
+    "en": "Mia Hansen-Løve",
+    "ko": "미아 한센-뢰베"
   },
   "region": {
     "en": "",
@@ -8096,8 +8096,8 @@ var FILM_DATA = [
   },
   "year": 2001,
   "director": {
-    "en": "",
-    "ko": ""
+    "en": "Wes Anderson",
+    "ko": "웨스 앤더슨"
   },
   "region": {
     "en": "",
@@ -8209,8 +8209,8 @@ var FILM_DATA = [
   },
   "year": 1998,
   "director": {
-    "en": "",
-    "ko": ""
+    "en": "Nancy Meyers",
+    "ko": "낸시 마이어스"
   },
   "region": {
     "en": "",
@@ -8271,8 +8271,8 @@ var FILM_DATA = [
   },
   "year": 1978,
   "director": {
-    "en": "",
-    "ko": ""
+    "en": "Terrence Malick",
+    "ko": "테렌스 맬릭"
   },
   "region": {
     "en": "",
@@ -8389,8 +8389,8 @@ var FILM_DATA = [
   },
   "year": 1985,
   "director": {
-    "en": "",
-    "ko": ""
+    "en": "Hou Hsiao-hsien",
+    "ko": "허우 샤오시엔"
   },
   "region": {
     "en": "",
@@ -8483,8 +8483,8 @@ var FILM_DATA = [
   },
   "year": 1972,
   "director": {
-    "en": "",
-    "ko": ""
+    "en": "Éric Rohmer",
+    "ko": "에릭 로메르"
   },
   "region": {
     "en": "",
@@ -8558,8 +8558,8 @@ var FILM_DATA = [
   },
   "year": 2018,
   "director": {
-    "en": "",
-    "ko": ""
+    "en": "Jia Zhangke",
+    "ko": "자장커"
   },
   "region": {
     "en": "",
@@ -8671,8 +8671,8 @@ var FILM_DATA = [
   },
   "year": 1996,
   "director": {
-    "en": "",
-    "ko": ""
+    "en": "Éric Rohmer",
+    "ko": "에릭 로메르"
   },
   "region": {
     "en": "",
@@ -8764,8 +8764,8 @@ var FILM_DATA = [
   },
   "year": 2000,
   "director": {
-    "en": "",
-    "ko": ""
+    "en": "Éric Rohmer",
+    "ko": "에릭 로메르"
   },
   "region": {
     "en": "",
@@ -8801,8 +8801,8 @@ var FILM_DATA = [
   },
   "year": 1977,
   "director": {
-    "en": "",
-    "ko": ""
+    "en": "Éric Rohmer",
+    "ko": "에릭 로메르"
   },
   "region": {
     "en": "",
@@ -8886,8 +8886,8 @@ var FILM_DATA = [
   },
   "year": 2023,
   "director": {
-    "en": "",
-    "ko": ""
+    "en": "Zach Braff",
+    "ko": "잭 브래프"
   },
   "region": {
     "en": "",
@@ -8956,8 +8956,8 @@ var FILM_DATA = [
   },
   "year": 2002,
   "director": {
-    "en": "",
-    "ko": ""
+    "en": "Zhang Yimou",
+    "ko": "장예모"
   },
   "region": {
     "en": "",
@@ -9038,8 +9038,8 @@ var FILM_DATA = [
   },
   "year": 2010,
   "director": {
-    "en": "",
-    "ko": ""
+    "en": "Hirokazu Kore-eda",
+    "ko": "고레에다 히로카즈"
   },
   "region": {
     "en": "",
@@ -9095,8 +9095,8 @@ var FILM_DATA = [
   },
   "year": 2002,
   "director": {
-    "en": "",
-    "ko": ""
+    "en": "Tsai Ming-liang",
+    "ko": "차이밍량"
   },
   "region": {
     "en": "",
@@ -9173,8 +9173,8 @@ var FILM_DATA = [
   },
   "year": 2012,
   "director": {
-    "en": "",
-    "ko": ""
+    "en": "Wes Anderson",
+    "ko": "웨스 앤더슨"
   },
   "region": {
     "en": "",
@@ -9240,8 +9240,8 @@ var FILM_DATA = [
   },
   "year": 2017,
   "director": {
-    "en": "",
-    "ko": ""
+    "en": "Mia Hansen-Løve",
+    "ko": "미아 한센-뢰베"
   },
   "region": {
     "en": "",
@@ -9309,8 +9309,8 @@ var FILM_DATA = [
   },
   "year": 2009,
   "director": {
-    "en": "",
-    "ko": ""
+    "en": "Nora Ephron",
+    "ko": "노라 에프론"
   },
   "region": {
     "en": "",
@@ -9405,8 +9405,8 @@ var FILM_DATA = [
   },
   "year": 1985,
   "director": {
-    "en": "",
-    "ko": ""
+    "en": "Sydney Pollack",
+    "ko": "시드니 폴락"
   },
   "region": {
     "en": "",
