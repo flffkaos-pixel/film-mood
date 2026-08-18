@@ -448,7 +448,7 @@ function renderFilms(main) {
   let html = `
     <div class="page-header">
       <h1>${lang('films')}</h1>
-      <p>64 ${lang('filmsCount', { count: FILM_DATA.length })}</p>
+      <p>${lang('filmsCount', { count: FILM_DATA.length })}</p>
     </div>
     <section class="section">
       <div class="filter-bar" id="filmFilters">
