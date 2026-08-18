@@ -2,9 +2,6 @@ const FILM_DETAILS_FULL = [
   {
     "id": "nostalghia-1983",
     "screenshotCount": 58,
-    "description": {
-      "en": "Tarkovsky shoots Italian ruins, thermal baths, and farmhouses as though they are objects from Russian memory — damp, heavy, flaking. Almost none of the spaces in the film are conventionally attractive: waterlogged stone floors, vaulted arcades sweating with moisture, countryside rooms cluttered with accumulated things — plaster always stopped mid-peel, timber beams left bare, fabric gone to mold. This deliberately preserved decay is not about poverty; it is Tarkovsky's obsession with the \"unfinished\" — spaces in which something is always in the process of disappearing, being eaten by water, rotting into the walls. If you find yourself uncertain about where the line falls between studied distressing and the real thing in a home interior, this film can recalibrate you: what he shoots is not a staged patina but the genuine marks left by time, and the way a person stands and moves inside those marks."
-    },
     "colors": [
       "#3e595b",
       "#000000",
@@ -74,9 +71,6 @@ const FILM_DETAILS_FULL = [
   {
     "id": "ivans-childhood-1962",
     "screenshotCount": 43,
-    "description": {
-      "en": "Tarkovsky's debut feature operates in almost exactly two registers: sun-drenched summer fields glimpsed through dreams, and the wartime detritus of abandoned encampments, waterlogged basements, and bombed-out church shells.Ruins and standing waterare the film's true spatial protagonists — fractured brickwork, moss-slicked logs, seeping rammed-earth walls, their textures rendered with extraordinary grain in black-and-white, rawer than anything achieved by deliberately aged 'industrial' interiors.Charred timber beams against moss-stained plasterdon't romanticise war; they articulate a space that has been completely hollowed out. Cinematographer Yusov's repeated low-angle shots press crumbling walls into near-abstract geometric planes — you find yourself remembering those compositions long after the plot has faded. The dream sequences provide an extreme counter-pressure: water, sunlight, birch trees — the same camera, two entirely different spatial densities."
-    },
     "colors": [
       "#bcdbd9",
       "#050505",
@@ -180,9 +174,6 @@ const FILM_DETAILS_FULL = [
   {
     "id": "parasite-2019",
     "screenshotCount": 32,
-    "description": {
-      "en": "What makes this film worth returning to is how it shoots two types of residence as though they were two different species — the semi-basement and the mansion share the same Seoul, yet are total opposites in terms of natural light, ceiling height, and materials. The semi-basement where the Ki-woo's family lives has windows level with the pavement, light cutting in at a low angle from the street; the walls are damp, furniture is stacked against the walls, and the toilet sits raised above floor level to prevent backflow — these details are not symbols of poverty, they are Bong Joon-ho writing class through the physics of space. The Park family home operates by an entirely different logic: floor-to-ceiling glass walls opening onto a private garden, interiors with almost no surplus furniture, stone floors, built-in storage, and low-profile sofas — the kind of expensive feel assembled through subtraction. Cutting between these two spaces, viewers start to notice the height of their own windowsills, whether moisture seeps up through their own floors, whether their storage is on show."
-    },
     "colors": [
       "#f39496",
       "#5C5339",
@@ -226,9 +217,6 @@ const FILM_DETAILS_FULL = [
   {
     "id": "the-room-next-door-2024",
     "screenshotCount": 37,
-    "description": {
-      "en": "Almodóvar has unusually reined in his signature saturated color clashes this time — the spaces in The Room Next Door are subdued and heavy, like an apartment worn smooth by time: linen curtains, dark oak floors, books stacked on sofa armrests. The story centers on two old friends, one of whom is facing the end of her life, so a large share of the film takes place in intimate spaces — bedrooms, sitting rooms — rather than the theatrically staged living rooms Almodóvar typically favors. Cinematographer Eduard Grau keeps the natural light very low, so that half of every room sits in shadow at all times. That approach to lighting makes the texture and outline of each piece of furniture matter enormously: upholstery, the spines of old books, wood-framed mirrors — things that would disappear under flat light here come through with a clarity that feels almost like speech."
-    },
     "colors": [
       "#3a5d5f",
       "#171513",
@@ -276,9 +264,6 @@ const FILM_DETAILS_FULL = [
   {
     "id": "le-bonheur-1965",
     "screenshotCount": 54,
-    "description": {
-      "en": "Varda sets this story about happiness and its cost in the most ordinary spaces of a Paris suburb — Fontenay-aux-Roses, 1965:a carpentry workshop, a sunlit meadow, a sewing room. The protagonist François is a cabinetmaker, and the objects around him carry the unpretentious quality of a working man's life — planed timber edges, rough cotton work aprons, a picnic basket stuffed with bread and wine bottles. Varda never reaches for a staged \"homey\" feeling; instead she lets the texture of domestic life seep out through things close at hand: a wife pedaling a sewing machine by the window, children rolling across a rug, sunlight bleaching everything just slightly. Two women who are nearly identical live inside spaces that are nearly identical, and thisdeliberate symmetryis precisely what makes you start to wonder what \"happiness\" actually looks like — and where, exactly, it lives."
-    },
     "colors": [
       "#c0a7a5",
       "#041C18",
@@ -396,9 +381,6 @@ const FILM_DETAILS_FULL = [
   {
     "id": "the-scent-of-green-papaya-1993",
     "screenshotCount": 96,
-    "description": {
-      "en": "The entire film takes place insidea single old Vietnamese house— the first half follows Mui, a young servant girl, and the second half moves to a pianist's home. Two interior spaces carry the whole film, with almost no outdoor scenes. This was made possible because director Tran Anh Hung built a complete studio set in France, reconstructing the Hanoi architecture of his memory at a one-to-one scale: wooden lattice windows, moss-covered courtyard flagstones, fabric hanging to dry naturally under the eaves, and in one cornera worn cutting board surface stained with the juice of green papaya. These details never feel like set dressing — cinematographer Benoît Delhomme's camera moves in close, close enough that you can sense the dampness of the wood and the coolness of the stone. If you are thinking about how to layernatural woodwork and rough-textured stone in a modern space — not the deliberate kind that reads as \"Japanese wabi-sabi,\" but something that feels genuinely lived-in — every framed composition in this film is a ready-made reference."
-    },
     "colors": [
       "#462123",
       "#3D2F22",
@@ -506,9 +488,6 @@ const FILM_DETAILS_FULL = [
   {
     "id": "american-psycho-2000",
     "screenshotCount": 34,
-    "description": {
-      "en": "The film's spatial setting is itself an argument: a high-end apartment on Manhattan's Upper East Side in the 1980s, shot by director Mary Harron as a form of deeply restrained horror. Nothing in Patrick Bateman's residence is placed \"casually\" — white marble countertops, low-sheen dark wood paneling, a business card tray aligned with surgical precision — every object is performing some kind of ritual. Cinematographer Andrzej Sekula's camera almost never finds a messy corner; the frame holds to a cool, symmetrical composition throughout, which makes the hard architectural details — recessed lighting coves, polished floors, open-plan rooms softened by almost no fabric — read more like a showroom than a home. If you are considering a high-execution minimalist scheme, this film will show you what the end of that road looks like — not warmth, but control."
-    },
     "colors": [
       "#345351",
       "#3B2C26",
@@ -554,9 +533,6 @@ const FILM_DETAILS_FULL = [
   {
     "id": "the-wind-will-carry-us-1999",
     "screenshotCount": 53,
-    "description": {
-      "en": "Kiarostami turns his camera on therammed-earth walls, stone-paved lanes, and sun-dried straw rooftopsof a Kurdish mountain village in Iran, and the whole film reads like field notes on how a settlement is built. Houses stack up along the slope with no formal courtyard planning, no right angles imposed on the hillside; window openings are cut wherever they happen to fall, and light slides in at an angle, landing on rough plaster surfaces. The interiors carry almost no soft furnishings — a woven rug, a copper kettle, a few clay bowls in the corner, and that is the entirety of the \"décor.\" Thisrestraint pushed so far it approaches emptinessends up prompting a genuine question: how much does a space actually need? A journalist arrives from the city, carrying equipment and an agenda, and the village's own rhythm slowly wears him down. Kiarostami films this friction between the outsider and the place with a cool eye — no exotic curiosity, just letting the location speak for itself."
-    },
     "colors": [
       "#85e2e0",
       "#2A443E",
@@ -621,9 +597,6 @@ const FILM_DETAILS_FULL = [
   {
     "id": "taste-of-cherry-1997",
     "screenshotCount": 38,
-    "description": {
-      "en": "Abbas Kiarostami compresses almost the entire story into acar winding through the dusty hills on the outskirts of Tehran — the passenger seat is the only interior space this film returns to again and again. Outside the window: gravel slopes from construction sites, patches of dry grass, exposed reddish-brown earth, and occasionally a mulberry tree or a stretch of low scrub. There is no carefully dressed room, no soft furnishings, no furniture at all — and yet that cramped cabin produces a remarkably strong sense ofan enclosed container: the worn grain of the leather seat, the diffused white haze of light through the windshield, the plastic seams of the dashboard — these details carry more texture than any deliberately arranged prop. If you are interested in how far a limited set of materials can sustain an entire spatial atmosphere, this film shows you what that looks like pushed to its absolute limit."
-    },
     "colors": [
       "#7d1a18",
       "#060E10",
@@ -784,9 +757,6 @@ const FILM_DETAILS_FULL = [
   {
     "id": "amour-2012",
     "screenshotCount": 22,
-    "description": {
-      "en": "Haneke confines nearly the entire film toa Paris apartment in an older building— the hallway, the bedroom, the living room around the piano, occasionally the kitchen. This is not a set dressed to create atmosphere; it has the texture of a real home belonging to two elderly musicians:walls of books, heavy curtains, worn hardwood floors, a piano that anchors the living room with real weight, and a bedroom that begins to feel narrower once the bed and wheelchair are both inside it. Cinematographer Darius Khondji uses almost no supplemental lighting — whatever natural light the room holds is what he works with. The diffused light coming through the windows falls across book spines and bed linen, making the apartment look soaked in time rather than arranged by a designer. If you are thinking about how to handle the low-light problem in a north-facing older room, this film's answer is: don't fight it — use dark wood furniture, heavy textiles, and warm small light fixtures to turn \"dim\" into a character trait."
-    },
     "colors": [
       "#e98e8c",
       "#1A160C",
@@ -819,9 +789,6 @@ const FILM_DETAILS_FULL = [
   {
     "id": "marriage-story-2019",
     "screenshotCount": 29,
-    "description": {
-      "en": "Baumbach frames this divorce — split across New York and Los Angeles — as a collision between two entirely different philosophies of living.New York is Charlie's world: an apartment near the Broadway theaters, dark wood floors, stacked scripts, bookshelves crammed into narrow hallways —the kind of male living space filled up entirely by work, with almost no conscious thought given to decoration. Los Angeles, by contrast, is Nicole in a state of transition, returning to her starting point — her mother's home, with warm off-white walls, loose natural light, and the occasional woven textile. The space is more relaxed, but also more provisional.Robbie Ryan's camera doesn't flatter any of it. The conference rooms in the law offices, the mediator's small beige room — every functional space underlines the same point: this couple's life is being disassembled into paperwork."
-    },
     "colors": [
       "#2b4c4e",
       "#413A22",
@@ -862,9 +829,6 @@ const FILM_DETAILS_FULL = [
   {
     "id": "pierrot-le-fou-1965",
     "screenshotCount": 44,
-    "description": {
-      "en": "When Godard made this film, he deliberately created a sense of rupture between two kinds of space: on the Paris end, there is thesuffocating quality of the bourgeois living room— spacious apartments, well-dressed crowds at cocktail parties, Italian advertising slogans woven throughout, everything conveying a life that is wealthy but hollow; on the Mediterranean end, there aremakeshift dwellings along the road, beaches, beat-up cars, and outdoor scenes of camping wherever they land. Raoul Coutard's cinematography makes no attempt to reconcile these two kinds of space — he lets the Paris interiors feel cramped and hard, while the outdoors of southern France actually breathe. If you have ever felt the pull of the \"well-appointed home trap\" — enough square footage, the right objects, yet somehow no life in it — the deliberately disordered dining tables, scattered books, and casually piled clutter in this film offer a very concrete counter-example."
-    },
     "colors": [
       "#117674",
       "#AAACA1",
@@ -953,9 +917,6 @@ const FILM_DETAILS_FULL = [
   {
     "id": "an-autumn-afternoon-1962",
     "screenshotCount": 86,
-    "description": {
-      "en": "Ozu's camera never moves, and the position is always lowered to the eye level of someone seated on tatami. The Japanese interiors in An Autumn Afternoon (1962) are filmed with a particular honesty as a result:sliding shoji panels, low dining tables, corridor light filtering through half-open doors — every room follows a logic of horizontal spread rather than vertical stacking. The scene where the father sits alone at home after sending his daughter off to be married is empty without any soft furnishing to dramatize the mood; it relies only onthe negative space between plain wood furniture and bare walls to say everything about someone no longer being in the house. For anyone working toward a Japanese or wabi-sabi interior today, this subtractive logic is more useful than any reference image — Ozu is telling you that the fewer pieces of furniture there are, the more weight falls on what is absent."
-    },
     "colors": [
       "#95f2f0",
       "#0C0D08",
@@ -1123,9 +1084,6 @@ const FILM_DETAILS_FULL = [
   {
     "id": "eat-drink-man-woman-1994",
     "screenshotCount": 44,
-    "description": {
-      "en": "Ang Lee shoots this old Taipei house as a place with real weight — not a set dressed up as a \"Chinese family home,\" but a genuinely lived-inkitchen and dining table shared across three generations. The kitchen takes up an enormous share of the film's narrative space: the wok, the chopping block, the earthenware bowls, the shelves stacked with dishes — everything shows use, nothing is for show. In the long takes of Master Chu preparing meals, the spatial relationship between the prep counter and the stove is laid out clearly enough that you can feel this kitchen is aworking space soaked through by decades of cooking smoke, not an open-plan kitchen out of a showroom. The wooden door frames, the worn floor tiles, the way the curtains and tablecloths layer on top of each other — all of it says the same thing: this family has lived here a long time, and every object has a history. For anyone trying to understand how to give a home a sense of age without looking neglected, the details here are worth going back to more than once."
-    },
     "colors": [
       "#afc8ca",
       "#221B12",
@@ -1347,9 +1305,6 @@ const FILM_DETAILS_FULL = [
   {
     "id": "portrait-of-a-lady-on-fire-2019",
     "screenshotCount": 49,
-    "description": {
-      "en": "A noble manor on the Brittany coast at the end of the 18th century — almost no room in this film is \"decorated\" in any deliberate sense.Stone walls, candlelight, unfinished canvases: the sense of space comes entirely from restraint and subtraction. Cinematographer Claire Mathon uses almost no light sources beyond what exists naturally in the scene; interiors rely heavily on fireplaces and candles, which gives the Brittany manor araw, unembellished roughness: bare limestone walls, heavy wooden picture frames, worn linen hems. In the painter's workroom, jars of pigment, palettes, and unstretched canvases are piled together — not a romantic vision of the artist's studio, but something closer to a craftsperson's practical workspace. If you are thinking through a living scheme built primarily around natural materials, this film offers a remarkably honest reference point. It shows you what stone and timber actually look like at low light levels, not the version you see in a show apartment flooded with fill lighting."
-    },
     "colors": [
       "#85e2e0",
       "#1F1307",
@@ -1410,9 +1365,6 @@ const FILM_DETAILS_FULL = [
   {
     "id": "roma-2018",
     "screenshotCount": 75,
-    "description": {
-      "en": "The first reason to watch this film is that Cuarón renders amiddle-class Mexico City courtyard housewith extraordinary precision — a courtyard barely wide enough for one car, a second-floor corridor paved in worn decorative tiles, a maid's room containing nothing but an iron-frame bed and a neatly folded cotton cloth. The film is set in the 1970s in the Colonia Roma neighborhood, and Cuarón shot it from his own childhood memory, which is why theresidential logic — courtyard, corridor, employer and servant spaces interlocked within the same structure— feels so specific. This is not exotic atmosphere staged for foreign viewers; it is a genuine record of how a middle-class family fills a house over time and wears it in. If you are thinking about what to do with lime-plaster walls and aged floor tiles in an older home, the answer this house offers is: don't renovate — let the density of daily life do the work."
-    },
     "colors": [
       "#600705",
       "#1A1A1A",
@@ -1499,9 +1451,6 @@ const FILM_DETAILS_FULL = [
   {
     "id": "jojo-rabbit-2019",
     "screenshotCount": 64,
-    "description": {
-      "en": "The film is set in a small German town near the end of World War II, but Waititi isn't filming war and rubble — he's filmingthe still-orderly daily life inside a ten-year-old boy's bedroom: bed made neatly, propaganda posters on the walls, curtains drawn against the unease outside. The space itself is oppressive — wood-panelled walls, heavy drapes, and a dim wall lamp together produce a kind ofstifling respectability of a middle-class household, yet the mother's brightly coloured coat and the traces of someone hidden in the attic mean two entirely different realities are sharing the same house at once. Cinematographer Mihai Malaimare Jr. keeps a large portion of the scenes in low interior light, where the outlines of the furniture read more clearly than their details — the way you tend to remember the rooms of a childhood home."
-    },
     "colors": [
       "#630406",
       "#040B0C",
@@ -1649,9 +1598,6 @@ const FILM_DETAILS_FULL = [
   {
     "id": "the-shining-1980",
     "screenshotCount": 59,
-    "description": {
-      "en": "What rewards repeat viewing in The Shining isn't the horror sequences but the Overlook Hotel as a space in its own right — Kubrick and cinematographer John Alcott used a Steadicam to turn the corridors, lobby, and the twin-girl room into an extreme case study in how large-scale public spaces generate a sense of oppression. The Gold Ballroom floor is covered in geometric-patterned carpet where Native American motifs collide with neoclassical wood panelling; the children's corridor repeats the same geometric pattern underfoot, but the proportions are stretched — the same design language reads as an entirely different psychological weight at a different scale. If you're working with a floor plan that has a long corridor or a very deep living room, this film will show you clearly: the ratio of a floor pattern's repeat density to the clear width of the corridor determines whether a space feels \"ceremonial\" or \"suffocating.\" Wood wainscoting, brass door handles, dark leather sofas — almost every material choice in the Overlook has physical weight; nothing reads as thin or insubstantial."
-    },
     "colors": [
       "#84e3e1",
       "#0D0E0A",
@@ -1722,9 +1668,6 @@ const FILM_DETAILS_FULL = [
   {
     "id": "the-sacrifice-1986",
     "screenshotCount": 65,
-    "description": {
-      "en": "Tarkovsky's final feature film, set inside and arounda timber farmhouse standing alone on a stretch of wastelandby the Swedish coast. Sven Nykvist's camera almost never leaves this building — rough log cladding, low ceiling beams, condensation on the window glass, and a bare dead tree in the yard that the film keeps returning to. This is not a showcase of Scandinavian style; it is the space a man locks himself inside on the eve of the apocalypse. The interior is specific: loose manuscript pages on a writing desk, old maps on shelves, a upholstered chair beside the fireplace — the density and disorder of these objects alone tell you who owns this house and how he lives. If you havebare-wood furniture or timber wall panelling in a study, this is practically the only film that shows you what those materials actually look like under extreme lighting conditions — not warm and Scandinavian, but oppressive, heavy, and real."
-    },
     "colors": [
       "#680f0d",
       "#0E060E",
@@ -1801,9 +1744,6 @@ const FILM_DETAILS_FULL = [
   {
     "id": "la-la-land-2016",
     "screenshotCount": 55,
-    "description": {
-      "en": "Chazelle shoots Los Angeles as a city built specifically for people who haven't made it yet — the dome of Griffith Observatory, the lookout on the Hollywood Hills, Sebastian'scramped apartment stacked with sheet music and old jazz records. None of the furniture in these spaces is \"carefully arranged,\" yet every frame feels genuinely lived in. A coat thrown over the side of the piano, a candle bottle on the dining table, a floor lamp tucked into a corner — the objects are sparse, but each one belongs somewhere. Cinematographer Linus Sandgren favors wide-screen horizontal compositions to open up these tight spaces, making a piano room under 20 square meters feel like a stage rather than a rental. This approach ofusing depth to substitute for floor areais a genuinely useful reference for laying out a small real-world apartment: reduce the number of pieces of furniture, push one anchor piece (a piano, a large coffee table, a bookshelf) toward the back of the frame, and leave the foreground open."
-    },
     "colors": [
       "#751210",
       "#503338",
@@ -1870,9 +1810,6 @@ const FILM_DETAILS_FULL = [
   {
     "id": "her-2013",
     "screenshotCount": 37,
-    "description": {
-      "en": "Her is set in a near-future Los Angeles, but Spike Jonze deliberately strips away all the cold, hard trappings of technology — no metal corridors, no blue-lit interfaces. The protagonist Theodore lives in ahigh-rise studio apartment with floor-to-ceiling windows, furnished with wood floors, a low sofa, and a few stacks of books. The space holds nothing superfluous, yet feels thoroughly lived-in thanks to an abundance of warm natural light. Hoyte Van Hoytema's camera favorsside-backlighting coming in through the windows, with semi-sheer curtains and walls that glow faintly orange-yellow. This approach to lighting gives even the most ordinary apartment corner a sense of long, quiet habitation. Another recurring setting is Theodore's workplace — an open-plan office with raw-wood partitions and expanses of off-white — and together with the apartment it establishes a deliberate\"warm minimalism\": few objects, but each one with material weight — cotton-linen, solid wood, frosted glass. Nothing that reads as plastic ever appears."
-    },
     "colors": [
       "#99fefc",
       "#1D170E",
@@ -1921,9 +1858,6 @@ const FILM_DETAILS_FULL = [
   {
     "id": "mirror-1975",
     "screenshotCount": 62,
-    "description": {
-      "en": "Tarkovsky films memory, not story, which is why the spaces in Mirror are always half-awake—a wooden cottage, a corridor at the edge of a field, a drafty window frame—these places feel as though they were forgotten for a long time before light found them again. A large portion of the film takes place inside an old Soviet countryside house: the floors are worn wooden boards, the walls are flaking limewash, the curtains are thin cotton, and the furniture barely matches.It is precisely this sense of absent objectsthat gives the space its weight—not by filling it with things, but by making everything look as though someone just left. If you are thinking about using reclaimed timber or rough plaster on your walls, this film will show you exactly what that kind of surface looks like under natural light at its limit: it is not warm, but it is honest."
-    },
     "colors": [
       "#eb8c8e",
       "#181811",
@@ -1997,9 +1931,6 @@ const FILM_DETAILS_FULL = [
   {
     "id": "revolutionary-road-2008",
     "screenshotCount": 31,
-    "description": {
-      "en": "Mendes and Roger Deakins turn astandard American Colonial housein 1950s Connecticut suburbia into a precise specimen of a trap — generous living rooms, neatly trimmed lawns, uniform clapboard siding, every inch a concrete expression of what the middle class then understood \"the good life\" to mean. The Wheeler home's interior is filled throughout withdark walnut wainscoting, beige upholstered sofas, and brass light fixtures, a combination that in that era signified respectability and security. Deakins lights it with a quiet restraint that makes the whole thing feel oppressive and airless — nothing in the room is wrong; what's wrong is the relationship between the people living there and the space itself. If you're thinking about recreating an authentic American traditional interior from that period, this film is about as honest a reference as you'll find: it shows what that style actually feels like to live inside, rather than the aspirational version you'd see in a renovation magazine."
-    },
     "colors": [
       "#f29597",
       "#504B3A",
@@ -2086,9 +2017,6 @@ const FILM_DETAILS_FULL = [
   {
     "id": "raise-the-red-lantern-1991",
     "screenshotCount": 45,
-    "description": {
-      "en": "Nearly the entire film takes place in a single location: the Qiao Family Compound in Pingyao, Shanxi.Yimou Zhang shot in a real Shanxi merchant estate — high enclosing walls, courtyards nested within courtyards, the sky reduced to a narrow strip directly overhead. That spatial structure is itself the plot: the wives are each assigned to their own side rooms, and whoever's lanterns are lit that night receives power until morning. Cinematographer Fei Zhao makes extensive use of direct overhead angles trained on the rooftops, and the symmetrical geometry of grey-blue roof tiles reads like an architectural drawing — calm to the point of cruelty.Latticed wooden windows, stone-paved floors, heavy lacquered-red door panels — these materials function in the film not as set dressing but as the physical embodiment of rules. If you want to understand how a Chinese courtyard compound conveys spatial oppression through its materials, this film is the most direct visual reference you will find."
-    },
     "colors": [
       "#f19694",
       "#0F0B0A",
@@ -2287,9 +2215,6 @@ const FILM_DETAILS_FULL = [
   {
     "id": "our-little-sister-2015",
     "screenshotCount": 42,
-    "description": {
-      "en": "The old family house in Kamakura is the film's true protagonist. The four sisters live in a wooden residential home inherited from their grandmother — corridors, paper sliding doors, a kitchen window at the end of the hallway letting in light — Hirokazu Kore-eda barely moves the camera, letting the actorsfind their own natural paths through the space, so you can read the house clearly in layers: shoes removed at the entryway, laundry hung along the corridor, the dining room filled with people, plum preserves drying in the back garden. The boundaries between functional zones are loose, but the order within them is legible — and that is precisely what is hardest to learn from old Japanese homes, and most worth learning:zones defined by habit rather than partition walls. Mikiya Takimoto shoots the wood-grain floors and paper doors entirely in natural light, no fill added — cedar's grey-brown looks exactly like this in the afternoon: dim but not heavy, because light drifts in from the side. If you are trying to decide whether to renovate an older apartment into something with a Japanese feel, this film is more honest about what that actually looks like than any showroom."
-    },
     "colors": [
       "#721517",
       "#1C1E21",
@@ -2343,9 +2268,6 @@ const FILM_DETAILS_FULL = [
   {
     "id": "yi-yi-2000",
     "screenshotCount": 52,
-    "description": {
-      "en": "Edward Yang films Taipei the way an architect draws a cross-section — laying outthe overlapping slices of life inside a middle-class apartment buildingdirectly in front of the camera: multiple generations living in the same block, with hallways, dining tables, and glass partitions as the main stages. The furniture is unpretentious — light wood-veneer coffee tables, plastic-backed chairs, the fluorescent white light bleeding through curtains. These are the most typical textures of late-1990s urban middle-class homes in Taiwan, not a matter of design sensibility but ratherthe everyday quality of things used for ten years but not yet broken. If you are furnishing a small-footprint, standard-ceiling-height older apartment, this film is a rare reference you can study seriously for its layout logic: how an open living room connects to the dining area, how light leaks in through balcony doors, how a bed and a desk coexist in a small bedroom — all the details are there."
-    },
     "colors": [
       "#224547",
       "#37231B",
@@ -2560,9 +2482,6 @@ const FILM_DETAILS_FULL = [
   {
     "id": "vertigo-1958",
     "screenshotCount": 59,
-    "description": {
-      "en": "In this film, Hitchcock turns 1950s San Francisco into a spatial study ofobsession and disguise— hotel rooms, gallery corridors, clifftop overlooks above the sea: none of these are mere backdrops, but containers into which the male lead projects his fixation. Worth noting is the restraint of the interior furnishings: wooden bed frames, heavy velvet curtains, the amber glow of wall sconces — no superfluous decoration, yet the spaces carry a distinctoppressive stillness, as if someone has been watching them for a very long time. Cinematographer Robert Burks is particularly skilled at using corridor depth and mirror reflections to stretch spatial layering, making ordinary apartment hallways feel deeper than they actually are. If you are thinking about working with dark tones in a bedroom or study, this film offers a very concrete point of reference — atmosphere built not by accumulating objects, but by controlling the placement of light sources and the density of textiles."
-    },
     "colors": [
       "#4e292b",
       "#524D52",
@@ -2712,9 +2631,6 @@ const FILM_DETAILS_FULL = [
   {
     "id": "midnight-in-paris-2011",
     "screenshotCount": 45,
-    "description": {
-      "en": "The Paris that Darius Khondji shoots has almost no daytime worth lingering on — the most memorable images in this film are not panoramic views of the Eiffel Tower, butrain-slicked cobblestone streets, candlelit bookshops, and the corridors of old apartments: interiors that are narrow, underlit, and layered with the patina of time. The film's protagonist is obsessed with 1920s Paris, so the camera keeps returning to the material traces that era left behind:worn leather book spines, dark wooden stair railings, cast-iron lamp brackets, and rooms where nearly every surface shows some degree of wear. For anyone working on a home interior, these scenes offer something more useful than a \"Parisian style\" filter — they're a practical reference. When deep brown and brass form the dominant palette, and the colors of fabric, wood, and stone are kept close to one another without clashing, age reads as texture rather than cheapness."
-    },
     "colors": [
       "#711614",
       "#3C2612",
@@ -2949,9 +2865,6 @@ const FILM_DETAILS_FULL = [
   {
     "id": "the-green-ray-1986",
     "screenshotCount": 75,
-    "description": {
-      "en": "Rohmer hands this film almost entirely over tooutdoor, transient spaces— beaches, mountain holiday resorts, café terraces on Parisian streets — rather than the domestic interiors this site usually covers. For exactly that reason, though, it is an exceptional case study inhow French people construct a sense of daily order from temporary settings: folding chairs, rough linen blankets, paperbacks stacked loosely on wooden tables, mineral water in cheap glasses — not a single object has been deliberately arranged, yet Rohmer's precise command of daylight makes an ordinary camping chair look as though it belongs to some private ritual. If you are thinking through the layout of a balcony, a small courtyard, or any transitional outdoor space, this film will show you more honestly than any magazine spread:how few objects, in the right light, can carry a full sense of lived life."
-    },
     "colors": [
       "#89eeec",
       "#1A1E19",
@@ -3038,9 +2951,6 @@ const FILM_DETAILS_FULL = [
   {
     "id": "all-about-my-mother-1999",
     "screenshotCount": 38,
-    "description": {
-      "en": "Almodóvar never treats space politely — the Barcelona apartments, backstage dressing rooms, and convent corridors in his films are all shot as spaces with strong personalities of their own.The interiors in this film have a deliberatetheatrical density: no bare walls, no empty surfaces, curtains and religious icons and old photographs layered on top of one another. This isn't clutter — it's a Spanish mode of emotional display, where objects carry weight and spaces speak. Pay attention to the recurringdark wood-framed mirrors and warm yellow table lamps; they press the characters' faces into a dim amber glow that feels at once like a stage spotlight and like the cheapest mood device you could put in a home. If you're working on a poorly lit secondary bedroom or a transitional space, this film is worth watching frame by frame for how it builds light through layered sources rather than natural light."
-    },
     "colors": [
       "#c9aeac",
       "#252921",
@@ -3090,9 +3000,6 @@ const FILM_DETAILS_FULL = [
   {
     "id": "the-grand-budapest-hotel-2014",
     "screenshotCount": 107,
-    "description": {
-      "en": "Wes Anderson shoots the entire film likean architectural cross-section you can measure layer by layer— lobby, elevator shaft, kitchen prep room, mountaintop cable-car station: every scene is its own self-contained box, with its own wallpaper pattern, uniform color, and furniture arrangement. The fictional Central European mountaintop hotel in the film is not a backdrop — it is the protagonist: a Rococo pink-and-gold entrance hall, symmetry pushed to obsessive extremes,French-style window casements set in deep chestnut wood frames, the oval halos cast by wall sconces lining the corridors. These details are not \"vintage\" for vintage's sake; they reconstruct the actual spatial taste of the Central European upper class in the interwar years — heavy fabric drapes, gilded metal hardware, worn marble steps. Pay attention to theviolet-and-navy splice on the concierge uniform, and the fine-line printing on the pastry boxes. Using small objects to define a character's social standing is more direct than any line of dialogue."
-    },
     "colors": [
       "#ec8b89",
       "#4B535A",
@@ -3211,9 +3118,6 @@ const FILM_DETAILS_FULL = [
   {
     "id": "the-hedgehog-2009",
     "screenshotCount": 76,
-    "description": {
-      "en": "The film's central setting is aParisian Haussmann-style apartment building, but where director Mona Achache really puts her attention is the concierge's lodge at the bottom — low-ceilinged, cramped, filled wall to wall with books and cats, forming a very concrete class contrast with the grand living rooms of the residents upstairs. People who watch this film are usually struck by that lodge: the same worn wooden shelves, the same table lamps — how does it manage to feel so dense yet uncluttered? The answer is probably that Patrick Blossier keeps the camera very low, letting the texture of book spines, the weight of upholstered armchairs, and the edges of rugs come through clearly, rather than blurring the details with a wide shot. The upstairs apartments operate on an entirely different grammar:high ceilings, hard finishes, cold light, with furniture arranged to leave deliberate open space — which ends up projecting a kind of respectability that feels difficult to actually live in. The two spaces comment on each other, and by the end you'll find yourself looking differently at the \"cluttered\" corners of your own home."
-    },
     "colors": [
       "#7e191b",
       "#090E14",
@@ -3301,9 +3205,6 @@ const FILM_DETAILS_FULL = [
   {
     "id": "amelie-2001",
     "screenshotCount": 156,
-    "description": {
-      "en": "If you're working on asmall-space, strong-personality interior scheme, this film can serve almost directly as a mood board. Jean-Pierre Jeunet shoots thosetight but highly organized Montmartre rooms — Amélie's bedroom, the café counter, the glass greenhouse — as layered spaces where each frame holds one layer of story, one layer of color, one layer of objects. The furniture doesn't aim for negative space; instead,vintage pieces, tiles, posters, and enamel mugs fill every wall and surface, yet a consistent color palette keeps it from feeling chaotic."
-    },
     "colors": [
       "#274042",
       "#9A8043",
@@ -3471,9 +3372,6 @@ const FILM_DETAILS_FULL = [
   {
     "id": "the-hours-2002",
     "screenshotCount": 114,
-    "description": {
-      "en": "The Hours films one day in three women's lives as three distinct kinds of interior pressure — a brick-house bedroom on the outskirts of Sussex in the 1920s, astandard American kitchenin a 1950s Los Angeles suburb, and an apartment hallway in contemporary New York — yet cinematographer Seamus McGarvey pushes nearly every scene towarddarkness, letting curtain fabric, wooden bed frames, and tiled countertops all recede into background shadow, leaving light only on the characters' faces and the small patch of surface nearest their hands. The approach makes a clear statement: space here is not decoration — it is the container that traps people. The 1950s kitchen in particular is worth studying closely —cream-colored cabinets against cold-gray grouted tiles, flowers arranged in plain drinking glasses, the whole room so tidy it unsettles you. Virginia Woolf's side of the story has deep-wood door frames and heavy cotton curtains, with light angling in from the side to fall across a writing desk — a room that is genuinely meant for work, not for display."
-    },
     "colors": [
       "#8fe8ea",
       "#342F2B",
@@ -3599,9 +3497,6 @@ const FILM_DETAILS_FULL = [
   {
     "id": "things-to-come-2016",
     "screenshotCount": 80,
-    "description": {
-      "en": "Mia Hansen-Løve gives most of the film's screen time tothe everyday interiors of a Parisian middle-class intellectual's apartment— walls of books, a desk buried under annotated papers, old coats hanging in the hallway. The protagonist is a philosophy teacher; divorce, her mother's death, and a dropped book contract all arrive in quick succession, yet the camera never reaches for sentiment, always settling instead onconcrete interior details: afternoon light filtering through linen curtains, paperbacks stacked on the kitchen counter, canvas bags stuffed full of things. What Hansen-Løve is filming is not \"the French intellectual home\" as a symbol, but a space that has actually been used, lived in, and argued in — furniture mismatched, old and new mixed together,the density of objects itself a footnote to the character's personality. If you are working on a study or a multipurpose living room, the reference this film offers is: don't clear surfaces out — let every surface show signs of use."
-    },
     "colors": [
       "#b0d7d5",
       "#0B0E08",
@@ -3693,9 +3588,6 @@ const FILM_DETAILS_FULL = [
   {
     "id": "call-me-by-your-name-2017",
     "screenshotCount": 78,
-    "description": {
-      "en": "Guadagnino films a 1980s country villa in northern Italy so that it feels likea home you could move into at any moment— not a museum-style period recreation, but a house in genuine summer habitation: books stacked on the stairs, peaches left sitting in a ceramic dish, a bicycle leaned against a colonnade. Thestone villafollows the old logic of thick walls built for insulation — interiors dark and cool, the outdoor light bright enough to make you dizzy, with the transition between the two temperatures handled by shutters, arcaded walkways, and open wooden door panels. The bedrooms have no deliberate styling: whitewashed walls, iron-frame beds, linen sheets, a low density of objects, but every object shows signs of use. This quality of\"worn-in oldness\"is very hard to replicate with purchased distressed furniture. Cinematographer Mukdeeprom shoots it with entirely natural light and complete honesty — no artificial fill to soften anything, shadows falling directly onto the lime-plaster walls."
-    },
     "colors": [
       "#84e3e1",
       "#2B3A20",
@@ -3785,9 +3677,6 @@ const FILM_DETAILS_FULL = [
   {
     "id": "a-tale-of-springtime-1990",
     "screenshotCount": 52,
-    "description": {
-      "en": "Rohmer's camera never pretends to be making a film — it moves more like someone wandering through a Parisian intellectual's apartment. The spatial core of A Tale of Springtime (1990) is two sharply contrasting homes: the friend's flat where philosophy teacher Natacha is staying, and her father Igor's older bourgeois apartment, with its bookshelves running floor to ceiling and blankets draped casually over the sofa. Rohmer never stages these spaces with deliberate lighting or a cleared set — coffee cups left on the table, a few spider plants on the windowsill, a chair against the wall catching backlight. This is what French middle-class homes actually look like: not designed, but shaped by years of living until each object has found its own place. If your space is small and full of things, this film is worth pausing for screenshots: it models an approach to making a room feel good without emptying it out first."
-    },
     "colors": [
       "#8ee9eb",
       "#41372D",
@@ -3851,9 +3740,6 @@ const FILM_DETAILS_FULL = [
   {
     "id": "play-time-1967",
     "screenshotCount": 52,
-    "description": {
-      "en": "For this film, Tati built an entire city from scratch on the outskirts of Paris — glass-curtain-wall office buildings, aluminum revolving doors, concrete plazas, airport departure halls — every space apushed-to-the-extreme version of industrial modernism: hard-edged, symmetrical, infinitely repeatable, with reception desks and restaurant partitions that look as though they were all printed from the same blueprint. What Tati actually wanted to capture was the feeling of being swallowed by this kind of space — corridors folding into corridors, office glass reflecting office glass, no way to tell which floor or which cell you're in. If you're consideringlarge-scale glass partitions or an open-plan layout, this film will show you in very concrete terms what \"transparency\" looks like once it loses control: people become props inside the space, rather than the other way around."
-    },
     "colors": [
       "#b7d0d2",
       "#0E110C",
@@ -3917,9 +3803,6 @@ const FILM_DETAILS_FULL = [
   {
     "id": "the-dreamers-2003",
     "screenshotCount": 53,
-    "description": {
-      "en": "Bertolucci compresses Paris on the eve of the May 1968 uprising into a singleHaussmann-era apartment— tall ceilings, heavy wooden doors, floors stacked waist-high with books. The three young characters live almost entirely within one set of rooms: the living room becomes an impromptu cinema, the bathroom a courtroom, and the boundaries of the bedroom slowly dissolve. The space earns its power not through furnishings but throughdensity— film posters nailed across every wall, a rug turned back to expose the parquet underneath, curtains permanently half-drawn against the light from the street. Bertolucci had cinematographer Fabio Cianchetti shoot tight against the characters, which makes the rooms feel smaller and more claustrophobic than they are, giving every piece of furniture a sense of friction."
-    },
     "colors": [
       "#5e393b",
       "#3B2814",
@@ -3984,9 +3867,6 @@ const FILM_DETAILS_FULL = [
   {
     "id": "the-father-2020",
     "screenshotCount": 42,
-    "description": {
-      "en": "The film has essentially one core setting: a middle-class London flat, yet it shifts quietly beneath your eyes. The same hallway, the same armchair, the same dining table reappear across scenes with small, unsettling discrepancies — the curtains have changed, a picture hangs slightly crooked, a different tea set sits on the table. Director Florian Zeller translates an elderly man's dementia-affected point of view directly into spatial instability, so that the audience loses their bearings alongside the protagonist. This means the flat itself had to be filmed with exceptional precision: heavy wooden bookcases, high-backed upholstered chairs, and wall panelling — everything carries the feel of a British home lived in for thirty years, where each piece has a history, rather than a home decorated to look that way. If you are thinking about how to anchor a room with furniture that carries a sense of inheritance, the logic behind this flat's arrangement is worth studying closely."
-    },
     "colors": [
       "#9cfbf9",
       "#12100E",

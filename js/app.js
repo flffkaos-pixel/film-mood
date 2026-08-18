@@ -245,7 +245,6 @@ function getRoute() {
       DETAILS_SRC.forEach(d => {
         const f = FILM_DATA.find(x => x.id === d.id);
         if (!f) return;
-        if (d.description?.en && !f.description?.en) f.description = d.description;
         if (d.colors?.length >= 3) f.colors = d.colors;
         if (d.letterboxd) f.letterboxd = d.letterboxd;
         if (d.screenshots?.length >= 5) f.screenshots = d.screenshots;
@@ -737,7 +736,6 @@ function renderFilmDetail(main, slug) {
   const title = film.title[CURRENT_LANG] || film.title.en;
   const dir = film.director[CURRENT_LANG] || film.director.en;
   const reg = film.region[CURRENT_LANG] || film.region.en;
-  const desc = film.description?.[CURRENT_LANG] || film.description?.en || '';
   const colors = film.colors || [];
   const shots = film.screenshots?.length > 1 ? film.screenshots : [film.poster];
 
@@ -755,12 +753,6 @@ function renderFilmDetail(main, slug) {
         <h3 style="font-size:16px;font-weight:600;margin-bottom:8px">${lang('colorPalette')}</h3>
         <div class="film-palette">${colors.map(c => `<div class="film-palette-bar" style="background:${c};flex:1" title="${c}"></div>`).join('')}</div>
         <div class="film-palette-info">${colors.map(c => `<span style="display:flex;align-items:center;gap:4px"><span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:${c}"></span>${c}</span>`).join('')}</div>
-      ` : ''}
-      ${desc ? `
-        <div class="film-detail-desc">
-          <strong style="color:var(--text)">${lang('whyWeRecommend')}</strong>
-          <p style="margin-top:8px">${desc}</p>
-        </div>
       ` : ''}
       <h3 style="font-size:16px;font-weight:600;margin-top:32px;margin-bottom:12px">${lang('screenshots')} · ${shots.length}</h3>
       <div class="film-screenshots">
