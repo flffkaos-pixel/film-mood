@@ -170,19 +170,6 @@ function getLocalImageFromFilm(film) {
 
 
 // Color distribution will be loaded dynamically from color-distribution-full.json
-let COLOR_DISTRIBUTION_CACHE = null;
-async function loadColorDistribution() {
-  if (COLOR_DISTRIBUTION_CACHE) return COLOR_DISTRIBUTION_CACHE;
-  try {
-    const resp = await fetch('color-distribution-full.json');
-    COLOR_DISTRIBUTION_CACHE = await resp.json();
-    return COLOR_DISTRIBUTION_CACHE;
-  } catch (e) {
-    console.warn('Failed to load color distribution:', e);
-    return {};
-  }
-}
-
 let CURRENT_LANG = localStorage.getItem('filmmood-lang') || 'ko';
 
 
@@ -255,34 +242,7 @@ function closeLightbox() {
   document.getElementById('lightbox').classList.remove('active');
   document.body.style.overflow = '';
 }
-async function openDistModal(colorId) {
-  const distData = await loadColorDistribution();
-  const dist = distData[colorId] || [];
-  if (!dist.length) return;
-  const nameKey = colorId;
-  const name = lang(nameKey);
-  document.getElementById('distModalTitle').textContent = name + ' ' + lang('distribution');
-  const total = dist.reduce((sum, d) => sum + d.pct, 0);
-  document.getElementById('distModalBody').innerHTML = dist.map(d => {
-    const pct = ((d.pct / total) * 100).toFixed(1);
-    return `
-      <div class="dist-item">
-        <span class="dist-swatch" style="background:${d.hex}"></span>
-        <span class="dist-hex">${d.hex}</span>
-        <span class="dist-pct">${pct}%</span>
-        <div class="dist-bar" style="--pct:${pct}%"></div>
-      </div>
-    `;
-  }).join('');
-  document.getElementById('distModal').classList.add('active');
-  document.body.style.overflow = 'hidden';
-}
-function closeDistModal(e) {
-  if (e && e.target !== document.getElementById('distModal')) return;
-  document.getElementById('distModal').classList.remove('active');
-  document.body.style.overflow = '';
-}
-document.addEventListener('keydown', e => { if (e.key === 'Escape') { closeLightbox(); closeDistModal(); } });
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
 
 // ─── Img helper ───
 function imgAttr(src, alt) {
@@ -552,9 +512,6 @@ function colorCardThumbsFromStills(c, stills, usedImages) {
 }
 
 async function renderColors(main) {
-  // Load color distribution first
-  const colorDist = await loadColorDistribution();
-  
   main.innerHTML = `
     <div class="page-header">
       <h1>${lang('colors')}</h1>
@@ -567,10 +524,6 @@ ${COLORS_DATA.map(c => {
             const descKey = c.id + 'Desc';
             const name = lang(nameKey);
             const desc = lang(descKey);
-            // Color distribution bars
-            const dist = colorDist[c.id] || [];
-            const topColors = dist.slice(0, 8).map(d => `<span class="dist-color" style="background:${d.hex}" title="${d.hex} ${d.pct}%"></span>`).join('');
-            const distHtml = dist.length ? `<div class="color-dist-bar">${topColors}</div>` : '';
             return `
               <div class="color-card" onclick="navigate('#/color/${c.id}')">
                 <div class="color-card-header">
@@ -579,8 +532,6 @@ ${COLORS_DATA.map(c => {
                   <div class="color-card-tags">
                     ${desc.split(', ').map(t => `<span>${t}</span>`).join('')}
                   </div>
-                  ${distHtml}
-                  <button class="dist-btn" data-color="${c.id}" onclick="event.stopPropagation(); openDistModal('${c.id}')">${lang('distribution')}</button>
                 </div>
                 <div class="color-card-thumbs"><div class="loading" style="padding:24px;text-align:center;color:var(--text3);font-size:13px">${lang('loading')}</div></div>
               </div>
@@ -588,16 +539,6 @@ ${COLORS_DATA.map(c => {
           }).join('')}
       </div>
     </section>
-    <!-- Distribution Modal -->
-    <div class="dist-modal" id="distModal" onclick="closeDistModal(event)">
-      <div class="dist-modal-content">
-        <div class="dist-modal-header">
-          <h3 id="distModalTitle"></h3>
-          <button class="dist-modal-close" onclick="closeDistModal()">&times;</button>
-        </div>
-        <div class="dist-modal-body" id="distModalBody"></div>
-      </div>
-    </div>
   `;
   loadYeguoziColorStills().then(stillsData => {
     const usedImages = new Set();
@@ -608,19 +549,10 @@ ${COLORS_DATA.map(c => {
       if (!wrap) return;
       wrap.innerHTML = thumbs.map(t => {
         const title = t.film.title[CURRENT_LANG] || t.film.title.en || '';
-        const palette = (t.palette || []).slice(0, 8);
-        const paletteHtmlTooltip = palette.map(hex => `<span class="palette-swatch-tooltip" style="background:${hex}" title="${hex}"></span>`).join('');
-        const barHtml = palette.map(p => {
-          const hex = p.hex || p;
-          const pct = p.pct ? p.pct : 0;
-          return `<span class="mini-swatch" style="width:${pct}%;background:${hex}" title="${hex} ${pct}%"></span>`;
-        }).join('');
         return `
           <div class="color-thumb-wrap">
             <img ${imgAttr(t.img, title)}>
             <span class="color-thumb-title">${title}</span>
-            <div class="mini-bar">${barHtml}</div>
-            <div class="palette-tooltip">${paletteHtmlTooltip}</div>
           </div>
         `;
       }).join('');
