@@ -399,7 +399,7 @@ function getRoute() {
 */
 
 // ─── Render ───
-function renderPage() {
+async function renderPage() {
   const route = getRoute();
   const main = qs('main');
   main.innerHTML = '<div class="loading"><div class="spinner"></div>' + lang('loading') + '</div>';
@@ -408,7 +408,7 @@ function renderPage() {
   switch (route.page) {
     case 'home': renderHome(main); break;
     case 'films': renderFilms(main); break;
-    case 'colors': renderColors(main); break;
+    case 'colors': await renderColors(main); break;
     case 'about': renderAbout(main); break;
     case 'academy': renderAcademy(main); break;
     case 'color': renderColorDetail(main, route.slug); break;
@@ -551,7 +551,10 @@ function colorCardThumbsFromStills(c, stills, usedImages) {
   return thumbs;
 }
 
-function renderColors(main) {
+async function renderColors(main) {
+  // Load color distribution first
+  const colorDist = await loadColorDistribution();
+  
   main.innerHTML = `
     <div class="page-header">
       <h1>${lang('colors')}</h1>
@@ -565,7 +568,7 @@ ${COLORS_DATA.map(c => {
             const name = lang(nameKey);
             const desc = lang(descKey);
             // Color distribution bars
-            const dist = COLOR_DISTRIBUTION[c.id] || [];
+            const dist = colorDist[c.id] || [];
             const topColors = dist.slice(0, 8).map(d => `<span class="dist-color" style="background:${d.hex}" title="${d.hex} ${d.pct}%"></span>`).join('');
             const distHtml = dist.length ? `<div class="color-dist-bar">${topColors}</div>` : '';
             return `
@@ -606,7 +609,6 @@ ${COLORS_DATA.map(c => {
       wrap.innerHTML = thumbs.map(t => {
         const title = t.film.title[CURRENT_LANG] || t.film.title.en || '';
         const palette = (t.palette || []).slice(0, 8);
-        const paletteHtml = palette.map(hex => `<span class="palette-swatch" style="background:${hex}" title="${hex}"></span>`).join('');
         const paletteHtmlTooltip = palette.map(hex => `<span class="palette-swatch-tooltip" style="background:${hex}" title="${hex}"></span>`).join('');
         return `
           <div class="color-thumb-wrap">
