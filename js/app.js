@@ -957,7 +957,8 @@ function colorCardThumbsFromStills(c, stills, usedImages) {
     }
     const titleEn = (localFilm && localFilm.title.en) || frame.filmTitleEn || '';
     const titleKo = (localFilm && localFilm.title.ko) || (localFilm && localFilm.title.en) || titleEn;
-    thumbs.push({ img: localPath, film: { id: localFilm ? localFilm.id : frame.filmSlug, title: { en: titleEn, ko: titleKo } } });
+    const palette = (frame.palette || []).slice(0, 8).map(p => p.hex || p);
+    thumbs.push({ img: localPath, film: { id: localFilm ? localFilm.id : frame.filmSlug, title: { en: titleEn, ko: titleKo } }, palette });
     if (thumbs.length >= 6) break;
   }
   return thumbs;
@@ -1006,10 +1007,14 @@ ${COLORS_DATA.map(c => {
       if (!wrap) return;
       wrap.innerHTML = thumbs.map(t => {
         const title = t.film.title[CURRENT_LANG] || t.film.title.en || '';
+        const palette = (t.palette || []).slice(0, 8);
+        const paletteHtml = palette.map(hex => `<span class="palette-swatch" style="background:${hex}" title="${hex}"></span>`).join('');
+        const paletteHtmlTooltip = palette.map(hex => `<span class="palette-swatch-tooltip" style="background:${hex}" title="${hex}"></span>`).join('');
         return `
           <div class="color-thumb-wrap">
             <img ${imgAttr(t.img, title)}>
             <span class="color-thumb-title">${title}</span>
+            <div class="palette-tooltip">${paletteHtmlTooltip}</div>
           </div>
         `;
       }).join('');
