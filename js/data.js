@@ -9485,7 +9485,7 @@ var FILM_DATA = [
 const COLORS_DATA = [
   {
   id: "red",
-  count: 67,
+  count: 461,
   thumbs: [
     "/colors/red/a-nie-si-de-hai-tan-2008/0001.webp",
     "/colors/red/a-nie-si-de-hai-tan-2008/0002.webp",
@@ -9542,7 +9542,7 @@ const COLORS_DATA = [
 },
   {
   id: "orange",
-  count: 35,
+  count: 234,
   thumbs: [
     "/colors/orange/a-nie-si-de-hai-tan-2008/0028.webp",
     "/colors/orange/all-about-my-mother/0002.webp",
@@ -9599,7 +9599,7 @@ const COLORS_DATA = [
 },
   {
   id: "earth",
-  count: 83,
+  count: 748,
   thumbs: [
     "/colors/earth/a-nie-si-de-hai-tan-2008/0003.webp",
     "/colors/earth/a-nie-si-de-hai-tan-2008/0007.webp",
@@ -9656,7 +9656,7 @@ const COLORS_DATA = [
 },
   {
   id: "yellow",
-  count: 43,
+  count: 254,
   thumbs: [
     "/colors/yellow/a-nie-si-de-hai-tan-2008/0019.webp",
     "/colors/yellow/a-nie-si-de-hai-tan-2008/0029.webp",
@@ -9713,7 +9713,7 @@ const COLORS_DATA = [
 },
   {
   id: "green",
-  count: 80,
+  count: 714,
   thumbs: [
     "/colors/green/a-nie-si-de-hai-tan-2008/0005.webp",
     "/colors/green/a-nie-si-de-hai-tan-2008/0006.webp",
@@ -9770,7 +9770,7 @@ const COLORS_DATA = [
 },
   {
   id: "teal",
-  count: 78,
+  count: 670,
   thumbs: [
     "/colors/teal/a-nie-si-de-hai-tan-2008/0005.webp",
     "/colors/teal/a-nie-si-de-hai-tan-2008/0007.webp",
@@ -9827,7 +9827,7 @@ const COLORS_DATA = [
 },
   {
   id: "blue",
-  count: 81,
+  count: 574,
   thumbs: [
     "/colors/blue/a-nie-si-de-hai-tan-2008/0004.webp",
     "/colors/blue/a-nie-si-de-hai-tan-2008/0011.webp",
@@ -9884,7 +9884,7 @@ const COLORS_DATA = [
 },
   {
   id: "purple",
-  count: 53,
+  count: 210,
   thumbs: [
     "/colors/purple/a-nie-si-de-hai-tan-2008/0030.webp",
     "/colors/purple/all-about-my-mother/0018.webp",
@@ -9941,7 +9941,7 @@ const COLORS_DATA = [
 },
   {
   id: "mono",
-  count: 8,
+  count: 240,
   thumbs: [
     "/colors/mono/chun-guang-zha-xie-1997/0003.webp",
     "/colors/mono/chun-guang-zha-xie-1997/0004.webp",
