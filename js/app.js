@@ -168,6 +168,461 @@ function getLocalImageFromFilm(film) {
   return PLACEHOLDER_SVG;
 }
 
+
+// Color distribution data from D:\FilmMood\Colors
+const COLOR_DISTRIBUTION = {
+  red: [
+    {
+      hex: '#ACA69A',
+      pct: 308
+    },
+    {
+      hex: '#EEF8FD',
+      pct: 253
+    },
+    {
+      hex: '#BEEDFA',
+      pct: 250
+    },
+    {
+      hex: '#C1E8F6',
+      pct: 246
+    },
+    {
+      hex: '#DEF2F2',
+      pct: 242
+    },
+    {
+      hex: '#B3DCF1',
+      pct: 241
+    },
+    {
+      hex: '#D7E7F0',
+      pct: 240
+    },
+    {
+      hex: '#EFF2EF',
+      pct: 239
+    },
+    {
+      hex: '#A89176',
+      pct: 236
+    },
+    {
+      hex: '#82C3EB',
+      pct: 235
+    },
+    {
+      hex: '#E8E9E9',
+      pct: 233
+    },
+    {
+      hex: '#F7F1E7',
+      pct: 231
+    }
+  ],
+  orange: [
+    {
+      hex: '#82C3EB',
+      pct: 235
+    },
+    {
+      hex: '#E9F4E6',
+      pct: 230
+    },
+    {
+      hex: '#70B1DC',
+      pct: 220
+    },
+    {
+      hex: '#C4D9D7',
+      pct: 215
+    },
+    {
+      hex: '#FBF9D6',
+      pct: 214
+    },
+    {
+      hex: '#CDD2CF',
+      pct: 207
+    },
+    {
+      hex: '#F9D8CF',
+      pct: 207
+    },
+    {
+      hex: '#ECEFCF',
+      pct: 207
+    },
+    {
+      hex: '#E1EACD',
+      pct: 205
+    },
+    {
+      hex: '#C7DBCA',
+      pct: 202
+    },
+    {
+      hex: '#AEC7C7',
+      pct: 199
+    },
+    {
+      hex: '#97CDC7',
+      pct: 199
+    }
+  ],
+  earth: [
+    {
+      hex: '#BEAE89',
+      pct: 274
+    },
+    {
+      hex: '#BAA788',
+      pct: 272
+    },
+    {
+      hex: '#DBF1FA',
+      pct: 250
+    },
+    {
+      hex: '#988F7B',
+      pct: 246
+    },
+    {
+      hex: '#D4E8F3',
+      pct: 243
+    },
+    {
+      hex: '#E9EBF0',
+      pct: 240
+    },
+    {
+      hex: '#DDEBE7',
+      pct: 231
+    },
+    {
+      hex: '#CBDCE7',
+      pct: 231
+    },
+    {
+      hex: '#CEDAE5',
+      pct: 229
+    },
+    {
+      hex: '#DEE5E5',
+      pct: 229
+    },
+    {
+      hex: '#ACCAE1',
+      pct: 225
+    },
+    {
+      hex: '#B3CEE1',
+      pct: 225
+    }
+  ],
+  yellow: [
+    {
+      hex: '#C7B780',
+      pct: 256
+    },
+    {
+      hex: '#D4E6F9',
+      pct: 249
+    },
+    {
+      hex: '#FBF6E8',
+      pct: 232
+    },
+    {
+      hex: '#E9F4E6',
+      pct: 230
+    },
+    {
+      hex: '#D4E3DA',
+      pct: 218
+    },
+    {
+      hex: '#DBDCD5',
+      pct: 213
+    },
+    {
+      hex: '#D5E0D3',
+      pct: 211
+    },
+    {
+      hex: '#D3E5D3',
+      pct: 211
+    },
+    {
+      hex: '#E4E5D3',
+      pct: 211
+    },
+    {
+      hex: '#FBF9D2',
+      pct: 210
+    },
+    {
+      hex: '#DDEFCF',
+      pct: 207
+    },
+    {
+      hex: '#E1EACD',
+      pct: 205
+    }
+  ],
+  green: [
+    {
+      hex: '#CFDCC8',
+      pct: 400
+    },
+    {
+      hex: '#D3C09F',
+      pct: 318
+    },
+    {
+      hex: '#819382',
+      pct: 260
+    },
+    {
+      hex: '#FAFBFB',
+      pct: 251
+    },
+    {
+      hex: '#CBE6F8',
+      pct: 248
+    },
+    {
+      hex: '#CDDFF6',
+      pct: 246
+    },
+    {
+      hex: '#C1E8F6',
+      pct: 246
+    },
+    {
+      hex: '#EDEFF5',
+      pct: 245
+    },
+    {
+      hex: '#EFF3F5',
+      pct: 245
+    },
+    {
+      hex: '#F5F8F4',
+      pct: 244
+    },
+    {
+      hex: '#9BCDF3',
+      pct: 243
+    },
+    {
+      hex: '#DEF2F2',
+      pct: 242
+    }
+  ],
+  teal: [
+    {
+      hex: '#0E7B95',
+      pct: 298
+    },
+    {
+      hex: '#A4A286',
+      pct: 268
+    },
+    {
+      hex: '#2D4B58',
+      pct: 264
+    },
+    {
+      hex: '#848782',
+      pct: 260
+    },
+    {
+      hex: '#D3FEFD',
+      pct: 253
+    },
+    {
+      hex: '#EFFEFD',
+      pct: 253
+    },
+    {
+      hex: '#AFDCFD',
+      pct: 253
+    },
+    {
+      hex: '#D9FBFC',
+      pct: 252
+    },
+    {
+      hex: '#F1F8FB',
+      pct: 251
+    },
+    {
+      hex: '#BEEDFA',
+      pct: 250
+    },
+    {
+      hex: '#DBF1FA',
+      pct: 250
+    },
+    {
+      hex: '#E1F4F8',
+      pct: 248
+    }
+  ],
+  blue: [
+    {
+      hex: '#7288A8',
+      pct: 336
+    },
+    {
+      hex: '#0E7B95',
+      pct: 298
+    },
+    {
+      hex: '#EEF8FD',
+      pct: 253
+    },
+    {
+      hex: '#EFFEFD',
+      pct: 253
+    },
+    {
+      hex: '#AFDCFD',
+      pct: 253
+    },
+    {
+      hex: '#D3FEFD',
+      pct: 253
+    },
+    {
+      hex: '#FDFCFD',
+      pct: 253
+    },
+    {
+      hex: '#D9FBFC',
+      pct: 252
+    },
+    {
+      hex: '#F1F8FB',
+      pct: 251
+    },
+    {
+      hex: '#FAFBFB',
+      pct: 251
+    },
+    {
+      hex: '#F1F4FA',
+      pct: 250
+    },
+    {
+      hex: '#BEEDFA',
+      pct: 250
+    }
+  ],
+  purple: [
+    {
+      hex: '#B3CDF8',
+      pct: 248
+    },
+    {
+      hex: '#E7F3F5',
+      pct: 245
+    },
+    {
+      hex: '#ADBFF4',
+      pct: 244
+    },
+    {
+      hex: '#DAE2F3',
+      pct: 243
+    },
+    {
+      hex: '#EBE2F2',
+      pct: 242
+    },
+    {
+      hex: '#ECEEF1',
+      pct: 241
+    },
+    {
+      hex: '#E7EAEF',
+      pct: 239
+    },
+    {
+      hex: '#D5DFEF',
+      pct: 239
+    },
+    {
+      hex: '#D1C5EE',
+      pct: 238
+    },
+    {
+      hex: '#EEEFED',
+      pct: 237
+    },
+    {
+      hex: '#F2F0ED',
+      pct: 237
+    },
+    {
+      hex: '#CDE0E7',
+      pct: 231
+    }
+  ],
+  mono: [
+    {
+      hex: '#C5C5C5',
+      pct: 2167
+    },
+    {
+      hex: '#767676',
+      pct: 2124
+    },
+    {
+      hex: '#939393',
+      pct: 1911
+    },
+    {
+      hex: '#959595',
+      pct: 1788
+    },
+    {
+      hex: '#979797',
+      pct: 1661
+    },
+    {
+      hex: '#A4A4A4',
+      pct: 1640
+    },
+    {
+      hex: '#8F8F8F',
+      pct: 1573
+    },
+    {
+      hex: '#787878',
+      pct: 1560
+    },
+    {
+      hex: '#ABABAB',
+      pct: 1539
+    },
+    {
+      hex: '#C0C0C0',
+      pct: 1536
+    },
+    {
+      hex: '#6C6C6C',
+      pct: 1512
+    },
+    {
+      hex: '#BBBBBB',
+      pct: 1496
+    }
+  ]
+};
+
 let CURRENT_LANG = localStorage.getItem('filmmood-lang') || 'ko';
 
 
@@ -521,6 +976,10 @@ ${COLORS_DATA.map(c => {
             const descKey = c.id + 'Desc';
             const name = lang(nameKey);
             const desc = lang(descKey);
+            // Color distribution bars
+            const dist = COLOR_DISTRIBUTION[c.id] || [];
+            const topColors = dist.slice(0, 8).map(d => `<span class="dist-color" style="background:${d.hex}" title="${d.hex} ${d.pct}%"></span>`).join('');
+            const distHtml = dist.length ? `<div class="color-dist-bar">${topColors}</div>` : '';
             return `
               <div class="color-card" onclick="navigate('#/color/${c.id}')">
                 <div class="color-card-header">
@@ -529,6 +988,7 @@ ${COLORS_DATA.map(c => {
                   <div class="color-card-tags">
                     ${desc.split(', ').map(t => `<span>${t}</span>`).join('')}
                   </div>
+                  ${distHtml}
                 </div>
                 <div class="color-card-thumbs"><div class="loading" style="padding:24px;text-align:center;color:var(--text3);font-size:13px">${lang('loading')}</div></div>
               </div>

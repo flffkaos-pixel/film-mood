@@ -216,6 +216,18 @@ main { min-height: calc(100vh - 64px - 180px); }
   font-size: 11px; padding: 2px 10px; border-radius: 12px;
   background: var(--accent-dim); color: var(--accent);
 }
+.color-dist-bar {
+  display: flex; gap: 2px; margin-top: 8px; height: 16px;
+  background: var(--bg2); border-radius: 8px; overflow: hidden;
+}
+.color-dist-bar .dist-color {
+  flex: 1; min-width: 0;
+  transition: flex 0.2s;
+}
+.color-dist-bar .dist-color:hover {
+  flex: 3;
+  z-index: 1;
+}
 .color-card-thumbs {
   display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; grid-auto-rows: 110px;
 }
