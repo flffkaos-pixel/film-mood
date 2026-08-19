@@ -820,6 +820,22 @@ function renderColorDetail(main, slug) {
           </div>
           <div class="color-detail-palette">${paletteHtml}</div>
           ${title ? `<div class="color-detail-title"><a href="#/film/${filmId}">${title}</a></div>` : ''}
+          ${(card.palette || []).length ? `
+            <div class="color-detail-bar">
+              ${card.palette.map(p => {
+                const hex = p.hex || p;
+                const pct = p.pct ? p.pct : 0;
+                return `<span class="detail-swatch" style="width:${pct}%;background:${hex}" title="${hex} ${pct}%"></span>`;
+              }).join('')}
+            </div>
+            <div class="color-detail-labels">
+              ${card.palette.map(p => {
+                const hex = p.hex || p;
+                const pct = p.pct ? p.pct : 0;
+                return `<span><i style="background:${hex}"></i>${hex} ${pct}%</span>`;
+              }).join('')}
+            </div>
+          ` : ''}
         </div>
       `;
     }).join('');
