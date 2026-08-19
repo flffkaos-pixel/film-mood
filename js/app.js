@@ -544,7 +544,7 @@ function colorCardThumbsFromStills(c, stills, usedImages) {
     }
     const titleEn = (localFilm && localFilm.title.en) || frame.filmTitleEn || '';
     const titleKo = (localFilm && localFilm.title.ko) || (localFilm && localFilm.title.en) || titleEn;
-    const palette = (frame.palette || []).slice(0, 8).map(p => p.hex || p);
+    const palette = (frame.palette || []).slice(0, 8).map(p => ({ hex: p.hex || p, pct: p.pct || 0 }));
     thumbs.push({ img: localPath, film: { id: localFilm ? localFilm.id : frame.filmSlug, title: { en: titleEn, ko: titleKo } }, palette });
     if (thumbs.length >= 6) break;
   }
