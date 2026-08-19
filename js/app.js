@@ -695,7 +695,33 @@ function closeLightbox() {
   document.getElementById('lightbox').classList.remove('active');
   document.body.style.overflow = '';
 }
-document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+function openDistModal(colorId) {
+  const dist = COLOR_DISTRIBUTION[colorId] || [];
+  if (!dist.length) return;
+  const nameKey = colorId;
+  const name = lang(nameKey);
+  document.getElementById('distModalTitle').textContent = name + ' ' + lang('distribution');
+  const total = dist.reduce((sum, d) => sum + d.pct, 0);
+  document.getElementById('distModalBody').innerHTML = dist.map(d => {
+    const pct = ((d.pct / total) * 100).toFixed(1);
+    return `
+      <div class="dist-item">
+        <span class="dist-swatch" style="background:${d.hex}"></span>
+        <span class="dist-hex">${d.hex}</span>
+        <span class="dist-pct">${pct}%</span>
+        <div class="dist-bar" style="--pct:${pct}%"></div>
+      </div>
+    `;
+  }).join('');
+  document.getElementById('distModal').classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+function closeDistModal(e) {
+  if (e && e.target !== document.getElementById('distModal')) return;
+  document.getElementById('distModal').classList.remove('active');
+  document.body.style.overflow = '';
+}
+document.addEventListener('keydown', e => { if (e.key === 'Escape') { closeLightbox(); closeDistModal(); } });
 
 // ─── Img helper ───
 function imgAttr(src, alt) {
@@ -990,6 +1016,7 @@ ${COLORS_DATA.map(c => {
                     ${desc.split(', ').map(t => `<span>${t}</span>`).join('')}
                   </div>
                   ${distHtml}
+                  <button class="dist-btn" data-color="${c.id}" onclick="event.stopPropagation(); openDistModal('${c.id}')">${lang('distribution')}</button>
                 </div>
                 <div class="color-card-thumbs"><div class="loading" style="padding:24px;text-align:center;color:var(--text3);font-size:13px">${lang('loading')}</div></div>
               </div>
@@ -997,6 +1024,16 @@ ${COLORS_DATA.map(c => {
           }).join('')}
       </div>
     </section>
+    <!-- Distribution Modal -->
+    <div class="dist-modal" id="distModal" onclick="closeDistModal(event)">
+      <div class="dist-modal-content">
+        <div class="dist-modal-header">
+          <h3 id="distModalTitle"></h3>
+          <button class="dist-modal-close" onclick="closeDistModal()">&times;</button>
+        </div>
+        <div class="dist-modal-body" id="distModalBody"></div>
+      </div>
+    </div>
   `;
   loadYeguoziColorStills().then(stillsData => {
     const usedImages = new Set();
