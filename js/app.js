@@ -610,10 +610,16 @@ ${COLORS_DATA.map(c => {
         const title = t.film.title[CURRENT_LANG] || t.film.title.en || '';
         const palette = (t.palette || []).slice(0, 8);
         const paletteHtmlTooltip = palette.map(hex => `<span class="palette-swatch-tooltip" style="background:${hex}" title="${hex}"></span>`).join('');
+        const barHtml = palette.map(p => {
+          const hex = p.hex || p;
+          const pct = p.pct ? p.pct : 0;
+          return `<span class="mini-swatch" style="width:${pct}%;background:${hex}" title="${hex} ${pct}%"></span>`;
+        }).join('');
         return `
           <div class="color-thumb-wrap">
             <img ${imgAttr(t.img, title)}>
             <span class="color-thumb-title">${title}</span>
+            <div class="mini-bar">${barHtml}</div>
             <div class="palette-tooltip">${paletteHtmlTooltip}</div>
           </div>
         `;
