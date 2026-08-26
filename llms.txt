@@ -1,0 +1,6 @@
+# Film Mood (FilmMood)
+
+> Discover home decorating inspiration from movie interiors and color palettes. Curated film screenshots for exploring spaces, lighting, and moods.
+
+Canonical URL: https://film-mood.pages.dev
+Language: ko
